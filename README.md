@@ -1,10 +1,10 @@
-# Dark Souls 3 Cheat Sheet
+# Final Fantasy X Cheat Sheet
 
-To view the cheat sheet [click here](http://zkjellberg.github.io/dark-souls-3-cheat-sheet/).
+To view the cheat sheet [click here](https://drunktraveler.github.io/).
 
-This checklist was created by adopting the source code from the [Dark Souls 2 Cheat Sheet](https://github.com/smcnabb/dark-souls-2-cheat-sheet/tree/gh-pages) created by [Stephen McNabb](https://github.com/smcnabb).
+This checklist was created by adopting the source code from the [Dark Souls 2 Cheat Sheet](https://github.com/smcnabb/dark-souls-2-cheat-sheet/tree/gh-pages) created by [Stephen McNabb](https://github.com/smcnabb) and [Dark Souls 3 Cheat Sheet](https://https://github.com/ZKjellberg/dark-souls-3-cheat-sheet).
 
-The walkthrough is thanks to [DeathGodGarra's NPC Side Quests Guide V2](https://www.gamefaqs.com/boards/168566-dark-souls-iii/73599466).
+The walkthrough is thanks to [FFX FAQ/Walkthrough (PS3) by KeyBlade999](https://gamefaqs.gamespot.com/ps3/643146-final-fantasy-x-x-2-hd-remaster/faqs/69037) and [finalcraft](http://www.finalcraft.com/final-fantasy-x/komplettloesung/) as well as [Dansg08 video series](https://www.youtube.com/watch?v=03HaLMNJWWk&list=PL9wpzJw8GKy74rLqQv7OH9v94Hj8qQWps&index=1).
 
 ## Contribution Guide
 
@@ -43,11 +43,3 @@ The **class="f_gem f_misc"** field is used for the filtering system. This task p
 | f_misc  | *any other items* |
 
 If none of these filter classes match, use **class="f_none"**.
-
-In addition to the filter classes, there is a second type of classes used to control the visibility of entries based on which playthrough the user is on:
-
-| Class  | Description |
-|---     |--- |
-| h_ng+  | items hidden on NG+ and beyond, e.g., Ashen Estus Flask |
-| s_ng+  | items shown on NG+ and beyond, e.g., +1 rings |
-| s_ng++ | items shown on NG++ and beyond, e.g., +2 rings |
