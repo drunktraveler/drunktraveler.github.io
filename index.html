@@ -31,7 +31,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Playthrough</a></li>
           <li><a href="#tabChecklists" data-toggle="tab" data-target="#tabChecklists,#btnHideCompleted">Achievements</a></li>
-          <li><a href="#tabWeaponsShields" data-toggle="tab" data-target="#tabWeaponsShields,#btnHideCompleted">Weapons/Shields</a></li>
+          <li><a href="#tabMonsterFarm" data-toggle="tab" data-target="#tabMonsterFarm,#btnHideCompleted">Monster Farm</a></li>
           <li><a href="#tabArmors" data-toggle="tab" data-target="#tabArmors,#btnHideCompleted">Armor</a></li>
           <li><a href="#tabMisc" data-toggle="tab" data-target="#tabMisc,#btnHideCompleted">Misc</a></li>
           <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
@@ -845,175 +845,122 @@
         <!-- Search Zone END -->
       </div>
 
-      <!-- WEAPONS/SHIELD START -->
-      <div class="tab-pane" id="tabWeaponsShields">
-        <h2>Weapons and Shields Checklists <span id="weapons_overall_total"></span></h2>
+      <!-- Monster Farm START -->
+      <div class="tab-pane" id="tabMonsterFarm">
+        <h2>Monster Farm Checklists <span id="monster_farm_total"></span></h2>
         <ul class="table_of_contents">
-          <li><a href="#Weapons">Weapons</a> <span id="weapons_nav_totals_1"></span></li>
-          <li><a href="#Shields">Shields</a> <span id="weapons_nav_totals_2"></span></li>
+          <li><a href="#Besaid">Besaid</a> <span id="weapons_nav_totals_1"></span></li>
+          <li><a href="#Kilika">Kilika</a> <span id="weapons_nav_totals_2"></span></li>
+		  <li><a href="#Mi'ihen">Mi'ihen</a> <span id="weapons_nav_totals_3"></span></li>
+		  <li><a href="#Mushroom">Mushroom</a> <span id="weapons_nav_totals_4"></span></li>
+		  <li><a href="#Djose">Djose</a> <span id="weapons_nav_totals_5"></span></li>
+		  <li><a href="#Thunder">Thunder</a> <span id="weapons_nav_totals_6"></span></li>
+		  <li><a href="#Macalania">Macalania</a> <span id="weapons_nav_totals_7"></span></li>
+		  <li><a href="#Bikanel">Bikanel</a> <span id="weapons_nav_totals_8"></span></li>
+		  <li><a href="#Calm">Calm</a> <span id="weapons_nav_totals_9"></span></li>
+		  <li><a href="#Forgotten">Forgotten</a> <span id="weapons_nav_totals_10"></span></li>
+		  <li><a href="#Gagazet">Gagazet</a> <span id="weapons_nav_totals_11"></span></li>
+		  <li><a href="#Sin">Sin</a> <span id="weapons_nav_totals_12"></span></li>
+		  <li><a href="#Omega">Omega</a> <span id="weapons_nav_totals_13"></span></li>
         </ul>
 
         <div class="form-group">
-          <input type="search" id="weapons_search" class="form-control" placeholder="Start typing to filter results..." />
+          <input type="search" id="monster_search" class="form-control" placeholder="Start typing to filter results..." />
         </div>
 
-        <div id="weapons_list">
-          <h3 id="Weapons"><a href="#Weapons_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://darksouls3.wiki.fextralife.com/Weapons">Weapons</a> <span id="weapons_totals_1"></span></h3>
-          <div id="Weapons_col" class="collapse in">
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Daggers">Daggers</a></h4>
-            <ul>
-              <li data-id="weapons_1_1"><a href="http://darksouls3.wiki.fextralife.com/Dagger">Dagger</a></li>
-              <li data-id="weapons_1_2"><a href="http://darksouls3.wiki.fextralife.com/Parrying+Dagger">Parrying Dagger</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Straight+Swords">Straight Swords</a></h4>
-            <ul>
-              <li data-id="weapons_1_12"><a href="http://darksouls3.wiki.fextralife.com/Shortsword">Shortsword</a></li>
-              <li data-id="weapons_1_13"><a href="http://darksouls3.wiki.fextralife.com/Long+Sword">Long Sword</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Greatswords">Greatswords</a></h4>
-            <ul>
-              <li data-id="weapons_1_27"><a href="http://darksouls3.wiki.fextralife.com/Bastard+Sword">Bastard Sword</a></li>
-              <li data-id="weapons_1_28"><a href="http://darksouls3.wiki.fextralife.com/Claymore">Claymore</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Ultra+Greatswords">Ultra Greatswords</a></h4>
-            <ul>
-              <li data-id="weapons_1_41"><a href="http://darksouls3.wiki.fextralife.com/Zweihander">Zweihander</a></li>
-              <li data-id="weapons_1_42"><a href="http://darksouls3.wiki.fextralife.com/Greatsword">Greatsword</a></li>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Curved+Swords">Curved Swords</a></h4>
-            <ul>
-              <li data-id="weapons_1_52"><a href="http://darksouls3.wiki.fextralife.com/Scimitar">Scimitar</a></li>
-              <li data-id="weapons_1_54"><a href="http://darksouls3.wiki.fextralife.com/Falchion">Falchion</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Curved+Greatswords">Curved Greatswords</a></h4>
-            <ul>
-              <li data-id="weapons_1_64"><a href="http://darksouls3.wiki.fextralife.com/Murakumo">Murakumo</a></li>
-              <li data-id="weapons_1_67"><a href="http://darksouls3.wiki.fextralife.com/Carthus+Curved+Greatsword">Carthus Curved Greatsword</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Thrusting+Swords">Thrusting Swords</a></h4>
-            <ul>
-              <li data-id="weapons_1_76"><a href="http://darksouls3.wiki.fextralife.com/Rapier">Rapier</a></li>
-              <li data-id="weapons_1_75"><a href="http://darksouls3.wiki.fextralife.com/Estoc">Estoc</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Katanas">Katanas</a></h4>
-            <ul>
-              <li data-id="weapons_1_69"><a href="http://darksouls3.wiki.fextralife.com/Uchigatana">Uchigatana</a></li>
-              <li data-id="weapons_1_70"><a href="http://darksouls3.wiki.fextralife.com/Washing+Pole">Washing Pole</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Axes">Axes</a></h4>
-            <ul>
-              <li data-id="weapons_1_81"><a href="http://darksouls3.wiki.fextralife.com/Hand+Axe">Hand Axe</a></li>
-              <li data-id="weapons_1_82"><a href="http://darksouls3.wiki.fextralife.com/Thrall+Axe">Thrall Axe</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Greataxes">Greataxes</a></h4>
-            <ul>
-              <li data-id="weapons_1_89"><a href="http://darksouls3.wiki.fextralife.com/Greataxe">Greataxe</a></li>
-              <li data-id="weapons_1_92"><a href="http://darksouls3.wiki.fextralife.com/Great+Machete">Great Machete</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Hammers">Hammers</a></h4>
-            <ul>
-              <li data-id="weapons_1_95"><a href="http://darksouls3.wiki.fextralife.com/Club">Club</a></li>
-              <li data-id="weapons_1_99"><a href="http://darksouls3.wiki.fextralife.com/Reinforced+Club">Reinforced Club</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Great+Hammers">Great Hammers</a></h4>
-            <ul>
-              <li data-id="weapons_1_105"><a href="http://darksouls3.wiki.fextralife.com/Large+Club">Large Club</a></li>
-              <li data-id="weapons_1_109"><a href="http://darksouls3.wiki.fextralife.com/Great+Club">Great Club</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Spears">Spears</a></h4>
-            <ul>
-              <li data-id="weapons_1_123"><a href="http://darksouls3.wiki.fextralife.com/Spear">Spear</a></li>
-              <li data-id="weapons_1_126"><a href="http://darksouls3.wiki.fextralife.com/Winged+Spear">Winged Spear</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Pikes">Pikes</a></h4>
-            <ul>
-              <li data-id="weapons_1_125"><a href="http://darksouls3.wiki.fextralife.com/Pike">Pike</a></li>
-              <li data-id="weapons_1_137"><a href="http://darksouls3.wiki.fextralife.com/Greatlance">Greatlance</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Halberds">Halberds</a></h4>
-            <ul>
-              <li data-id="weapons_1_138"><a href="http://darksouls3.wiki.fextralife.com/Halberd">Halberd</a></li>
-              <li data-id="weapons_1_141"><a href="http://darksouls3.wiki.fextralife.com/Red+Hilted+Halberd">Red Hilted Halberd</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Reapers">Reapers</a></h4>
-            <ul>
-              <li data-id="weapons_1_147"><a href="http://darksouls3.wiki.fextralife.com/Great+Scythe">Great Scythe</a></li>
-              <li data-id="weapons_1_149"><a href="http://darksouls3.wiki.fextralife.com/Great+Corvian+Scythe">Great Corvian Scythe</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Whips">Whips</a></h4>
-            <ul>
-              <li data-id="weapons_1_150"><a href="http://darksouls3.wiki.fextralife.com/Whip">Whip</a></li>
-              <li data-id="weapons_1_151"><a href="http://darksouls3.wiki.fextralife.com/Notched+Whip">Notched Whip</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Fist+&+Claws">Fists</a></h4>
-            <ul>
-              <li data-id="weapons_1_115"><a href="http://darksouls3.wiki.fextralife.com/Caestus">Caestus</a></li>
-              <li data-id="weapons_1_116"><a href="http://darksouls3.wiki.fextralife.com/Demon's+Fist">Demon's Fist</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Fist+&+Claws">Claws</a></h4>
-            <ul>
-              <li data-id="weapons_1_118"><a href="http://darksouls3.wiki.fextralife.com/Claw">Claw</a></li>
-              <li data-id="weapons_1_119"><a href="http://darksouls3.wiki.fextralife.com/Manikin+Claws">Manikin Claws</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Bows">Bows</a></h4>
-            <ul>
-              <li data-id="weapons_1_156"><a href="http://darksouls3.wiki.fextralife.com/Short+Bow">Short Bow</a></li>
-              <li data-id="weapons_1_158"><a href="http://darksouls3.wiki.fextralife.com/Composite+Bow">Composite Bow</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Greatbows">Greatbows</a></h4>
-            <ul>
-              <li data-id="weapons_1_161"><a href="http://darksouls3.wiki.fextralife.com/Dragonslayer+Greatbow">Dragonslayer Greatbow</a></li>
-              <li data-id="weapons_1_160"><a href="http://darksouls3.wiki.fextralife.com/Onislayer+Greatbow">Onislayer Greatbow</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Crossbows">Crossbows</a></h4>
-            <ul>
-              <li data-id="weapons_1_162"><a href="http://darksouls3.wiki.fextralife.com/Light+Crossbow">Light Crossbow</a></li>
-              <li data-id="weapons_1_167"><a href="http://darksouls3.wiki.fextralife.com/Heavy+Crossbow">Heavy Crossbow</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Staves">Staves</a></h4>
-            <ul>
-              <li data-id="weapons_1_168"><a href="http://darksouls3.wiki.fextralife.com/Sorcerer's+Staff">Sorcerer's Staff</a></li>
-              <li data-id="weapons_1_169"><a href="http://darksouls3.wiki.fextralife.com/Heretic's+Staff">Heretic's Staff</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Flames">Pyromancy Flames</a></h4>
-            <ul>
-              <li data-id="weapons_1_178"><a href="http://darksouls3.wiki.fextralife.com/Pyromancy+Flame">Pyromancy Flame</a></li>
-              <li data-id="weapons_1_201"><a href="http://darksouls3.wiki.fextralife.com/Pyromancer's+Parting+Flame">Pyromancer's Parting Flame</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Talismans">Talismans</a></h4>
-            <ul>
-              <li data-id="weapons_1_179"><a href="http://darksouls3.wiki.fextralife.com/Talisman">Talisman</a></li>
-              <li data-id="weapons_1_182"><a href="http://darksouls3.wiki.fextralife.com/Canvas+Talisman">Canvas Talisman</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Sacred+Chimes">Sacred Chimes</a></h4>
-            <ul>
-              <li data-id="weapons_1_185"><a href="http://darksouls3.wiki.fextralife.com/Cleric's+Sacred+Chime">Cleric's Sacred Chime</a></li>
-              <li data-id="weapons_1_186"><a href="http://darksouls3.wiki.fextralife.com/Priest's+Chime">Priest's Chime</a></li>
-            </ul>
-          </div>
-
-          <h3 id="Shields"><a href="#Shields_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://darksouls3.wiki.fextralife.com/Shields">Shields</a> <span id="weapons_totals_2"></span></h3>
-          <div id="Shields_col" class="collapse in">
-            <h4>Torches</h4>
-            <ul>
-              <li data-id="weapons_2_59"><a href="http://darksouls3.wiki.fextralife.com/Torch">Torch</a></li>
-              <li data-id="weapons_2_60"><a href="http://darksouls3.wiki.fextralife.com/Follower+Torch">Follower Torch</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Small+Shields">Small Shields</a></h4>
-            <ul>
-              <li data-id="weapons_2_1"><a href="http://darksouls3.wiki.fextralife.com/Buckler">Buckler</a></li>
-              <li data-id="weapons_2_4"><a href="http://darksouls3.wiki.fextralife.com/Target+Shield">Target Shield</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Standard+Shields">Shields</a></h4>
-            <ul>
-              <li data-id="weapons_2_39"><a href="http://darksouls3.wiki.fextralife.com/Large+Leather+Shield">Large Leather Shield</a></li>
-              <li data-id="weapons_2_43"><a href="http://darksouls3.wiki.fextralife.com/Carthus+Shield">Carthus Shield</a></li>
-            </ul>
-            <h4><a href="http://darksouls3.wiki.fextralife.com/Greatshields">Greatshields</a></h4>
-            <ul>
-              <li data-id="weapons_2_48"><a href="http://darksouls3.wiki.fextralife.com/Twin+Dragon+Greatshield">Twin Dragon Greatshield</a></li>
-              <li data-id="weapons_2_45"><a href="http://darksouls3.wiki.fextralife.com/Black+Iron+Greatshield">Black Iron Greatshield</a></li>
-            </ul>
-          </div>
+        <div id="monster_list">
+          <h3 id="Besaid"><a href="#Besaid_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Besaid <span id="monster_totals_1"></span></h3>
+          <ul id="Besaid_col" class="collapse in">
+            <li data-id="monster_1_1">mob</li>
+			<li data-id="monster_1_2">mob</li>
+			<li data-id="monster_1_3">mob</li>
+          </ul>
+		 
+		  <h3 id="Kilika"><a href="#Kilika_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Kilika <span id="monster_totals_2"></span></h3>
+          <ul id="Kilika_col" class="collapse in">
+            <li data-id="monster_2_1">mob</li>
+			<li data-id="monster_2_2">mob</li>
+			<li data-id="monster_2_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Mi'ihen"><a href="#Mi'ihen_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mi'ihen <span id="monster_totals_3"></span></h3>
+          <ul id="Mi'ihen_col" class="collapse in">
+            <li data-id="monster_3_1">mob</li>
+			<li data-id="monster_3_2">mob</li>
+			<li data-id="monster_3_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Mushroom"><a href="#Mushroom_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mushroom <span id="monster_totals_4"></span></h3>
+          <ul id="Mushroom_col" class="collapse in">
+            <li data-id="monster_4_1">mob</li>
+			<li data-id="monster_4_2">mob</li>
+			<li data-id="monster_4_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Djose"><a href="#Djose_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Djose <span id="monster_totals_5"></span></h3>
+          <ul id="Djose_col" class="collapse in">
+            <li data-id="monster_5_1">mob</li>
+			<li data-id="monster_5_2">mob</li>
+			<li data-id="monster_5_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Thunder"><a href="#Thunder_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Thunder <span id="monster_totals_6"></span></h3>
+          <ul id="Thunder_col" class="collapse in">
+            <li data-id="monster_6_1">mob</li>
+			<li data-id="monster_6_2">mob</li>
+			<li data-id="monster_6_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Macalania"><a href="#Macalania_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Macalania <span id="monster_totals_7"></span></h3>
+          <ul id="Macalania_col" class="collapse in">
+            <li data-id="monster_7_1">mob</li>
+			<li data-id="monster_7_2">mob</li>
+			<li data-id="monster_7_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Bikanel"><a href="#Bikanel_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Bikanel <span id="monster_totals_8"></span></h3>
+          <ul id="Bikanel_col" class="collapse in">
+            <li data-id="monster_8_1">mob</li>
+			<li data-id="monster_8_2">mob</li>
+			<li data-id="monster_8_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Calm"><a href="#Calm_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Calm <span id="monster_totals_9"></span></h3>
+          <ul id="Calm_col" class="collapse in">
+            <li data-id="monster_9_1">mob</li>
+			<li data-id="monster_9_2">mob</li>
+			<li data-id="monster_9_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Forgotten"><a href="#Forgotten_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Forgotten <span id="monster_totals_10"></span></h3>
+          <ul id="Forgotten_col" class="collapse in">
+            <li data-id="monster_10_1">mob</li>
+			<li data-id="monster_10_2">mob</li>
+			<li data-id="monster_10_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Gagazet"><a href="#Gagazet_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Gagazet <span id="monster_totals_11"></span></h3>
+          <ul id="Gagazet_col" class="collapse in">
+            <li data-id="monster_11_1">mob</li>
+			<li data-id="monster_11_2">mob</li>
+			<li data-id="monster_11_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Sin"><a href="#Sin_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Sin <span id="monster_totals_12"></span></h3>
+          <ul id="Sin_col" class="collapse in">
+            <li data-id="monster_12_1">mob</li>
+			<li data-id="monster_12_2">mob</li>
+			<li data-id="monster_12_3">mob</li>
+          </ul>
+		  
+		  <h3 id="Omega"><a href="#Omega_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Omega <span id="monster_totals_13"></span></h3>
+          <ul id="Omega_col" class="collapse in">
+            <li data-id="monster_13_1">mob</li>
+			<li data-id="monster_13_2">mob</li>
+			<li data-id="monster_13_3">mob</li>
+          </ul>
+		  
+           
         </div>
       </div>
 
