@@ -31,7 +31,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Playthrough</a></li>
           <li><a href="#tabChecklists" data-toggle="tab" data-target="#tabChecklists,#btnHideCompleted">Achievements</a></li>
-          <li><a href="#tabMonsterFarm" data-toggle="tab" data-target="#tabMonsterFarm,#btnHideCompleted">Monster Farm</a></li>
+          <li><a href="#tabMonsterArena" data-toggle="tab" data-target="#tabMonsterArena,#btnHideCompleted">Monster Arena</a></li>
           <li><a href="#tabSidequests" data-toggle="tab" data-target="#tabSidequests,#btnHideCompleted">Sidequests</a></li>
           <li><a href="#tabMisc" data-toggle="tab" data-target="#tabMisc,#btnHideCompleted">Misc</a></li>
           <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
@@ -846,22 +846,26 @@
       </div>
 
       <!-- Monster Farm START -->
-      <div class="tab-pane" id="tabMonsterFarm">
-        <h2>Monster Farm Checklists <span id="monster_farm_total"></span></h2>
+      <div class="tab-pane" id="tabMonsterArena">
+        <h2>Monster Arena Checklists <span id="monster_arena_total"></span></h2>
         <ul class="table_of_contents">
-          <li><a href="#Besaid_Monster">Besaid</a> <span id="monster_nav_totals_1"></span></li>
-          <li><a href="#Kilika_Monster">Kilika</a> <span id="monster_nav_totals_2"></span></li>
-		  <li><a href="#Mi'ihen">Mi'ihen</a> <span id="monster_nav_totals_3"></span></li>
-		  <li><a href="#Mushroom">Mushroom</a> <span id="monster_nav_totals_4"></span></li>
-		  <li><a href="#Djose_Monster">Djose</a> <span id="monster_nav_totals_5"></span></li>
-		  <li><a href="#Thunder">Thunder</a> <span id="monster_nav_totals_6"></span></li>
-		  <li><a href="#Macalania_Monster">Macalania</a> <span id="monster_nav_totals_7"></span></li>
-		  <li><a href="#Bikanel">Bikanel</a> <span id="monster_nav_totals_8"></span></li>
-		  <li><a href="#Calm">Calm</a> <span id="monster_nav_totals_9"></span></li>
-		  <li><a href="#Forgotten">Forgotten</a> <span id="monster_nav_totals_10"></span></li>
-		  <li><a href="#Gagazet">Gagazet</a> <span id="monster_nav_totals_11"></span></li>
-		  <li><a href="#Sin">Sin</a> <span id="monster_nav_totals_12"></span></li>
-		  <li><a href="#Omega">Omega</a> <span id="monster_nav_totals_13"></span></li>
+		  <li><a href="#Besaid_Monster">General Information</a> <span id="monster_nav_totals_1"></span></li>
+		  <li><a href="#Area_Creations">Area Creations</a> <span id="monster_nav_totals_2"></span></li>
+		  <li><a href="#Species_Creations">Species Creations</a> <span id="monster_nav_totals_3"></span></li>
+		  <li><a href="#Unique_Creations">Unique Creations</a> <span id="monster_nav_totals_4"></span></li>
+          <li><a href="#Besaid_Monster">Besaid</a> <span id="monster_nav_totals_5"></span></li>
+          <li><a href="#Kilika_Monster">Kilika</a> <span id="monster_nav_totals_6"></span></li>
+		  <li><a href="#Mi'ihen">Mi'ihen</a> <span id="monster_nav_totals_7"></span></li>
+		  <li><a href="#Mushroom">Mushroom</a> <span id="monster_nav_totals_8"></span></li>
+		  <li><a href="#Djose_Monster">Djose</a> <span id="monster_nav_totals_9"></span></li>
+		  <li><a href="#Thunder">Thunder</a> <span id="monster_nav_totals_10"></span></li>
+		  <li><a href="#Macalania_Monster">Macalania</a> <span id="monster_nav_totals_11"></span></li>
+		  <li><a href="#Bikanel">Bikanel</a> <span id="monster_nav_totals_12"></span></li>
+		  <li><a href="#Calm">Calm</a> <span id="monster_nav_totals_13"></span></li>
+		  <li><a href="#Forgotten">Forgotten</a> <span id="monster_nav_totals_14"></span></li>
+		  <li><a href="#Gagazet">Gagazet</a> <span id="monster_nav_totals_15"></span></li>
+		  <li><a href="#Sin">Sin</a> <span id="monster_nav_totals_16"></span></li>
+		  <li><a href="#Omega">Omega</a> <span id="monster_nav_totals_17"></span></li>
         </ul>
 
         <div class="form-group">
@@ -869,95 +873,214 @@
         </div>
 
         <div id="monster_list">
-          <h3 id="Besaid_Monster"><a href="#Besaid_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Besaid <span id="monster_totals_1"></span></h3>
+		  <h3 id="General_Info"><a href="#General_Info_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>General Information <span id="monster_totals_1"></span></h3>
+          <ul id="General_Info_col" class="collapse in">
+            <li data-id="monster_1_1">To start the quest, talk to the manager of the Monster Arena to the east of the Calm Lands</li>
+			<li data-id="monster_1_2">You can capture monsters by defeating them with a weapon that has the Capture ability, which can be bought from said manager</li>
+			<li data-id="monster_1_3">Capturing specific monsters will lead to the creation of a new monster and a reward. The monster is categorized as an Area Creation, Species Creation or Unique Creation</li>
+          </ul>
+		  
+		  <h3 id="Area_Creations"><a href="#Area_Creations_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Area Creations <span id="monster_totals_2"></span></h3>
+          <ul id="Area_Creations_col" class="collapse in">
+            <li data-id="monster_2_1">To unlock Area Creations, you need to capture every monster in the area at least once. The monster list is further down this page</li>
+			<li data-id="monster_2_2"><b>Besaid</b>: Unlock Stratoavis and receive Stamina Tonic (x99)</li>
+			<li data-id="monster_2_3"><b>Kilika</b>: Unlock Malboro Menace and receive Poison Fang (x99)</li>
+			<li data-id="monster_2_4"><b>Mi'ihen Highroad</b>: Unlock Kottos and receive Soul Spring (x99)</li>
+			<li data-id="monster_2_5"><b>Mushroom Rock Road</b>: Unlock Coeurlregina and receive Candle of Life (x99)</li>
+			<li data-id="monster_2_6"><b>Djose Highroad</b>: Unlock Jormungand and receive Petrify Grenade (x99)</li>
+			<li data-id="monster_2_7"><b>Thunder Plains</b>: Unlock Cactuar King and receive Chocobo Wing (x99)</li>
+			<li data-id="monster_2_8"><b>Macalania</b>: Unlock Espada and receive Shining Gem (x60)</li>
+			<li data-id="monster_2_9"><b>Bikanel</b>: Unlock Abyss Worm and receive Shadow Gem (x99)</li>
+			<li data-id="monster_2_10"><b>Calm Lands</b>: Unlock Chimerageist and receive Farplane Wind (x60)</li>
+			<li data-id="monster_2_11"><b>Cavern of the Stolen Fayth</b>: Unlock Don Tonberry and receive Silver Hourglass (x40)</li>
+			<li data-id="monster_2_12"><b>Mt. Gagazet</b>: Unlock Catoblepas and receive Blossom Crown</li>
+			<li data-id="monster_2_13"><b>Inside Sin</b>: Unlock Abaddon and receive Light Curtain (x99)</li>
+			<li data-id="monster_2_14"><b>Omega Ruins</b>: Unlock Vorban and receive Designer Wallet (x60)</li>
+          </ul>
+		  
+		  <h3 id="Species_Creations"><a href="#Species_Creations_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Species Creations <span id="monster_totals_3"></span></h3>
+          <ul id="Species_Creations_col" class="collapse in">
+            <li data-id="monster_3_1">To unlock Species Creations, you need to capture specific monsters in different areas at least 3 times, up to 10 times</li>
+			<li data-id="monster_3_2"><b>Fenrir</b>: Receive Chocobo Feather (x99) for capturing 3 of: Dingo, Mi'ihen Fang, Garm, Snow Wolf, Sand Wolf, Skoll, Bandersnatch</li>
+			<li data-id="monster_3_3"><b>Ornitholestes</b>: Receive Stamina Spring (x99) for capturing 3 of: Dinonix, Ipiria, Raptor, Melusine, Iguion, Yowie, Zaurus</li>
+			<li data-id="monster_3_4"><b>Pteryx</b>: Receive Mega Phoenix (x99) for capturing 4 of: Condor, Simurgh, Alcyone</li>
+			<li data-id="monster_3_5"><b>Hornet</b>: Receive Mana Tonic (x99) for capturing 4 of: Killer Bee, Bite Bug, Wasp, Nebiros</li>
+			<li data-id="monster_3_6"><b>Vidatu</b>: Receive Mana Spring (x99) for capturing 4 of: Gandarewa, Aerouge, Imp</li>
+			<li data-id="monster_3_7"><b>One-Eye</b>: Receive Stamina Tablet (x60) for capturing 4 of: Floating Eye, Buer, Evil Eye, Ahriman, Floating Death</li>
+			<li data-id="monster_3_8"><b>Jumbo Flan</b>: Receive Twin Star (x60) for capturing 3 of: Water, Thunder, Snow, Ice, Flame, Dark Flan</li>
+			<li data-id="monster_3_9"><b>Nega Elemental</b>: Receive Star Curtain (x99) for capturing 3 of: Yellow, White, Red, Gold, Blue, Dark, Black Element</li>
+			<li data-id="monster_3_10"><b>Tanket</b>: Receive Gold Hourglass (x99) for capturing 3 of: Raldo, Bunyip, Murussu, Mafdet, Shred, Halma</li>
+			<li data-id="monster_3_11"><b>Fafnir</b>: Receive Purifying Salt (x99) for capturing 4 of: Vouivre, Lamashtu, Kusariqqu, Mushussu, Nidhogg</li>
+			<li data-id="monster_3_12"><b>Sleep Sprout</b>: Receive Healing Spring (x99) for capturing 5 of: Funguar, Thorn, Exoray</li>
+			<li data-id="monster_3_13"><b>Bomb King</b>: Receive Turbo Ether (x60) for capturing 5 of: Bomb, Grenade, Puroboros</li>
+			<li data-id="monster_3_14"><b>Juggernaut</b>: Receive Light Curtain (x99) for capturing 5 of: Dual Horn, Valaha, Grendel</li>
+			<li data-id="monster_3_15"><b>Ironclad</b>: Receive Mana Tablet (x60) for capturing 10 of: Iron Giant, Gemini (club), Gemini (sword)</li>
+          </ul>
+		  
+		  <h3 id="Unique_Creations"><a href="#Unique_Creations_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Unique Creations <span id="monster_totals_4"></span></h3>
+          <ul id="Unique_Creations_col" class="collapse in">
+            <li data-id="monster_4_1"><b>Earth Eater</b>: Receive Three Star (x60) for unlocking two Area Creations</li>
+			<li data-id="monster_4_2"><b>Greater Sphere</b>: Receive Supreme Gem (x60) for unlocking two Species Creations</li>
+			<li data-id="monster_4_3"><b>Catastrophe</b>: Receive Door to Tomorrow (x99) for unlocking six Area Creations</li>
+			<li data-id="monster_4_4"><b>Th'uban</b>: Receive Gambler's Spirit (x99) for unlocking six Species Creations</li>
+			<li data-id="monster_4_5"><b>Neslug</b>: Receive Winning Formula (x99) for unlocking every Area Creation</li>
+			<li data-id="monster_4_6"><b>Ultima Buster</b>: Receive Dark Matter (x99) and enable the selling of Clear Spheres at the Monster Arena Shop for capturing every monster five times</li>
+			<li data-id="monster_4_7"><b>Shinryu</b>: Receive Megalixir (x60) for capturing 2 of: Splasher, Achelous, Maelspike</li>
+			<li data-id="monster_4_8"><b>Nemesis</b>: Receive Master Sphere (x10) for capturing every monster ten times and defeating all other Creations</li>
+          </ul>
+		  
+          <h3 id="Besaid_Monster"><a href="#Besaid_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Besaid <span id="monster_totals_5"></span></h3>
           <ul id="Besaid_Monster_col" class="collapse in">
-            <li data-id="monster_1_1">mob</li>
-			<li data-id="monster_1_2">mob</li>
-			<li data-id="monster_1_3">mob</li>
+            <li data-id="monster_5_1">Dingo</li>
+			<li data-id="monster_5_2">Condor</li>
+			<li data-id="monster_5_3">Water Flan</li>
           </ul>
 		 
-		  <h3 id="Kilika_Monster"><a href="#Kilika_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Kilika <span id="monster_totals_2"></span></h3>
+		  <h3 id="Kilika_Monster"><a href="#Kilika_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Kilika <span id="monster_totals_6"></span></h3>
           <ul id="Kilika_Monster_col" class="collapse in">
-            <li data-id="monster_2_1">mob</li>
-			<li data-id="monster_2_2">mob</li>
-			<li data-id="monster_2_3">mob</li>
+		    <li data-id="monster_6_1">Dinonix</li>
+			<li data-id="monster_6_2">Killer Bee</li>
+			<li data-id="monster_6_3">Yellow Element</li>
+			<li data-id="monster_6_4">Ragora</li>
           </ul>
 		  
-		  <h3 id="Mi'ihen"><a href="#Mi'ihen_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mi'ihen <span id="monster_totals_3"></span></h3>
+		  <h3 id="Mi'ihen"><a href="#Mi'ihen_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mi'ihen <span id="monster_totals_7"></span></h3>
           <ul id="Mi'ihen_col" class="collapse in">
-            <li data-id="monster_3_1">mob</li>
-			<li data-id="monster_3_2">mob</li>
-			<li data-id="monster_3_3">mob</li>
+            <li data-id="monster_7_1">Mi'ihen Fang</li>
+			<li data-id="monster_7_2">Ipiria</li>
+			<li data-id="monster_7_3">Floating Eye</li>
+			<li data-id="monster_7_4">White Element</li>
+			<li data-id="monster_7_5">Raldo</li>
+			<li data-id="monster_7_6">Vouivre</li>
+			<li data-id="monster_7_7">Bomb</li>
+			<li data-id="monster_7_8">Dual Horn</li>
           </ul>
 		  
-		  <h3 id="Mushroom"><a href="#Mushroom_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mushroom <span id="monster_totals_4"></span></h3>
+		  <h3 id="Mushroom"><a href="#Mushroom_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mushroom <span id="monster_totals_8"></span></h3>
           <ul id="Mushroom_col" class="collapse in">
-            <li data-id="monster_4_1">mob</li>
-			<li data-id="monster_4_2">mob</li>
-			<li data-id="monster_4_3">mob</li>
+            <li data-id="monster_8_1">Raptor</li>
+			<li data-id="monster_8_2">Gandarewa</li>
+			<li data-id="monster_8_3">Thunder Flan</li>
+			<li data-id="monster_8_4">Red Element</li>
+			<li data-id="monster_8_5">Lamashtu</li>
+			<li data-id="monster_8_6">Funguar</li>
+			<li data-id="monster_8_7">Garuda</li>
           </ul>
 		  
-		  <h3 id="Djose_Monster"><a href="#Djose_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Djose <span id="monster_totals_5"></span></h3>
+		  <h3 id="Djose_Monster"><a href="#Djose_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Djose <span id="monster_totals_9"></span></h3>
           <ul id="Djose_Monster_col" class="collapse in">
-            <li data-id="monster_5_1">mob</li>
-			<li data-id="monster_5_2">mob</li>
-			<li data-id="monster_5_3">mob</li>
+            <li data-id="monster_9_1">Garm</li>
+			<li data-id="monster_9_2">Simurgh</li>
+			<li data-id="monster_9_3">Bite Bug</li>
+			<li data-id="monster_9_4">Snow Flan</li>
+			<li data-id="monster_9_5">Bunyip</li>
+			<li data-id="monster_9_6">Basilisk</li>
+			<li data-id="monster_9_7">Ochu (south Moonflow)</li>
           </ul>
 		  
-		  <h3 id="Thunder"><a href="#Thunder_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Thunder <span id="monster_totals_6"></span></h3>
+		  <h3 id="Thunder"><a href="#Thunder_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Thunder <span id="monster_totals_10"></span></h3>
           <ul id="Thunder_col" class="collapse in">
-            <li data-id="monster_6_1">mob</li>
-			<li data-id="monster_6_2">mob</li>
-			<li data-id="monster_6_3">mob</li>
+            <li data-id="monster_10_1">Melusine</li>
+			<li data-id="monster_10_2">Aerouge</li>
+			<li data-id="monster_10_3">Buer</li>
+			<li data-id="monster_10_4">Gold Element</li>
+			<li data-id="monster_10_5">Kusariqqu</li>
+			<li data-id="monster_10_6">Larva</li>
+			<li data-id="monster_10_7">Iron Giant</li>
+			<li data-id="monster_10_8">Qactuar</li>
           </ul>
 		  
-		  <h3 id="Macalania_Monster"><a href="#Macalania_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Macalania <span id="monster_totals_7"></span></h3>
+		  <h3 id="Macalania_Monster"><a href="#Macalania_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Macalania <span id="monster_totals_11"></span></h3>
           <ul id="Macalania_Monster_col" class="collapse in">
-            <li data-id="monster_7_1">mob</li>
-			<li data-id="monster_7_2">mob</li>
-			<li data-id="monster_7_3">mob</li>
+            <li data-id="monster_11_1">Snow Wolf</li>
+			<li data-id="monster_11_2">Iguion</li>
+			<li data-id="monster_11_3">Wasp</li>
+			<li data-id="monster_11_4">Evil Eye</li>
+			<li data-id="monster_11_5">Ice Flan</li>
+			<li data-id="monster_11_6">Blue Element</li>
+			<li data-id="monster_11_7">Murssu</li>
+			<li data-id="monster_11_8">Mafdet</li>
+			<li data-id="monster_11_9">Xiphos</li>
+			<li data-id="monster_11_10">Chimera</li>
           </ul>
 		  
-		  <h3 id="Bikanel_Monster"><a href="#Bikanel_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Bikanel <span id="monster_totals_8"></span></h3>
+		  <h3 id="Bikanel_Monster"><a href="#Bikanel_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Bikanel<span id="monster_totals_12"></span></h3>
           <ul id="Bikanel_Monster_col" class="collapse in">
-            <li data-id="monster_8_1">mob</li>
-			<li data-id="monster_8_2">mob</li>
-			<li data-id="monster_8_3">mob</li>
+            <li data-id="monster_12_1">Sand Wolf</li>
+			<li data-id="monster_12_2">Alcyone</li>
+			<li data-id="monster_12_3">Mushussu</li>
+			<li data-id="monster_12_4">Zu</li>
+			<li data-id="monster_12_5">Sand Worm</li>
+			<li data-id="monster_12_6">Cactuar</li>
           </ul>
 		  
-		  <h3 id="Calm"><a href="#Calm_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Calm <span id="monster_totals_9"></span></h3>
+		  <h3 id="Calm"><a href="#Calm_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Calm Lands<span id="monster_totals_13"></span></h3>
           <ul id="Calm_col" class="collapse in">
-            <li data-id="monster_9_1">mob</li>
-			<li data-id="monster_9_2">mob</li>
-			<li data-id="monster_9_3">mob</li>
+            <li data-id="monster_13_1">Skoll</li>
+			<li data-id="monster_13_2">Nebiros</li>
+			<li data-id="monster_13_3">Flame Flan</li>
+			<li data-id="monster_13_4">Shred</li>
+			<li data-id="monster_13_5">Anacondaur</li>
+			<li data-id="monster_13_6">Ogre</li>
+			<li data-id="monster_13_7">Coeurl</li>
+			<li data-id="monster_13_8">Chimera Brain</li>
+			<li data-id="monster_13_9">Malboro</li>
           </ul>
 		  
-		  <h3 id="Forgotten"><a href="#Forgotten_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Forgotten <span id="monster_totals_10"></span></h3>
+		  <h3 id="Forgotten"><a href="#Forgotten_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Cavern of the Stolen Fayth<span id="monster_totals_14"></span></h3>
           <ul id="Forgotten_col" class="collapse in">
-            <li data-id="monster_10_1">mob</li>
-			<li data-id="monster_10_2">mob</li>
-			<li data-id="monster_10_3">mob</li>
+            <li data-id="monster_14_1">Yowie</li>
+			<li data-id="monster_14_2">Imp</li>
+			<li data-id="monster_14_3">Dark Element</li>
+			<li data-id="monster_14_4">Nidhogg</li>
+			<li data-id="monster_14_5">Thorn</li>
+			<li data-id="monster_14_6">Valaha</li>
+			<li data-id="monster_14_7">Epaaj</li>
+			<li data-id="monster_14_8">Ghost</li>
+			<li data-id="monster_14_9">Tonberry</li>
           </ul>
 		  
-		  <h3 id="Gagazet"><a href="#Gagazet_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Gagazet <span id="monster_totals_11"></span></h3>
+		  <h3 id="Gagazet"><a href="#Gagazet_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Mt. Gagazet<span id="monster_totals_15"></span></h3>
           <ul id="Gagazet_col" class="collapse in">
-            <li data-id="monster_11_1">mob</li>
-			<li data-id="monster_11_2">mob</li>
-			<li data-id="monster_11_3">mob</li>
+            <li data-id="monster_15_1">Bandersnatch</li>
+			<li data-id="monster_15_2">Ahriman</li>
+			<li data-id="monster_15_3">Dark Flan</li>
+			<li data-id="monster_15_4">Grenade</li>
+			<li data-id="monster_15_5">Grat</li>
+			<li data-id="monster_15_6">Grendel</li>
+			<li data-id="monster_15_7">Bashura</li>
+			<li data-id="monster_15_8">Mandragora</li>
+			<li data-id="monster_15_9">Behemoth</li>
+			<li data-id="monster_15_10">Splasher</li>
+			<li data-id="monster_15_11">Achelous</li>
+			<li data-id="monster_15_12">Maelspike</li>
           </ul>
 		  
-		  <h3 id="Sin_Monster"><a href="#Sin_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Sin <span id="monster_totals_12"></span></h3>
+		  <h3 id="Sin_Monster"><a href="#Sin_Monster_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Inside Sin<span id="monster_totals_16"></span></h3>
           <ul id="Sin_Monster_col" class="collapse in">
-            <li data-id="monster_12_1">mob</li>
-			<li data-id="monster_12_2">mob</li>
-			<li data-id="monster_12_3">mob</li>
+            <li data-id="monster_16_1">Exoray</li>
+			<li data-id="monster_16_2">Wraith</li>
+			<li data-id="monster_16_3">Gemini (club)</li>
+			<li data-id="monster_16_4">Gemini (sword)</li>
+			<li data-id="monster_16_5">Demonolith</li>
+			<li data-id="monster_16_6">Great Malboro</li>
+			<li data-id="monster_16_7">Barbatos</li>
+			<li data-id="monster_16_8">Adamantoise</li>
+			<li data-id="monster_16_9">King Behemoth</li>
           </ul>
 		  
-		  <h3 id="Omega"><a href="#Omega_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Omega <span id="monster_totals_13"></span></h3>
+		  <h3 id="Omega"><a href="#Omega_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Omega Ruins<span id="monster_totals_17"></span></h3>
           <ul id="Omega_col" class="collapse in">
-            <li data-id="monster_13_1">mob</li>
-			<li data-id="monster_13_2">mob</li>
-			<li data-id="monster_13_3">mob</li>
+            <li data-id="monster_17_1">Zaurus</li>
+			<li data-id="monster_17_2">Floating Death</li>
+			<li data-id="monster_17_3">Black Element</li>
+			<li data-id="monster_17_4">Halma</li>
+			<li data-id="monster_17_5">Puroboros</li>
+			<li data-id="monster_17_6">Spirit</li>
+			<li data-id="monster_17_7">Machea</li>
+			<li data-id="monster_17_8">Master Coeurl</li>
+			<li data-id="monster_17_9">Master Tonberry</li>
+			<li data-id="monster_17_10">Varuna</li>
           </ul>
 		  
            
@@ -969,9 +1092,16 @@
         <h2>Sidequests Checklists <span id="sidequests_overall_total"></span></h2>
         <ul class="table_of_contents">
           <li><a href="#Celestial_Weapons">Celestial Weapons</a> <span id="sidequests_nav_totals_1"></span></li>
-          <li><a href="#B">B</a> <span id="sidequests_nav_totals_2"></span></li>
-          <li><a href="#C">C</a> <span id="sidequests_nav_totals_3"></span></li>
-          <li><a href="#D">D</a> <span id="sidequests_nav_totals_4"></span></li>
+          <li><a href="#Lightning_Dodging">Lightning Dodging</a> <span id="sidequests_nav_totals_2"></span></li>
+          <li><a href="#Cavern_of_the_Stolen_Fayth">Cavern of the Stolen Fayth</a> <span id="sidequests_nav_totals_3"></span></li>
+          <li><a href="#Cactuar_Village">Cactuar Village</a> <span id="sidequests_nav_totals_4"></span></li>
+		  <li><a href="#Revisiting_the_Temples">Revisiting the Temples</a> <span id="sidequests_nav_totals_5"></span></li>
+		  <li><a href="#Auron's_Special_Spheres">Auron's Special Spheres</a> <span id="sidequests_nav_totals_6"></span></li>
+		  <li><a href="#Hidden_Areas">Hidden Areas</a> <span id="sidequests_nav_totals_7"></span></li>
+		  <li><a href="#Baaj_Temple">Baaj Temple</a> <span id="sidequests_nav_totals_8"></span></li>
+		  <li><a href="#Remiem_Temple">Remiem Temple</a> <span id="sidequests_nav_totals_9"></span></li>
+		  <li><a href="#The_Omega_Ruins">The Omega Ruins</a> <span id="sidequests_nav_totals_10"></span></li>
+		  <li><a href="#The_Dark_Aeons">The Dark Aeons</a> <span id="sidequests_nav_totals_11"></span></li>
         </ul>
 
         <div class="form-group">
@@ -1102,105 +1232,806 @@
 		  </ul>
 		  </div>
 		  
-		  <h3 id="B"><a href="#B_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>B <span id="sidequests_totals_2"></span></h3>
-          <ul id="B_col" class="collapse in">
-            <li data-id="sidequests_2_1"><a>Bb</a></li>
+		  <h3 id="Lightning_Dodging"><a href="#Lightning_Dodging_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Lightning Dodging <span id="sidequests_totals_2"></span></h3>
+          <ul id="Lightning_Dodging_col" class="collapse in">
+			<li data-id="sidequests_2_1"><b>Head to the Thunder Plains. Beware the Dark Ixion on the northern part. You can pick up the rewards in a chest in front of the travel agency </b></li>
+            <li data-id="sidequests_2_1"><b>Dodge 5 bolts consecutively </b>: X-Potion (x2)</li>
+			<li data-id="sidequests_2_2"><b>Dodge 10 bolts consecutively </b>: Mega-Potion (x2)</li>
+			<li data-id="sidequests_2_3"><b>Dodge 20 bolts consecutively </b>: MP Sphere (x2)</li>
+			<li data-id="sidequests_2_4"><b>Dodge 50 bolts consecutively </b>: Strength Sphere (x3)</li>
+			<li data-id="sidequests_2_5"><b>Dodge 100 bolts consecutively </b>: HP Sphere (x3)</li>
+			<li data-id="sidequests_2_6"><b>Dodge 150 bolts consecutively </b>: Megalixir (x4)</li>
+			<li data-id="sidequests_2_7"><b>Dodge 200 bolts consecutively </b>: Venus Sigil</li>
+			<li data-id="sidequests_2_8"><b>Get hit by 30 bolts </b>: Ether</li>
+			<li data-id="sidequests_2_9"><b>Get hit by 80 bolts </b>: Elixir</li>
           </ul>
 		  
-		  <h3 id="C"><a href="#C_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>C <span id="sidequests_totals_3"></span></h3>
-          <ul id="C_col" class="collapse in">
-            <li data-id="sidequests_3_1"><a>Cc</a></li>
+		  <h3 id="Cavern_of_the_Stolen_Fayth"><a href="#Cavern_of_the_Stolen_Fayth_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Cavern of the Stolen Fayth <span id="sidequests_totals_3"></span></h3>
+          <ul id="Cavern_of_the_Stolen_Fayth_col" class="collapse in">
+            <li data-id="sidequests_3_1">This part is the same as it is in the playthrough, so feel free to skip it if you completed it there already</li>
+			<li data-id="sidequests_3_2">If you return here too late in the story, you will have to face Dark Yojimbo</li>
+			<li data-id="sidequests_3_3">Find the cavern before you reach Mt. Gagazet, in the area where you fought Defender X</li>
+			<li data-id="sidequests_3_4">The Magic urn is a special monster that can drop a reward if you attack the correct eye. It's random and your potential rewards are XXX</li>
+			<li data-id="sidequests_3_5">Upon entering the cave head east, then east again for a Megalixir</li>
+			<li data-id="sidequests_3_6">Follow the path and head east at the interaction for a Lv. 2 Key Sphere</li>
+			<li data-id="sidequests_3_7">Go west, then head north at a 4-way intersection for a Fortune Sphere</li>
+			<li data-id="sidequests_3_8">Return to the intersection and head west, then west again for the Al Bhed Primer Vol. XXV</li>
+			<li data-id="sidequests_3_9">Return to the last intersection you passed and head north for Mega-Potion (x2)</li>
+			<li data-id="sidequests_3_10">Defeat Yojimbo</li>
+			<li data-id="sidequests_3_11">Step on the warp panel and head east. Press X and pick up the MP Sphere and X-Potion</li>
+			<li data-id="sidequests_3_12">Head west for a Flexible Arm</li>
+			<li data-id="sidequests_3_13">Obtain Yojimbo. Cheapest way is X</li>
           </ul>
 		  
-		  <h3 id="D"><a href="#D_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>D <span id="sidequests_totals_4"></span></h3>
-          <ul id="D_col" class="collapse in">
-            <li data-id="sidequests_4_1"><a>Dd</a></li>
+		  <h3 id="Cactuar_Village"><a href="#Cactuar_Village_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Cactuar Village<span id="sidequests_totals_4"></span></h3>
+          <ul id="Cactuar_Village_col" class="collapse in">
+            <li data-id="sidequests_4_1">Head to Bikanel desert and enter the area with the sandstorm. In front of the area will be a Cactuar statue. Examine it and you will receive a hint on where to find rogue Cactuars</li>
+			<li data-id="sidequests_4_2">Upon finding a Cactuar, you will enter a game of red light-green light. Complete the mini game, receive a sphere, return to the statue to insert said sphere, receive a new hint, repeat 10 times</li>		
+			<li data-id="sidequests_4_3">Find all 10 Cactuars
+				<ul>
+				<li data-id="sidequests_4_3_1"><b>Tomay</b>: In the very first area, at the oasis</li>
+				<li data-id="sidequests_4_3_2"><b>Rovivea</b>: 4th area (East Sanubia Desert), far west</li>
+				<li data-id="sidequests_4_3_3"><b>Chava</b>: 2nd area (West Sanubia Desert), next to the "20% off" sign</li>
+				<li data-id="sidequests_4_3_4"><b>Alek & Aloja</b>: 3rd area (Central Sanubia Desert), near the ruins & 4th area (East Sanubia Desert), near the Save Sphere</li>
+				<li data-id="sidequests_4_3_5"><b>Vachella</b>: 4th area (East Sanubia Desert), at the Save Sphere</li>
+				<li data-id="sidequests_4_3_6"><b>Robeya</b>: 3rd area (Central Sanubia Desert), in a treasure chest to the west</li>
+				<li data-id="sidequests_4_3_7"><b>Issra</b>: 2nd area (West Sanubia Desert), in one of the quicksand pits</li>
+				<li data-id="sidequests_4_3_8"><b>Elio</b>: Head to the oasis, then return to the top of the airhip where you fought Evrae</li>
+				<li data-id="sidequests_4_3_9"><b>Flaile</b>: He will be at the Cactuar stone</li>
+				</ul>
+			</li>
+			<li data-id="sidequests_4_4">Depending on how many of the minigames you won, you will receive a reward. 1-2 for a Potion, 3-5 for an Elixir, 6-7 for a Megalixir, 8-9 for a Friend Sphere. The other reward is always the Mercury Sigil</li>
           </ul>
           
+		  <h3 id="Revisiting_the_Temples"><a href="#Revisiting_the_Temples_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Revisiting the Temples<span id="sidequests_totals_5"></span></h3>
+          <ul id="Revisiting_the_Temples_col" class="collapse in">
+            <li data-id="sidequests_5_1"><b>Besaid</b>: Evasion Sphere, White Magic Sphere, Potion (x2), Hi-Potion, Elixir</li>
+			<li data-id="sidequests_5_2"><b>Kilika</b>: Luck Sphere, Accuracy Sphere, Defense Sphere, Agility Sphere</li>		
+			<li data-id="sidequests_5_3"><b>Djose</b>: Luck Sphere, Magic Defense Sphere, Agility Sphere</li>
+			<li data-id="sidequests_5_4"><b>Macalania</b>: Magic Sphere, Magic Defense Sphere, Accuracy Sphere</li>
+			<li data-id="sidequests_5_5"><b>Cavern of the Stolen Fayth</b>: Strength Sphere</li>
+			<li data-id="sidequests_5_6"><b>Remiem Temple</b>: Defense Sphere</li>
+          </ul>
+		  
+		  <h3 id="Auron's_Special_Spheres"><a href="#Auron's_Special_Spheres_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Auron's Special Spheres<span id="sidequests_totals_6"></span></h3>
+          <ul id="Auron's_Special_Spheres_col" class="collapse in">
+            <li data-id="sidequests_6_1"><b>Jecht's Sphere</b>: Found in the story, after beating Spherimorph</li>
+			<li data-id="sidequests_6_2"><b>Jecht's Sphere</b>: Beside the temple in Besaid</li>
+			<li data-id="sidequests_6_3"><b>Jecht's Sphere</b>: Main deck of the S. S. Liki</li>
+			<li data-id="sidequests_6_4"><b>Jecht's Sphere</b>: Outside the Auroch's locker room</li>
+			<li data-id="sidequests_6_5"><b>Jecht's Sphere</b>: From the Mi'ihen/Mushroom Rock checkpoint, go southeast, near the Mars Crest</li>
+			<li data-id="sidequests_6_6"><b>Jecht's Sphere</b>: Near the tent in the Moonflow's South Wharf</li>
+			<li data-id="sidequests_6_7"><b>Jecht's Sphere</b>: Near a lightning rod on the eastern side of the southern Thunder Plains</li>
+			<li data-id="sidequests_6_8"><b>Jecht's Sphere</b>: Head east after entering Macalania Woods</li>
+			<li data-id="sidequests_6_9"><b>Auron's Sphere</b>: Mushroom Rock, south of a large elevator</li>
+			<li data-id="sidequests_6_10"><b>Braska's Sphere</b>: Found in the playthrough section, thin path in the northwest of Mt. Gagazet</li>
+          </ul>
+		  
+		  <h3 id="Hidden_Areas"><a href="#Hidden_Areas_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Hidden Areas<span id="sidequests_totals_7"></span></h3>
+          <ul id="Hidden_Areas_col" class="collapse in">
+            <li data-id="sidequests_7_1"><b>GODHAND</b>: Unlocks an area in Mushroom Rock, pick up Rikku's Godhand there</li>
+			<li data-id="sidequests_7_2"><b>MURASAME</b>: Unlocks an area in Besaid Ruins, pick up the Murasama for Auron there</li>
+			<li data-id="sidequests_7_3"><b>VICTORIOUS</b>: Unlocks an area in Besaid Ruins, pick up the Victorious armor for Rikku there</li>
+			<li data-id="sidequests_7_4"><b>X:12~14, Y:58~61</b>: Unlocks Baaj Temple</li>
+			<li data-id="sidequests_7_5"><b>X:40~42, Y:57~59</b>: Unlocks the Battle Site, pick up the Phantom Bangle there</li>
+			<li data-id="sidequests_7_6"><b>X:30~32, Y:73~76</b>: Unlocks Besaid Falls, grab the Dragoon Lance there</li>
+			<li data-id="sidequests_7_7"><b>X:34~36, Y:56~58</b>: Unlocks Mi'ihen Ruins, grab the Sonar there</li>
+			<li data-id="sidequests_7_8"><b>X:71~73, Y:35~36</b>: Unlocks The Omega Ruins</li>
+			<li data-id="sidequests_7_9"><b>X:13~15, Y:42~44</b>: Unlocks Sanubia Sands, pick up the Ascalon there</li>
+          </ul>
+		  
+		  <h3 id="Baaj_Temple"><a href="#Baaj_Temple_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Baaj Temple<span id="sidequests_totals_8"></span></h3>
+          <ul id="Baaj_Temple_col" class="collapse in">
+            <li data-id="sidequests_8_1">You started the game in this area. Before coming here, make sure you found the Destruction Sphere in the temples of Besaid, Kilika, Djose, Macalania, Bevelle and Zanarkand</li>
+			<li data-id="sidequests_8_2">Defeat Geosgaeno</li>
+			<li data-id="sidequests_8_3">In the room with the statues, pick up a Mega Phoenix and a Megalixir in the southeastern and southwestern corners</li>
+			<li data-id="sidequests_8_4">Obtain Anima</li>
+          </ul>
+		  
+		  <h3 id="Remiem_Temple"><a href="#Remiem_Temple_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Remiem Temple<span id="sidequests_totals_9"></span></h3>
+          <ul id="Remiem_Temple_col" class="collapse in">
+            <li data-id="sidequests_9_1">The part outside the temple can be found here</li>
+			<li data-id="sidequests_9_2">Make sure you have Valefor, Ifrit, Ixion, Shiva, Bahamut, Yojimbo and Anima before arriving here</li>
+			<li data-id="sidequests_9_3">Challenge Belgemine, defeat all her Aeons and obtain the rewards
+				<ul>
+				<li data-id="sidequests_9_3_1"><b>Valefor</b>: Lightning Gem (x4) or the Summoner's Soul if you missed it, Power Sphere (x4) thereafter </li>
+				<li data-id="sidequests_9_3_2"><b>Ifrit</b>: X-Potion (x30) or the Aeon's Soul if you missed it, Mana Sphere (x5) thereafter</li>
+				<li data-id="sidequests_9_3_3"><b>Ixion</b>: Chocobo Feater (x10), Power Sphere (x8) thereafter </li>
+				<li data-id="sidequests_9_3_4"><b>Shiva</b>: Mega-Potion (x60), Star Curtain (x6) thereafter</li>
+				<li data-id="sidequests_9_3_5"><b>Bahamut</b>: Flower Scepter, Mana Sphere (x8) thereafter</li>
+				<li data-id="sidequests_9_3_6"><b>Yojimbo</b>: Shadow Gem (x8), Power Sphere (x10) thereafter</li>
+				<li data-id="sidequests_9_3_7"><b>Anima</b>: Stamina Spring (x60), Mana Sphere (x10) thereafter</li>
+				<li data-id="sidequests_9_3_8"><b>Magus Sisters</b>: Shining Gem (x40), Power Sphere (x12) thereafter</li>
+				</ul>
+			</li>
+			<li data-id="sidequests_9_4">Send Belgemine for the Moon Sigil</li>
+			<li data-id="sidequests_9_5">Obtain the Blossom Crown at the Monster Arena by capturing every fiend at Mt. Gagazet and its cave </li>
+			<li data-id="sidequests_9_6">Obtain the Magus Sisters</li>
+          </ul>
+		  
+		  <h3 id="The_Omega_Ruins"><a href="#The_Omega_Ruins_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>The Omega Ruins<span id="sidequests_totals_10"></span></h3>
+          <ul id="The_Omega_Ruins_col" class="collapse in">
+            <li data-id="sidequests_10_1">Enter the hardest dungeon in the game (The Omega Ruins) by interacting with the map on the airship at the coordinates X: 71~73, Y: 35~36 </li>
+			<li data-id="sidequests_10_2">Randomized chests explanation</li>
+			<li data-id="sidequests_10_3">Head north, then head east at the intersection for some random treasures</li>
+			<li data-id="sidequests_10_4">Go west at the start for more random chests</li>
+			<li data-id="sidequests_10_5">From there, head northwest, then west at the fork for more random chests</li>
+			<li data-id="sidequests_10_6">Back at the fork, head east for even more random chests and the Al Bhed Primer Vol. XXVI at the northeast side of the clearing</li>
+			<li data-id="sidequests_10_7">Head northwest along the the incline and touch the glyph. Back at the clearing, so south and to the top of the ramp, touch that glyph too and receive a Teleport Sphere</li>
+			<li data-id="sidequests_10_8">From the clearing, head east and defeat Ultima Weapon</li>
+			<li data-id="sidequests_10_9">In the area with the winding spiral, head west for a Friend Sphere</li>
+			<li data-id="sidequests_10_10">Head east and defeat Omega Weapon</li>
+			<li data-id="sidequests_10_11">Go into the area where you defeated Omega Weapon for a Magic Sphere</li>
+          </ul>
+		  
+		  <h3 id="The_Dark_Aeons"><a href="#The_Dark_Aeons_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>The Dark Aeons<span id="sidequests_totals_11"></span></h3>
+          <ul id="The_Dark_Aeons_col" class="collapse in">
+            <li data-id="sidequests_11_1">The Aeons appear after you obtain your airship and are mostly beatable if you're able to beat the Unique Creations in the Monster Arena</li>
+			<li data-id="sidequests_11_2">Defeat Dark Valefor in front of the village of Besaid</li>
+			<li data-id="sidequests_11_3">Defeat Dark Ifrit in the final area of the Sanubia Desert</li>
+			<li data-id="sidequests_11_4">Defeat Dark Ixion in the Thunder Plains near a lightning rod</li>
+			<li data-id="sidequests_11_5">Defeat Dark Shiva at the Macalania Temple</li>
+			<li data-id="sidequests_11_6">Defeat Dark Bahamut in Zanarkand where you fought Yunalesca</li>
+			<li data-id="sidequests_11_7">Defeat Dark Yojimbo five times, started by going to the end of the cave where you obtain him</li>
+			<li data-id="sidequests_11_8">Defeat Dark Anima inside the cave on top of Mt. Gagazet - play the Blitzball minigame again to start the fight</li>
+			<li data-id="sidequests_11_9">Defeat Dark Magus Sisters at Mushroom Rock. If you run away before the fight starts long enough, you can fight them one by one</li>
+			<li data-id="sidequests_11_10">Defeat Penance, the hardest boss in the game, available as a destination on the airship after you beat all other Dark Aeons</li>
+          </ul>
+		  
         </div>
       </div>
 
       <!-- MISC START -->
       <div class="tab-pane" id="tabMisc">
-        <h2>Misc <span id="crow_overall_total"></span></h2>
+        <h2>Misc <span id="misc_overall_total"></span></h2>
         <ul class="table_of_contents">
-          <li><a href="#Pickle_Pee_Pump-a-Rum_Crow">Pickle Pee, Pump-a-Rum Crow</a> <span id="crow_nav_totals_1"></span></li>
-          <li><a href="#Soul_Types">Soul Types</a></li>
+          <li><a href="#Monster_Bestiary">Monster Bestiary</a> <span id="misc_nav_totals_1"></span></li>
+          <li><a href="#Monster_Drops_and_Steals">Monster Drops and Steals</a> <span id="misc_nav_totals_2"></span></li>
+		  <li><a href="#Monster_Bribes">Monster Bribes</a> <span id="misc_nav_totals_3"></span></li>
         </ul>
 
-        <h3 id="Pickle_Pee_Pump-a-Rum_Crow"><a href="#Pickle_Pee_Pump-a-Rum_Crow_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://darksouls3.wiki.fextralife.com/Pickle+Pee,+Pump-a-Rum+Crow">Pickle Pee, Pump-a-Rum Crow</a> <span id="crow_totals_1"></span></h3>
-        <ul id="Pickle_Pee_Pump-a-Rum_Crow_col" class="collapse in">
-          <li data-id="crow_1_1">Trade <a href="http://darksouls3.wiki.fextralife.com/Firebomb">Firebomb</a> or <a href="http://darksouls3.wiki.fextralife.com/Rope+Firebomb">Rope Firebomb</a> for <a href="http://darksouls3.wiki.fextralife.com/Large+Titanite+Shard">Large Titanite Shard</a></li>
-          <li data-id="crow_1_2">Trade <a href="http://darksouls3.wiki.fextralife.com/Black+Firebomb">Black Firebomb</a> or <a href="http://darksouls3.wiki.fextralife.com/Rope+Black+Firebomb">Rope Black Firebomb</a> for <a href="http://darksouls3.wiki.fextralife.com/Titanite+Chunk">Titanite Chunk</a></li>
-          <li data-id="crow_1_3">Trade <a href="http://darksouls3.wiki.fextralife.com/Prism+Stone">Prism Stone</a> for <a href="http://darksouls3.wiki.fextralife.com/Twinkling+Titanite">Twinkling Titanite</a></li>
-          <li data-id="crow_1_4">Trade <a href="http://darksouls3.wiki.fextralife.com/Loretta's+Bone">Loretta's Bone</a> for <a href="http://darksouls3.wiki.fextralife.com/Ring+of+Sacrifice">Ring of Sacrifice</a></li>
-          <li data-id="crow_1_5">Trade <a href="http://darksouls3.wiki.fextralife.com/+Avelyn">Avelyn</a> for <a href="http://darksouls3.wiki.fextralife.com/Titanite+Scale">Titanite Scale&nbsp;x3</a></li>
-        </ul>
+        <h3 id="Monster_Bestiary"><a href="#Monster_Bestiary_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Monster Bestiary<span id="misc_totals_1"></span></h3>
+        <div id="Monster_Bestiary_col" class="collapse in">
+		  <table class="table table-striped">
+		  <thead>
+		    <tr><th>Monster Name</th><th>Max HP</th><th>Max MP</th><th>STR</th><th>DEF</th><th>MAG</th><th>M. DEF</th><th>AGI</th><th>LUCK</th><th>EVD</th><th>ACC</th><th>AP</th><th>Gil</th><th>Weaknesses</th></tr>
+		  </thead>
+		  <tbody>
+			<tr><td>???? (Kimahri)</td><td>750</td><td>10</td><td>10</td><td>15</td><td>8</td><td>5</td><td>15</td><td>15</td><td>0</td><td>10</td><td>3</td><td>100</td><td>None</td></tr>
+			<tr><td>Abaddon</td><td>380</td><td>780</td><td>40</td><td>180</td><td>95</td><td>160</td><td>120</td><td>15</td><td>0</td><td>130</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Abyss Worm</td><td>480</td><td>200</td><td>60</td><td>24</td><td>93</td><td>63</td><td>22</td><td>15</td><td>0</td><td>120</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Achelous</td><td>5,1</td><td>85</td><td>33</td><td>10</td><td>52</td><td>20</td><td>20</td><td>15</td><td>0</td><td>0</td><td>730</td><td>420</td><td>Lightning</td></tr>
+			<tr><td>Adamantoise</td><td>54,4</td><td>40</td><td>38</td><td>90</td><td>31</td><td>90</td><td>15</td><td>15</td><td>0</td><td>0</td><td>12,5</td><td>2,2</td><td>None</td></tr>
+			<tr><td>Ahriman</td><td>2,8</td><td>400</td><td>1</td><td>1</td><td>38</td><td>180</td><td>24</td><td>15</td><td>18</td><td>0</td><td>2,2</td><td>650</td><td>None</td></tr>
+			<tr><td>Alcyone</td><td>430</td><td>42</td><td>16</td><td>1</td><td>1</td><td>1</td><td>26</td><td>15</td><td>15</td><td>0</td><td>310</td><td>240</td><td>Fire</td></tr>
+			<tr><td>Anacondaur</td><td>5,8</td><td>70</td><td>27</td><td>1</td><td>48</td><td>1</td><td>16</td><td>15</td><td>0</td><td>0</td><td>1,38</td><td>750</td><td>None</td></tr>
+			<tr><td>Anima (Macalania)</td><td>18</td><td>50</td><td>25</td><td>1</td><td>20</td><td>1</td><td>25</td><td>15</td><td>0</td><td>30</td><td>2,5</td><td>3</td><td>None</td></tr>
+			<tr><td>Aqua Flan</td><td>2,025</td><td>1</td><td>1</td><td>100</td><td>22</td><td>1</td><td>9</td><td>15</td><td>0</td><td>0</td><td>240</td><td>340</td><td>Lightning</td></tr>
+			<tr><td>Bandersnatch</td><td>1,8</td><td>75</td><td>32</td><td>1</td><td>1</td><td>180</td><td>32</td><td>15</td><td>11</td><td>0</td><td>820</td><td>880</td><td>Fire</td></tr>
+			<tr><td>Barbatos</td><td>95</td><td>480</td><td>42</td><td>90</td><td>38</td><td>15</td><td>28</td><td>15</td><td>0</td><td>0</td><td>17,5</td><td>1,55</td><td>None</td></tr>
+			<tr><td>Bashura</td><td>17</td><td>5</td><td>34</td><td>45</td><td>1</td><td>1</td><td>16</td><td>15</td><td>0</td><td>0</td><td>1,86</td><td>730</td><td>Fire</td></tr>
+			<tr><td>Basilisk</td><td>2,025</td><td>20</td><td>14</td><td>1</td><td>35</td><td>1</td><td>9</td><td>15</td><td>0</td><td>0</td><td>140</td><td>125</td><td>None</td></tr>
+			<tr><td>Bat Eye</td><td>380</td><td>280</td><td>1</td><td>1</td><td>29</td><td>120</td><td>16</td><td>15</td><td>13</td><td>0</td><td>240</td><td>320</td><td>Fire</td></tr>
+			<tr><td>Behemoth</td><td>23</td><td>480</td><td>43</td><td>1</td><td>37</td><td>1</td><td>23</td><td>15</td><td>0</td><td>0</td><td>6,54</td><td>1,35</td><td>None</td></tr>
+			<tr><td>Behemoth King</td><td>67,5</td><td>700</td><td>46</td><td>24</td><td>44</td><td>25</td><td>27</td><td>15</td><td>0</td><td>0</td><td>16,8</td><td>1,85</td><td>None</td></tr>
+			<tr><td>Biran Ronso</td><td>Varies</td><td>200</td><td>Varies</td><td>30</td><td>Varies</td><td>50</td><td>Varies</td><td>15</td><td>0</td><td>100</td><td>4,5</td><td>1,5</td><td>None</td></tr>
+			<tr><td>Bite Bug</td><td>200</td><td>10</td><td>13</td><td>1</td><td>1</td><td>1</td><td>15</td><td>15</td><td>12</td><td>0</td><td>40</td><td>62</td><td>Ice</td></tr>
+			<tr><td>Black Element</td><td>7,6</td><td>500</td><td>1</td><td>240</td><td>28</td><td>1</td><td>20</td><td>15</td><td>0</td><td>0</td><td>3,15</td><td>1,04</td><td>None</td></tr>
+			<tr><td>Blue Element</td><td>1,5</td><td>220</td><td>1</td><td>120</td><td>27</td><td>1</td><td>9</td><td>15</td><td>0</td><td>0</td><td>240</td><td>180</td><td>Lightning</td></tr>
+			<tr><td>Bomb (Home)</td><td>2,2</td><td>45</td><td>20</td><td>1</td><td>17</td><td>1</td><td>11</td><td>15</td><td>0</td><td>0</td><td>620</td><td>470</td><td>Ice</td></tr>
+			<tr><td>Bomb (Mi'ihen)</td><td>850</td><td>30</td><td>19</td><td>1</td><td>20</td><td>1</td><td>11</td><td>15</td><td>0</td><td>0</td><td>22</td><td>70</td><td>Ice</td></tr>
+			<tr><td>Bomb King</td><td>480</td><td>780</td><td>73</td><td>200</td><td>71</td><td>200</td><td>46</td><td>15</td><td>0</td><td>150</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Braska's Final Aeon (1st)</td><td>60</td><td>100</td><td>45</td><td>100</td><td>50</td><td>100</td><td>44</td><td>15</td><td>0</td><td>10</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Braska's Final Aeon (2nd)</td><td>120</td><td>100</td><td>50</td><td>100</td><td>50</td><td>100</td><td>44</td><td>15</td><td>0</td><td>10</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Bunyip</td><td>400</td><td>15</td><td>22</td><td>1</td><td>1</td><td>120</td><td>6</td><td>15</td><td>0</td><td>0</td><td>48</td><td>97</td><td>Water, Ice</td></tr>
+			<tr><td>Cactuar</td><td>800</td><td>1</td><td>23</td><td>1</td><td>1</td><td>255</td><td>24</td><td>15</td><td>20</td><td>0</td><td>8</td><td>1,5</td><td>None</td></tr>
+			<tr><td>Cactuar King</td><td>100</td><td>0</td><td>255</td><td>100</td><td>255</td><td>255</td><td>80</td><td>15</td><td>240</td><td>180</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Catastrophe</td><td>2,200,000</td><td>380</td><td>120</td><td>80</td><td>77</td><td>80</td><td>34</td><td>15</td><td>0</td><td>150</td><td>50</td><td>0</td><td>None</td></tr>
+			<tr><td>Catoblepas</td><td>550</td><td>160</td><td>76</td><td>33</td><td>58</td><td>27</td><td>47</td><td>15</td><td>0</td><td>180</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Cave Iguion</td><td>550</td><td>1</td><td>24</td><td>1</td><td>1</td><td>120</td><td>21</td><td>15</td><td>9</td><td>0</td><td>240</td><td>300</td><td>Ice</td></tr>
+			<tr><td>Chimera (Home)</td><td>9</td><td>200</td><td>30</td><td>1</td><td>25</td><td>1</td><td>10</td><td>15</td><td>0</td><td>0</td><td>2</td><td>990</td><td>None</td></tr>
+			<tr><td>Chimera (Macalania Woods)</td><td>5,25</td><td>130</td><td>25</td><td>1</td><td>22</td><td>1</td><td>9</td><td>15</td><td>0</td><td>0</td><td>1,22</td><td>970</td><td>None</td></tr>
+			<tr><td>Chimera Brain</td><td>9,8</td><td>250</td><td>34</td><td>10</td><td>32</td><td>10</td><td>14</td><td>15</td><td>0</td><td>0</td><td>1,2</td><td>1</td><td>None</td></tr>
+			<tr><td>Chimerageist</td><td>120</td><td>30</td><td>66</td><td>10</td><td>68</td><td>10</td><td>29</td><td>15</td><td>0</td><td>180</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Chocobo Eater</td><td>10</td><td>5</td><td>25</td><td>25</td><td>20</td><td>35</td><td>12</td><td>15</td><td>0</td><td>25</td><td>90</td><td>970</td><td>Fire</td></tr>
+			<tr><td>Coeurl</td><td>6</td><td>480</td><td>38</td><td>1</td><td>26</td><td>40</td><td>18</td><td>15</td><td>0</td><td>0</td><td>1,3</td><td>1,1</td><td>None</td></tr>
+			<tr><td>Coeurlregina</td><td>380</td><td>80</td><td>1</td><td>40</td><td>70</td><td>40</td><td>75</td><td>15</td><td>0</td><td>100</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Condor</td><td>95</td><td>15</td><td>9</td><td>1</td><td>1</td><td>1</td><td>11</td><td>15</td><td>10</td><td>0</td><td>2</td><td>12</td><td>Fire</td></tr>
+			<tr><td>Crane</td><td>65,535</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>100</td><td>20</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Crawler</td><td>16</td><td>1</td><td>25</td><td>100</td><td>30</td><td>50</td><td>20</td><td>15</td><td>0</td><td>30</td><td>4,4</td><td>7</td><td>Lightning</td></tr>
+			<tr><td>Dark Anima</td><td>8,000,000</td><td>999</td><td>155</td><td>230</td><td>255</td><td>255</td><td>183</td><td>85</td><td>0</td><td>255</td><td>30</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Bahamut</td><td>4,000,000</td><td>999</td><td>245</td><td>234</td><td>222</td><td>233</td><td>255</td><td>102</td><td>0</td><td>250</td><td>30</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Cindy</td><td>3,000,000</td><td>999</td><td>175</td><td>233</td><td>171</td><td>105</td><td>185</td><td>40</td><td>0</td><td>255</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Element</td><td>1,8</td><td>280</td><td>1</td><td>180</td><td>30</td><td>1</td><td>11</td><td>15</td><td>0</td><td>0</td><td>810</td><td>520</td><td>None</td></tr>
+			<tr><td>Dark Flan</td><td>12,8</td><td>250</td><td>1</td><td>220</td><td>30</td><td>200</td><td>11</td><td>15</td><td>0</td><td>0</td><td>3,75</td><td>1,08</td><td>None</td></tr>
+			<tr><td>Dark Ifrit</td><td>1,400,000</td><td>999</td><td>220</td><td>173</td><td>177</td><td>163</td><td>124</td><td>27</td><td>8</td><td>230</td><td>20</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Ixion</td><td>1,200,000</td><td>999</td><td>176</td><td>220</td><td>133</td><td>188</td><td>180</td><td>36</td><td>0</td><td>250</td><td>20</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Mindy</td><td>2,000,000</td><td>999</td><td>148</td><td>187</td><td>248</td><td>132</td><td>233</td><td>130</td><td>240</td><td>255</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Sandy</td><td>2,500,000</td><td>999</td><td>196</td><td>201</td><td>207</td><td>168</td><td>201</td><td>80</td><td>100</td><td>255</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Shiva</td><td>1,100,000</td><td>999</td><td>173</td><td>163</td><td>244</td><td>255</td><td>255</td><td>73</td><td>0</td><td>250</td><td>20</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Valefor</td><td>800</td><td>999</td><td>148</td><td>120</td><td>186</td><td>220</td><td>105</td><td>48</td><td>10</td><td>250</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Dark Yojimbo</td><td>1,600,000</td><td>999</td><td>244</td><td>210</td><td>131</td><td>144</td><td>243</td><td>114</td><td>0</td><td>255</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Defender</td><td>12</td><td>1</td><td>40</td><td>1</td><td>5</td><td>1</td><td>11</td><td>15</td><td>0</td><td>0</td><td>2,7</td><td>1,3</td><td>None</td></tr>
+			<tr><td>Defender X</td><td>64</td><td>1</td><td>42</td><td>30</td><td>5</td><td>1</td><td>20</td><td>15</td><td>0</td><td>0</td><td>6,6</td><td>3,5</td><td>None</td></tr>
+			<tr><td>Defender Z</td><td>42,3</td><td>1</td><td>45</td><td>70</td><td>5</td><td>70</td><td>16</td><td>15</td><td>0</td><td>0</td><td>6</td><td>2,4</td><td>None</td></tr>
+			<tr><td>Demonolith</td><td>45</td><td>9,999</td><td>33</td><td>1</td><td>99</td><td>1</td><td>18</td><td>15</td><td>0</td><td>0</td><td>11</td><td>1,47</td><td>Holy</td></tr>
+			<tr><td>Dingo</td><td>125</td><td>10</td><td>13</td><td>1</td><td>1</td><td>120</td><td>10</td><td>15</td><td>5</td><td>0</td><td>2</td><td>16</td><td>Fire</td></tr>
+			<tr><td>Dinonix</td><td>140</td><td>25</td><td>14</td><td>1</td><td>1</td><td>120</td><td>13</td><td>15</td><td>5</td><td>0</td><td>9</td><td>27</td><td>Ice</td></tr>
+			<tr><td>Don Tonberry</td><td>480</td><td>120</td><td>95</td><td>100</td><td>75</td><td>100</td><td>37</td><td>15</td><td>0</td><td>80</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Dual Horn (Home)</td><td>1,875</td><td>18</td><td>22</td><td>1</td><td>3</td><td>1</td><td>12</td><td>15</td><td>0</td><td>0</td><td>42</td><td>105</td><td>None</td></tr>
+			<tr><td>Dual Horn (Home)</td><td>3,795</td><td>22</td><td>27</td><td>1</td><td>8</td><td>1</td><td>17</td><td>15</td><td>0</td><td>0</td><td>820</td><td>520</td><td>None</td></tr>
+			<tr><td>Earth Eater</td><td>1,300,000</td><td>30</td><td>117</td><td>200</td><td>186</td><td>210</td><td>47</td><td>15</td><td>0</td><td>120</td><td>50</td><td>0</td><td>None</td></tr>
+			<tr><td>Epaaj</td><td>8,7</td><td>25</td><td>28</td><td>20</td><td>1</td><td>20</td><td>28</td><td>15</td><td>0</td><td>0</td><td>970</td><td>950</td><td>None</td></tr>
+			<tr><td>Espada</td><td>280</td><td>120</td><td>44</td><td>100</td><td>31</td><td>160</td><td>51</td><td>15</td><td>12</td><td>100</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Evil Eye (Home)</td><td>430</td><td>310</td><td>1</td><td>1</td><td>25</td><td>120</td><td>17</td><td>15</td><td>13</td><td>0</td><td>480</td><td>280</td><td>Fire</td></tr>
+			<tr><td>Evil Eye (Macalania Lake)</td><td>310</td><td>300</td><td>1</td><td>1</td><td>26</td><td>120</td><td>15</td><td>15</td><td>13</td><td>0</td><td>300</td><td>205</td><td>Fire</td></tr>
+			<tr><td>Evrae</td><td>32</td><td>500</td><td>36</td><td>1</td><td>30</td><td>1</td><td>20</td><td>15</td><td>0</td><td>100</td><td>5,4</td><td>2,6</td><td>None</td></tr>
+			<tr><td>Evrae Altana</td><td>16,384</td><td>200</td><td>32</td><td>1</td><td>27</td><td>1</td><td>25</td><td>15</td><td>0</td><td>100</td><td>5,8</td><td>3</td><td>Holy</td></tr>
+			<tr><td>Exoray</td><td>7,4</td><td>300</td><td>1</td><td>1</td><td>24</td><td>1</td><td>14</td><td>15</td><td>0</td><td>0</td><td>2,4</td><td>840</td><td>Fire</td></tr>
+			<tr><td>Extractor</td><td>4</td><td>10</td><td>23</td><td>1</td><td>15</td><td>1</td><td>15</td><td>15</td><td>0</td><td>30</td><td>2,4</td><td>660</td><td>Lightning</td></tr>
+			<tr><td>Fafnir</td><td>1,100,000</td><td>30</td><td>76</td><td>30</td><td>109</td><td>130</td><td>38</td><td>15</td><td>0</td><td>160</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Fallen Monk (flamethrower)</td><td>3,3</td><td>1</td><td>28</td><td>40</td><td>33</td><td>40</td><td>22</td><td>15</td><td>0</td><td>0</td><td>1,2</td><td>540</td><td>Healing</td></tr>
+			<tr><td>Fallen Monk (rifle)</td><td>3,3</td><td>1</td><td>28</td><td>40</td><td>33</td><td>40</td><td>27</td><td>15</td><td>0</td><td>0</td><td>1,2</td><td>540</td><td>Healing</td></tr>
+			<tr><td>Fenrir</td><td>850</td><td>300</td><td>73</td><td>40</td><td>12</td><td>165</td><td>200</td><td>30</td><td>60</td><td>200</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Flame Flan</td><td>1,5</td><td>200</td><td>1</td><td>180</td><td>20</td><td>1</td><td>6</td><td>15</td><td>0</td><td>0</td><td>480</td><td>448</td><td>Ice</td></tr>
+			<tr><td>Floating Death</td><td>6,7</td><td>520</td><td>1</td><td>1</td><td>45</td><td>120</td><td>33</td><td>15</td><td>0</td><td>0</td><td>7,1</td><td>1,265</td><td>None</td></tr>
+			<tr><td>Floating Eye</td><td>140</td><td>200</td><td>1</td><td>1</td><td>18</td><td>120</td><td>10</td><td>15</td><td>11</td><td>0</td><td>21</td><td>44</td><td>Lightning</td></tr>
+			<tr><td>Funguar</td><td>540</td><td>60</td><td>1</td><td>1</td><td>26</td><td>1</td><td>4</td><td>15</td><td>0</td><td>0</td><td>44</td><td>42</td><td>Fire</td></tr>
+			<tr><td>Ganderwa</td><td>148</td><td>160</td><td>1</td><td>1</td><td>23</td><td>120</td><td>9</td><td>15</td><td>12</td><td>0</td><td>32</td><td>62</td><td>Water</td></tr>
+			<tr><td>Garm</td><td>240</td><td>35</td><td>17</td><td>1</td><td>1</td><td>120</td><td>16</td><td>15</td><td>7</td><td>0</td><td>48</td><td>88</td><td>Fire, Lightning</td></tr>
+			<tr><td>Garuda (Besaid)</td><td>1,4</td><td>50</td><td>13</td><td>1</td><td>10</td><td>1</td><td>7</td><td>15</td><td>0</td><td>0</td><td>8</td><td>30</td><td>None</td></tr>
+			<tr><td>Garuda (Luca)</td><td>1,8</td><td>10</td><td>18</td><td>1</td><td>12</td><td>1</td><td>10</td><td>15</td><td>0</td><td>20</td><td>28</td><td>0</td><td>None</td></tr>
+			<tr><td>Garuda (Mushroom Rock)</td><td>4</td><td>50</td><td>21</td><td>1</td><td>40</td><td>1</td><td>14</td><td>15</td><td>0</td><td>0</td><td>170</td><td>140</td><td>None</td></tr>
+			<tr><td>Gemini (club)</td><td>36</td><td>1</td><td>33</td><td>50</td><td>1</td><td>30</td><td>21</td><td>15</td><td>0</td><td>0</td><td>7,8</td><td>1,111</td><td>None</td></tr>
+			<tr><td>Gemini (sword)</td><td>36</td><td>1</td><td>33</td><td>50</td><td>1</td><td>30</td><td>21</td><td>15</td><td>0</td><td>0</td><td>7,8</td><td>1,111</td><td>None</td></tr>
+			<tr><td>Geneaux Tentacle</td><td>500</td><td>10</td><td>14</td><td>1</td><td>1</td><td>1</td><td>10</td><td>15</td><td>0</td><td>20</td><td>5</td><td>30</td><td>None</td></tr>
+			<tr><td>Geosgaeno</td><td>32,767</td><td>128</td><td>36</td><td>50</td><td>40</td><td>50</td><td>48</td><td>15</td><td>0</td><td>50</td><td>0</td><td>0</td><td>Practically all</td></tr>
+			<tr><td>Ghost</td><td>9,999</td><td>350</td><td>1</td><td>120</td><td>33</td><td>1</td><td>14</td><td>15</td><td>0</td><td>0</td><td>1,45</td><td>840</td><td>Holy + Variable</td></tr>
+			<tr><td>Grat</td><td>4</td><td>25</td><td>28</td><td>50</td><td>1</td><td>50</td><td>12</td><td>15</td><td>0</td><td>0</td><td>980</td><td>520</td><td>Fire</td></tr>
+			<tr><td>Great Malboro</td><td>64</td><td>1</td><td>36</td><td>1</td><td>42</td><td>1</td><td>18</td><td>15</td><td>0</td><td>0</td><td>21</td><td>1,9</td><td>Fire</td></tr>
+			<tr><td>Greater Sphere</td><td>1,500,000</td><td>999</td><td>87</td><td>130</td><td>102</td><td>120</td><td>55</td><td>15</td><td>0</td><td>200</td><td>50</td><td>0</td><td>Varies</td></tr>
+			<tr><td>Grenade</td><td>7,5</td><td>63</td><td>26</td><td>1</td><td>24</td><td>150</td><td>17</td><td>15</td><td>0</td><td>0</td><td>1,35</td><td>540</td><td>Ice</td></tr>
+			<tr><td>Grendel</td><td>9,5</td><td>62</td><td>41</td><td>50</td><td>23</td><td>1</td><td>31</td><td>15</td><td>0</td><td>0</td><td>2,6</td><td>730</td><td>None</td></tr>
+			<tr><td>Grothia</td><td>8</td><td>600</td><td>23</td><td>10</td><td>21</td><td>1</td><td>18</td><td>15</td><td>0</td><td>0</td><td>2</td><td>2</td><td>Ice</td></tr>
+			<tr><td>Guado Guardian (Home)</td><td>2,6</td><td>600</td><td>1</td><td>1</td><td>24</td><td>1</td><td>20</td><td>15</td><td>0</td><td>0</td><td>540</td><td>380</td><td>None</td></tr>
+			<tr><td>Guado Guardian (w/Seymour)</td><td>2</td><td>10</td><td>10</td><td>1</td><td>15</td><td>1</td><td>12</td><td>15</td><td>0</td><td>100</td><td>290</td><td>300</td><td>None</td></tr>
+			<tr><td>Guado Guardian (w/Wendigo)</td><td>1,2</td><td>330</td><td>1</td><td>1</td><td>14</td><td>1</td><td>20</td><td>15</td><td>0</td><td>0</td><td>290</td><td>480</td><td>None</td></tr>
+			<tr><td>Halma</td><td>13</td><td>1</td><td>46</td><td>1</td><td>1</td><td>120</td><td>23</td><td>15</td><td>0</td><td>0</td><td>5,3</td><td>1,03</td><td>Fire</td></tr>
+			<tr><td>Hornet</td><td>620</td><td>180</td><td>63</td><td>70</td><td>88</td><td>95</td><td>102</td><td>33</td><td>17</td><td>160</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Ice Flan</td><td>1,35</td><td>160</td><td>1</td><td>120</td><td>21</td><td>1</td><td>9</td><td>15</td><td>0</td><td>0</td><td>300</td><td>188</td><td>Fire</td></tr>
+			<tr><td>Iguion</td><td>370</td><td>70</td><td>23</td><td>1</td><td>1</td><td>120</td><td>19</td><td>15</td><td>8</td><td>0</td><td>240</td><td>138</td><td>Ice</td></tr>
+			<tr><td>Imp</td><td>880</td><td>330</td><td>1</td><td>1</td><td>25</td><td>180</td><td>24</td><td>15</td><td>16</td><td>0</td><td>770</td><td>610</td><td>Water</td></tr>
+			<tr><td>Ipiria</td><td>180</td><td>35</td><td>15</td><td>1</td><td>1</td><td>120</td><td>13</td><td>15</td><td>7</td><td>0</td><td>24</td><td>46</td><td>Ice</td></tr>
+			<tr><td>Ironclad</td><td>2,000,000</td><td>0</td><td>100</td><td>220</td><td>0</td><td>180</td><td>65</td><td>15</td><td>0</td><td>180</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Jormungand</td><td>520</td><td>63</td><td>77</td><td>33</td><td>80</td><td>186</td><td>53</td><td>15</td><td>6</td><td>130</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Juggernaut</td><td>1,200,000</td><td>20</td><td>98</td><td>140</td><td>70</td><td>62</td><td>42</td><td>15</td><td>0</td><td>150</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Jumbo Flan</td><td>1,300,000</td><td>999</td><td>3</td><td>255</td><td>98</td><td>80</td><td>60</td><td>15</td><td>0</td><td>0</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Killer Bee</td><td>110</td><td>5</td><td>8</td><td>1</td><td>1</td><td>1</td><td>8</td><td>15</td><td>10</td><td>0</td><td>9</td><td>23</td><td>Ice</td></tr>
+			<tr><td>Klikk</td><td>1,5</td><td>5</td><td>14</td><td>1</td><td>1</td><td>1</td><td>4</td><td>15</td><td>0</td><td>50</td><td>50</td><td>5</td><td>None</td></tr>
+			<tr><td>Kottos</td><td>440</td><td>20</td><td>88</td><td>60</td><td>12</td><td>1</td><td>36</td><td>15</td><td>0</td><td>150</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Lamashtu</td><td>275</td><td>21</td><td>23</td><td>1</td><td>20</td><td>120</td><td>6</td><td>15</td><td>0</td><td>0</td><td>32</td><td>72</td><td>Fire</td></tr>
+			<tr><td>Land Worm</td><td>80</td><td>160</td><td>55</td><td>10</td><td>50</td><td>10</td><td>21</td><td>15</td><td>0</td><td>0</td><td>22</td><td>2,2</td><td>None</td></tr>
+			<tr><td>Left Fin</td><td>65</td><td>999</td><td>30</td><td>100</td><td>30</td><td>50</td><td>20</td><td>15</td><td>0</td><td>0</td><td>16</td><td>10</td><td>None</td></tr>
+			<tr><td>Lord Ochu</td><td>4,649</td><td>39</td><td>15</td><td>1</td><td>23</td><td>1</td><td>8</td><td>20</td><td>0</td><td>10</td><td>40</td><td>420</td><td>Fire</td></tr>
+			<tr><td>Machea</td><td>18</td><td>59</td><td>35</td><td>55</td><td>1</td><td>10</td><td>39</td><td>15</td><td>0</td><td>0</td><td>8,3</td><td>1,45</td><td>None</td></tr>
+			<tr><td>Maelspike</td><td>10</td><td>35</td><td>40</td><td>50</td><td>33</td><td>1</td><td>14</td><td>15</td><td>0</td><td>0</td><td>600</td><td>330</td><td>Lightning</td></tr>
+			<tr><td>Mafdet</td><td>710</td><td>25</td><td>29</td><td>1</td><td>1</td><td>120</td><td>9</td><td>15</td><td>0</td><td>0</td><td>300</td><td>172</td><td>Ice, Lightning</td></tr>
+			<tr><td>Magic Urn</td><td>999,999</td><td>9,999</td><td>1</td><td>255</td><td>40</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Malboro</td><td>27</td><td>1</td><td>32</td><td>1</td><td>32</td><td>1</td><td>10</td><td>15</td><td>0</td><td>0</td><td>2,2</td><td>1,5</td><td>Fire</td></tr>
+			<tr><td>Malboro Menace</td><td>640</td><td>200</td><td>60</td><td>24</td><td>53</td><td>63</td><td>34</td><td>15</td><td>0</td><td>100</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Mandragora</td><td>31</td><td>120</td><td>34</td><td>12</td><td>40</td><td>15</td><td>13</td><td>15</td><td>0</td><td>0</td><td>6,23</td><td>1,2</td><td>Fire</td></tr>
+			<tr><td>Master Coeurl</td><td>13</td><td>540</td><td>42</td><td>1</td><td>38</td><td>40</td><td>23</td><td>15</td><td>0</td><td>0</td><td>6,5</td><td>2,03</td><td>None</td></tr>
+			<tr><td>Master Tonberry</td><td>48</td><td>1</td><td>47</td><td>10</td><td>52</td><td>1</td><td>18</td><td>15</td><td>0</td><td>0</td><td>20</td><td>2,4</td><td>None</td></tr>
+			<tr><td>Maze Larva</td><td>2,222</td><td>1,111</td><td>11</td><td>40</td><td>24</td><td>45</td><td>14</td><td>15</td><td>0</td><td>0</td><td>1,85</td><td>620</td><td>Lightning</td></tr>
+			<tr><td>Mech Defender</td><td>8,7</td><td>1</td><td>40</td><td>15</td><td>1</td><td>10</td><td>7</td><td>15</td><td>0</td><td>0</td><td>950</td><td>880</td><td>Lightning, Steal</td></tr>
+			<tr><td>Mech Guard</td><td>1,28</td><td>1</td><td>25</td><td>1</td><td>1</td><td>1</td><td>10</td><td>15</td><td>0</td><td>0</td><td>310</td><td>600</td><td>Lightning, Steal</td></tr>
+			<tr><td>Mech Gunner</td><td>2,8</td><td>1</td><td>31</td><td>10</td><td>1</td><td>10</td><td>6</td><td>15</td><td>0</td><td>0</td><td>540</td><td>800</td><td>Lightning, Steal</td></tr>
+			<tr><td>Mech Hunter</td><td>5,5</td><td>1</td><td>36</td><td>10</td><td>1</td><td>10</td><td>8</td><td>15</td><td>0</td><td>0</td><td>820</td><td>673</td><td>Lightning, Steal</td></tr>
+			<tr><td>Mech Leader</td><td>3,7</td><td>1</td><td>31</td><td>5</td><td>28</td><td>5</td><td>19</td><td>15</td><td>0</td><td>0</td><td>830</td><td>530</td><td>Lightning, Steal</td></tr>
+			<tr><td>Mech Scouter</td><td>2,75</td><td>1</td><td>30</td><td>1</td><td>1</td><td>1</td><td>14</td><td>15</td><td>0</td><td>0</td><td>480</td><td>384</td><td>Lightning, Steal</td></tr>
+			<tr><td>Mi'ihen Fang</td><td>160</td><td>20</td><td>16</td><td>1</td><td>1</td><td>120</td><td>13</td><td>15</td><td>5</td><td>0</td><td>20</td><td>33</td><td>Fire, Water</td></tr>
+			<tr><td>Mimic (Basilisk)</td><td>40</td><td>10</td><td>42</td><td>1</td><td>58</td><td>255</td><td>22</td><td>15</td><td>0</td><td>0</td><td>0</td><td>50</td><td>None</td></tr>
+			<tr><td>Mimic (Dual Horn)</td><td>60</td><td>10</td><td>54</td><td>1</td><td>26</td><td>1</td><td>25</td><td>15</td><td>0</td><td>0</td><td>0</td><td>50</td><td>None</td></tr>
+			<tr><td>Mimic (Garuda)</td><td>40</td><td>10</td><td>42</td><td>255</td><td>12</td><td>1</td><td>22</td><td>15</td><td>0</td><td>0</td><td>0</td><td>50</td><td>None</td></tr>
+			<tr><td>Mimic (Machina)</td><td>40</td><td>10</td><td>33</td><td>150</td><td>38</td><td>150</td><td>29</td><td>15</td><td>0</td><td>0</td><td>0</td><td>50</td><td>None</td></tr>
+			<tr><td>Mortibody</td><td>4</td><td>50</td><td>22</td><td>50</td><td>20</td><td>1</td><td>28</td><td>15</td><td>0</td><td>100</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Mortiorchis</td><td>4</td><td>512</td><td>40</td><td>100</td><td>40</td><td>1</td><td>38</td><td>15</td><td>0</td><td>100</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Murrusu</td><td>580</td><td>20</td><td>25</td><td>1</td><td>1</td><td>120</td><td>7</td><td>15</td><td>0</td><td>0</td><td>240</td><td>165</td><td>Fire, Lightning</td></tr>
+			<tr><td>Mushussu</td><td>680</td><td>38</td><td>36</td><td>1</td><td>42</td><td>120</td><td>9</td><td>15</td><td>0</td><td>0</td><td>310</td><td>270</td><td>Ice</td></tr>
+			<tr><td>Nebiros</td><td>700</td><td>65</td><td>22</td><td>1</td><td>1</td><td>1</td><td>22</td><td>15</td><td>16</td><td>0</td><td>480</td><td>320</td><td>Ice</td></tr>
+			<tr><td>Nega Elemental</td><td>1,300,000</td><td>20</td><td>1</td><td>140</td><td>80</td><td>62</td><td>44</td><td>15</td><td>0</td><td>150</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Negator</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>220</td><td>300</td><td>None</td></tr>
+			<tr><td>Nemesis</td><td>10,000,000</td><td>9,999</td><td>255</td><td>150</td><td>255</td><td>150</td><td>200</td><td>0</td><td>0</td><td>150</td><td>55</td><td>0</td><td>None</td></tr>
+			<tr><td>Neslug</td><td>4,000,000</td><td>999</td><td>130</td><td>80</td><td>130</td><td>80</td><td>43</td><td>20</td><td>0</td><td>0</td><td>50</td><td>0</td><td>None</td></tr>
+			<tr><td>Nidhogg</td><td>2</td><td>46</td><td>43</td><td>1</td><td>50</td><td>180</td><td>10</td><td>15</td><td>0</td><td>0</td><td>810</td><td>602</td><td>Ice</td></tr>
+			<tr><td>Oblitzerator</td><td>6</td><td>10</td><td>16</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>10</td><td>36</td><td>580</td><td>Lightning</td></tr>
+			<tr><td>Ochu</td><td>7,2</td><td>35</td><td>22</td><td>1</td><td>14</td><td>1</td><td>6</td><td>15</td><td>0</td><td>0</td><td>180</td><td>520</td><td>Fire</td></tr>
+			<tr><td>Octopus</td><td>4,5</td><td>1</td><td>27</td><td>1</td><td>5</td><td>1</td><td>10</td><td>15</td><td>0</td><td>0</td><td>220</td><td>750</td><td>Lightning</td></tr>
+			<tr><td>Ogre</td><td>9,4</td><td>3</td><td>28</td><td>1</td><td>1</td><td>1</td><td>17</td><td>15</td><td>0</td><td>0</td><td>1,08</td><td>980</td><td>Fire</td></tr>
+			<tr><td>Omega Weapon</td><td>999,999</td><td>999</td><td>64</td><td>90</td><td>57</td><td>80</td><td>38</td><td>15</td><td>0</td><td>0</td><td>50</td><td>20</td><td>None</td></tr>
+			<tr><td>One-Eye</td><td>150</td><td>270</td><td>55</td><td>58</td><td>77</td><td>183</td><td>38</td><td>15</td><td>10</td><td>85</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Orrnitholestes</td><td>800</td><td>300</td><td>83</td><td>55</td><td>30</td><td>170</td><td>130</td><td>20</td><td>80</td><td>200</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Overdrive Sin</td><td>140</td><td>999</td><td>30</td><td>40</td><td>30</td><td>40</td><td>30</td><td>15</td><td>0</td><td>0</td><td>20</td><td>12</td><td>None</td></tr>
+			<tr><td>Penance - Each Arm</td><td>500</td><td>999</td><td>200</td><td>200</td><td>150</td><td>200</td><td>150</td><td>10</td><td>120</td><td>255</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Penance - Main Body</td><td>12,000,000</td><td>999</td><td>255</td><td>240</td><td>255</td><td>240</td><td>255</td><td>10</td><td>0</td><td>255</td><td>60</td><td>0</td><td>None</td></tr>
+			<tr><td>Phlegyas</td><td>1,68</td><td>50</td><td>26</td><td>1</td><td>33</td><td>20</td><td>12</td><td>15</td><td>0</td><td>0</td><td>650</td><td>410</td><td>Lightning</td></tr>
+			<tr><td>Piranha (x1)</td><td>50</td><td>1</td><td>6</td><td>1</td><td>1</td><td>1</td><td>12</td><td>15</td><td>0</td><td>0</td><td>1</td><td>2</td><td>Lightning</td></tr>
+			<tr><td>Piranha (x2)</td><td>100</td><td>2</td><td>8</td><td>1</td><td>1</td><td>1</td><td>9</td><td>15</td><td>0</td><td>0</td><td>1</td><td>3</td><td>Lightning</td></tr>
+			<tr><td>Piranha (x3)</td><td>150</td><td>3</td><td>10</td><td>1</td><td>1</td><td>1</td><td>6</td><td>15</td><td>0</td><td>0</td><td>1</td><td>5</td><td>Lightning</td></tr>
+			<tr><td>Pterya</td><td>12</td><td>1</td><td>20</td><td>10</td><td>18</td><td>10</td><td>21</td><td>15</td><td>0</td><td>0</td><td>2</td><td>2</td><td>None</td></tr>
+			<tr><td>Pteryx</td><td>100</td><td>0</td><td>90</td><td>90</td><td>100</td><td>5</td><td>100</td><td>60</td><td>15</td><td>200</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Puroboros</td><td>20</td><td>180</td><td>40</td><td>60</td><td>32</td><td>20</td><td>28</td><td>15</td><td>0</td><td>0</td><td>3,2</td><td>970</td><td>None</td></tr>
+			<tr><td>Ragora</td><td>780</td><td>15</td><td>18</td><td>1</td><td>1</td><td>1</td><td>15</td><td>8</td><td>0</td><td>0</td><td>20</td><td>48</td><td>Fire</td></tr>
+			<tr><td>Raldo</td><td>240</td><td>10</td><td>19</td><td>1</td><td>1</td><td>120</td><td>5</td><td>15</td><td>0</td><td>0</td><td>20</td><td>42</td><td>Ice</td></tr>
+			<tr><td>Raptor</td><td>200</td><td>45</td><td>18</td><td>1</td><td>1</td><td>120</td><td>14</td><td>15</td><td>7</td><td>0</td><td>32</td><td>48</td><td>Ice</td></tr>
+			<tr><td>Red Element</td><td>450</td><td>130</td><td>1</td><td>120</td><td>23</td><td>1</td><td>6</td><td>15</td><td>0</td><td>0</td><td>32</td><td>55</td><td>Ice</td></tr>
+			<tr><td>Remora</td><td>3</td><td>22</td><td>30</td><td>30</td><td>25</td><td>1</td><td>11</td><td>15</td><td>0</td><td>0</td><td>830</td><td>535</td><td>Lightning</td></tr>
+			<tr><td>Right Fin</td><td>65</td><td>999</td><td>30</td><td>100</td><td>30</td><td>50</td><td>20</td><td>15</td><td>0</td><td>0</td><td>17</td><td>10</td><td>None</td></tr>
+			<tr><td>Sahagin (Via Purifico: Tidus)</td><td>380</td><td>20</td><td>13</td><td>1</td><td>1</td><td>1</td><td>18</td><td>15</td><td>0</td><td>0</td><td>560</td><td>200</td><td>Lightning</td></tr>
+			<tr><td>Sahagin (Via Purifico: Yuna)</td><td>1,38</td><td>20</td><td>28</td><td>15</td><td>24</td><td>1</td><td>15</td><td>15</td><td>0</td><td>0</td><td>200</td><td>180</td><td>Lightning</td></tr>
+			<tr><td>Sahagin Chief</td><td>170</td><td>5</td><td>12</td><td>1</td><td>1</td><td>1</td><td>8</td><td>0</td><td>0</td><td>25</td><td>2</td><td>20</td><td>Lightning</td></tr>
+			<tr><td>Sanctuary Keeper</td><td>40</td><td>256</td><td>37</td><td>100</td><td>40</td><td>100</td><td>32</td><td>15</td><td>0</td><td>50</td><td>11</td><td>6,5</td><td>None</td></tr>
+			<tr><td>Sand Wolf</td><td>450</td><td>55</td><td>23</td><td>1</td><td>1</td><td>120</td><td>23</td><td>15</td><td>9</td><td>0</td><td>310</td><td>225</td><td>Fire, Ice</td></tr>
+			<tr><td>Sand Worm</td><td>45</td><td>100</td><td>30</td><td>5</td><td>28</td><td>5</td><td>8</td><td>15</td><td>0</td><td>0</td><td>2</td><td>1</td><td>Ice, Water</td></tr>
+			<tr><td>Sandragora</td><td>12,75</td><td>3</td><td>25</td><td>1</td><td>1</td><td>1</td><td>12</td><td>15</td><td>0</td><td>0</td><td>540</td><td>336</td><td>Fire</td></tr>
+			<tr><td>Seymour</td><td>6</td><td>100</td><td>20</td><td>1</td><td>25/32</td><td>25</td><td>20</td><td>15</td><td>0</td><td>100</td><td>2</td><td>5</td><td>None</td></tr>
+			<tr><td>Seymour Flux</td><td>70</td><td>512</td><td>30</td><td>40</td><td>15</td><td>40</td><td>38</td><td>15</td><td>0</td><td>100</td><td>10</td><td>6</td><td>None</td></tr>
+			<tr><td>Seymour Natus</td><td>36</td><td>200</td><td>30</td><td>1</td><td>25</td><td>1</td><td>21</td><td>15</td><td>0</td><td>100</td><td>6,3</td><td>3,5</td><td>None</td></tr>
+			<tr><td>Seymour Omnis</td><td>80</td><td>999</td><td>20</td><td>180</td><td>35</td><td>100</td><td>40</td><td>20</td><td>0</td><td>0</td><td>24</td><td>12</td><td>Variable</td></tr>
+			<tr><td>Shinryu</td><td>2,000,000</td><td>72</td><td>92</td><td>60</td><td>96</td><td>98</td><td>70</td><td>15</td><td>0</td><td>200</td><td>50</td><td>0</td><td>None</td></tr>
+			<tr><td>Shred</td><td>1,95</td><td>30</td><td>35</td><td>1</td><td>1</td><td>180</td><td>10</td><td>15</td><td>0</td><td>0</td><td>480</td><td>368</td><td>Fire</td></tr>
+			<tr><td>Simurgh</td><td>200</td><td>27</td><td>13</td><td>1</td><td>1</td><td>1</td><td>17</td><td>15</td><td>0</td><td>0</td><td>48</td><td>73</td><td>Fire</td></tr>
+			<tr><td>Sin (SS Liki)</td><td>2</td><td>100</td><td>1</td><td>1</td><td>1</td><td>1</td><td>6</td><td>15</td><td>0</td><td>0</td><td>10</td><td>100</td><td>None</td></tr>
+			<tr><td>Sin's Core</td><td>36</td><td>999</td><td>1</td><td>100</td><td>30</td><td>100</td><td>20</td><td>15</td><td>0</td><td>0</td><td>18</td><td>10</td><td>None</td></tr>
+			<tr><td>Sinscale (SS Liki)</td><td>200</td><td>0</td><td>13</td><td>1</td><td>1</td><td>1</td><td>12</td><td>0</td><td>0</td><td>0</td><td>2</td><td>22</td><td>None</td></tr>
+			<tr><td>Sinscale (Zanarkand)</td><td>100</td><td>0</td><td>5</td><td>1</td><td>1</td><td>1</td><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Sinspawn Ammes</td><td>2,4</td><td>400</td><td>1</td><td>1</td><td>5</td><td>1</td><td>9</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Sinspawn Echuilles</td><td>2</td><td>20</td><td>10</td><td>1</td><td>15</td><td>1</td><td>5</td><td>15</td><td>0</td><td>15</td><td>12</td><td>115</td><td>None</td></tr>
+			<tr><td>Sinspawn Genais</td><td>20</td><td>200</td><td>30</td><td>80</td><td>35</td><td>50</td><td>25</td><td>15</td><td>0</td><td>0</td><td>1,8</td><td>10</td><td>None</td></tr>
+			<tr><td>Sinspawn Geneaux</td><td>3</td><td>30</td><td>15</td><td>1</td><td>10</td><td>1</td><td>7</td><td>0</td><td>0</td><td>100</td><td>48</td><td>300</td><td>Fire</td></tr>
+			<tr><td>Sinspawn Gui #1 - Arms</td><td>800</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>15</td><td>0</td><td>0</td><td>37</td><td>300</td><td>None</td></tr>
+			<tr><td>Sinspawn Gui #1 - Body</td><td>12</td><td>30</td><td>29</td><td>1</td><td>20</td><td>30</td><td>10</td><td>15</td><td>0</td><td>100</td><td>400</td><td>1</td><td>None</td></tr>
+			<tr><td>Sinspawn Gui #1 - Head</td><td>4</td><td>200</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>15</td><td>0</td><td>0</td><td>48</td><td>200</td><td>None</td></tr>
+			<tr><td>Sinspawn Gui #2 - Arms</td><td>800</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>15</td><td>0</td><td>0</td><td>37</td><td>300</td><td>None</td></tr>
+			<tr><td>Sinspawn Gui #2 - Body</td><td>6</td><td>30</td><td>15</td><td>1</td><td>20</td><td>30</td><td>10</td><td>15</td><td>0</td><td>100</td><td>400</td><td>1</td><td>None</td></tr>
+			<tr><td>Sinspawn Gui #2 - Head</td><td>1</td><td>200</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>15</td><td>0</td><td>0</td><td>48</td><td>200</td><td>None</td></tr>
+			<tr><td>Skoll</td><td>1</td><td>60</td><td>28</td><td>1</td><td>1</td><td>180</td><td>28</td><td>15</td><td>10</td><td>0</td><td>480</td><td>420</td><td>Fire, Lightning</td></tr>
+			<tr><td>Sleep Sprout</td><td>98</td><td>820</td><td>3</td><td>167</td><td>112</td><td>203</td><td>26</td><td>15</td><td>0</td><td>0</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Snow Flan</td><td>600</td><td>120</td><td>1</td><td>120</td><td>19</td><td>1</td><td>7</td><td>15</td><td>0</td><td>0</td><td>48</td><td>93</td><td>Fire</td></tr>
+			<tr><td>Snow Wolf</td><td>400</td><td>50</td><td>20</td><td>1</td><td>1</td><td>120</td><td>20</td><td>15</td><td>8</td><td>0</td><td>300</td><td>192</td><td>Fire</td></tr>
+			<tr><td>Spathi</td><td>20</td><td>1,5</td><td>31</td><td>1</td><td>38</td><td>1</td><td>20</td><td>15</td><td>0</td><td>0</td><td>2</td><td>2</td><td>None</td></tr>
+			<tr><td>Spectral Keeper</td><td>52</td><td>500</td><td>36</td><td>100</td><td>1</td><td>100</td><td>36</td><td>15</td><td>0</td><td>50</td><td>12</td><td>7</td><td>None</td></tr>
+			<tr><td>Spherimorph</td><td>12</td><td>100</td><td>20</td><td>100</td><td>20</td><td>1</td><td>15</td><td>15</td><td>0</td><td>30</td><td>4</td><td>3,24</td><td>Variable</td></tr>
+			<tr><td>Spirit</td><td>10</td><td>700</td><td>1</td><td>60</td><td>42</td><td>1</td><td>24</td><td>15</td><td>0</td><td>0</td><td>4,3</td><td>1,3</td><td>None</td></tr>
+			<tr><td>Splasher (1)</td><td>200</td><td>2</td><td>14</td><td>1</td><td>1</td><td>1</td><td>20</td><td>15</td><td>10</td><td>0</td><td>140</td><td>100</td><td>Lightning</td></tr>
+			<tr><td>Splasher (2)</td><td>400</td><td>4</td><td>19</td><td>1</td><td>1</td><td>1</td><td>17</td><td>15</td><td>8</td><td>0</td><td>300</td><td>140</td><td>Lightning</td></tr>
+			<tr><td>Splasher (3)</td><td>600</td><td>6</td><td>24</td><td>1</td><td>1</td><td>1</td><td>15</td><td>15</td><td>6</td><td>0</td><td>440</td><td>200</td><td>Lightning</td></tr>
+			<tr><td>Stratoavis</td><td>320</td><td>115</td><td>73</td><td>41</td><td>32</td><td>82</td><td>32</td><td>15</td><td>5</td><td>100</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Swamp Mafdet</td><td>850</td><td>1</td><td>30</td><td>1</td><td>1</td><td>120</td><td>6</td><td>15</td><td>0</td><td>0</td><td>240</td><td>290</td><td>Lightning, Ice</td></tr>
+			<tr><td>Tanket</td><td>900</td><td>0</td><td>103</td><td>100</td><td>3</td><td>250</td><td>41</td><td>15</td><td>0</td><td>100</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Thorn</td><td>4,08</td><td>120</td><td>1</td><td>1</td><td>25</td><td>1</td><td>8</td><td>15</td><td>0</td><td>0</td><td>830</td><td>530</td><td>Fire</td></tr>
+			<tr><td>Th'uban</td><td>3,000,000</td><td>85</td><td>102</td><td>80</td><td>212</td><td>80</td><td>53</td><td>15</td><td>0</td><td>180</td><td>50</td><td>0</td><td>None</td></tr>
+			<tr><td>Thunder Flan</td><td>450</td><td>50</td><td>1</td><td>120</td><td>17</td><td>1</td><td>6</td><td>15</td><td>0</td><td>0</td><td>24</td><td>50</td><td>Water</td></tr>
+			<tr><td>Tonberry</td><td>13,5</td><td>1</td><td>40</td><td>10</td><td>43</td><td>10</td><td>14</td><td>15</td><td>0</td><td>0</td><td>6,5</td><td>2</td><td>None</td></tr>
+			<tr><td>Tros</td><td>2,2</td><td>10</td><td>10</td><td>1</td><td>1</td><td>1</td><td>12</td><td>15</td><td>0</td><td>20</td><td>8</td><td>100</td><td>None</td></tr>
+			<tr><td>Ultima Buster - Arm</td><td>80</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>80</td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Ultima Buster - Body</td><td>5,000,000</td><td>140</td><td>168</td><td>60</td><td>178</td><td>71</td><td>72</td><td>15</td><td>0</td><td>82</td><td>50</td><td>0</td><td>None</td></tr>
+			<tr><td>Ultima Buster - Head</td><td>80</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>80</td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Ultima Weapon</td><td>99,999</td><td>99</td><td>55</td><td>50</td><td>60</td><td>60</td><td>32</td><td>15</td><td>0</td><td>0</td><td>40</td><td>20</td><td>None</td></tr>
+			<tr><td>Valaha</td><td>8,7</td><td>29</td><td>36</td><td>1</td><td>21</td><td>1</td><td>23</td><td>15</td><td>0</td><td>0</td><td>1,32</td><td>720</td><td>None</td></tr>
+			<tr><td>Varuna</td><td>56</td><td>999</td><td>13</td><td>50</td><td>38</td><td>10</td><td>26</td><td>15</td><td>0</td><td>0</td><td>19,5</td><td>1,78</td><td>None</td></tr>
+			<tr><td>Vidatu</td><td>95</td><td>840</td><td>12</td><td>230</td><td>77</td><td>230</td><td>33</td><td>15</td><td>80</td><td>110</td><td>10</td><td>0</td><td>None</td></tr>
+			<tr><td>Vorban</td><td>630</td><td>120</td><td>95</td><td>100</td><td>75</td><td>100</td><td>33</td><td>15</td><td>0</td><td>80</td><td>8</td><td>0</td><td>None</td></tr>
+			<tr><td>Vouivre (Luca)</td><td>225</td><td>1</td><td>20</td><td>1</td><td>1</td><td>1</td><td>3</td><td>0</td><td>0</td><td>25</td><td>14</td><td>50</td><td>None</td></tr>
+			<tr><td>Vouivre (Mi'ihen)</td><td>255</td><td>22</td><td>20</td><td>1</td><td>21</td><td>120</td><td>6</td><td>15</td><td>0</td><td>0</td><td>24</td><td>60</td><td>Ice</td></tr>
+			<tr><td>Warrior Monk (flamethrower)</td><td>1,4</td><td>20</td><td>20</td><td>1</td><td>20</td><td>1</td><td>17</td><td>15</td><td>0</td><td>0</td><td>420</td><td>460</td><td>None</td></tr>
+			<tr><td>Warrior Monk (gun)</td><td>1,4</td><td>20</td><td>20</td><td>1</td><td>20</td><td>1</td><td>19</td><td>15</td><td>0</td><td>0</td><td>420</td><td>460</td><td>None</td></tr>
+			<tr><td>Wasp</td><td>360</td><td>30</td><td>17</td><td>1</td><td>1</td><td>1</td><td>18</td><td>15</td><td>13</td><td>0</td><td>240</td><td>142</td><td>Ice</td></tr>
+			<tr><td>Water Flan</td><td>315</td><td>30</td><td>3</td><td>120</td><td>15</td><td>1</td><td>5</td><td>15</td><td>0</td><td>0</td><td>2</td><td>18</td><td>Lightning</td></tr>
+			<tr><td>Wendigo</td><td>18</td><td>32</td><td>40</td><td>1</td><td>1</td><td>1</td><td>18</td><td>15</td><td>0</td><td>0</td><td>2</td><td>3</td><td>None</td></tr>
+			<tr><td>White Element</td><td>390</td><td>120</td><td>1</td><td>120</td><td>22</td><td>1</td><td>5</td><td>15</td><td>0</td><td>0</td><td>20</td><td>48</td><td>Fire</td></tr>
+			<tr><td>Wraith</td><td>22,222</td><td>3,5</td><td>1</td><td>150</td><td>24</td><td>30</td><td>25</td><td>15</td><td>0</td><td>0</td><td>3,1</td><td>1,07</td><td>Holy + variable</td></tr>
+			<tr><td>Xiphos</td><td>2,7</td><td>5</td><td>20</td><td>1</td><td>1</td><td>1</td><td>17</td><td>15</td><td>0</td><td>0</td><td>520</td><td>220</td><td>None</td></tr>
+			<tr><td>YAT-97</td><td>3,7</td><td>1</td><td>41</td><td>1</td><td>38</td><td>120</td><td>12</td><td>15</td><td>0</td><td>0</td><td>3,2</td><td>1,08</td><td>Fire, Water</td></tr>
+			<tr><td>YAT-99</td><td>2,7</td><td>1</td><td>40</td><td>1</td><td>32</td><td>120</td><td>9</td><td>15</td><td>0</td><td>0</td><td>1,87</td><td>1,3</td><td>Fire, Water</td></tr>
+			<tr><td>Yellow Element</td><td>300</td><td>100</td><td>1</td><td>120</td><td>18</td><td>1</td><td>5</td><td>15</td><td>5</td><td>0</td><td>9</td><td>33</td><td>Water</td></tr>
+			<tr><td>Yenke Ronso</td><td>Varies</td><td>200</td><td>Varies</td><td>30</td><td>Varies</td><td>50</td><td>Varies</td><td>15</td><td>0</td><td>100</td><td>4,5</td><td>1,5</td><td>None</td></tr>
+			<tr><td>YKT-11</td><td>6,2</td><td>1</td><td>34</td><td>1</td><td>1</td><td>60</td><td>25</td><td>15</td><td>0</td><td>0</td><td>3,2</td><td>1,08</td><td>Fire, Ice</td></tr>
+			<tr><td>YKT-63</td><td>4,2</td><td>1</td><td>30</td><td>1</td><td>1</td><td>60</td><td>22</td><td>15</td><td>0</td><td>0</td><td>1,87</td><td>1,3</td><td>Fire, Water</td></tr>
+			<tr><td>Yojimbo</td><td>33</td><td>2</td><td>34</td><td>80</td><td>35</td><td>1</td><td>32</td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Yowie</td><td>900</td><td>95</td><td>26</td><td>1</td><td>1</td><td>180</td><td>29</td><td>15</td><td>10</td><td>0</td><td>810</td><td>480</td><td>Ice</td></tr>
+			<tr><td>Yu Pagoda</td><td>5</td><td>5</td><td>0</td><td>80</td><td>50</td><td>80</td><td>40</td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Yunalesca (1st)</td><td>24</td><td>500</td><td>20</td><td>50</td><td>30</td><td>50</td><td>40</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Yunalesca (2nd)</td><td>48</td><td>500</td><td>20</td><td>50</td><td>30</td><td>50</td><td>40</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>None</td></tr>
+			<tr><td>Yunalesca (3rd)</td><td>60</td><td>500</td><td>20</td><td>50</td><td>30</td><td>50</td><td>40</td><td>20</td><td>0</td><td>0</td><td>14</td><td>7</td><td>None</td></tr>
+			<tr><td>Zaurus</td><td>7,85</td><td>1</td><td>38</td><td>30</td><td>1</td><td>120</td><td>46</td><td>15</td><td>14</td><td>0</td><td>5</td><td>950</td><td>None</td></tr>
+			<tr><td>Zu (first)</td><td>12</td><td>50</td><td>32</td><td>20</td><td>30</td><td>20</td><td>8</td><td>15</td><td>0</td><td>0</td><td>1,2</td><td>1,2</td><td>None</td></tr>
+			<tr><td>Zu (others)</td><td>18</td><td>50</td><td>37</td><td>20</td><td>35</td><td>20</td><td>20</td><td>15</td><td>0</td><td>0</td><td>1,2</td><td>1,2</td><td>None</td></tr>
+		  </tbody>
+		</table>
+        </div>
 
-        <h3 id="Soul_Types"><a href="#Soul_Types_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Soul Types</h3>
-        <div id="Soul_Types_col" class="collapse in">
+        <h3 id="Monster_Drops_and_Steals"><a href="#Monster_Drops_and_Steals_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Monster Drops and Steals<span id="misc_totals_2"></span></h3>
+        <div id="Monster_Drops_and_Steals_col" class="collapse in">
           <table class="table table-striped">
             <thead>
-              <tr>
-                <th>Character</th>
-                <th>Weapon</th>
-				<th>Ability #1</th>
-				<th>Ability #2</th>
-				<th>Ability #3</th>
-				<th>Ability #4</th>
-              </tr>
+              <tr><th>Monster</th><th>Common Drop</th><th>Rare Drop</th><th>Common Steal</th><th>Rare Steal</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Tidus</td>
-                <td>Caladbolg</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>Magic Counter</td>
-				<td>Evade & Counter</td>
-              </tr><tr>
-                <td>Yuna</td>
-                <td>Nirvana</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>One MP Cost</td>
-				<td>Double AP</td>
-              </tr><tr>
-                <td>Rikku</td>
-                <td>Godhand</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>Double AP</td>
-				<td>Gillionaire</td>
-              </tr><tr>
-                <td>Lulu</td>
-                <td>Onion Knight</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>Magic Booster</td>
-				<td>One MP Cost</td>
-              </tr><tr>
-                <td>Auron</td>
-                <td>Masamune</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>Counterattack</td>
-				<td>First Strike</td>
-              </tr><tr>
-                <td>Wakka</td>
-                <td>World Champion</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>Double AP</td>
-				<td>Evade & Counter</td>
-              </tr><tr>
-                <td>Kimahri</td>
-                <td>Spirit Lance</td>
-				<td>Tripple Overdrive</td>
-				<td>Break Damage Limit</td>
-				<td>Double AP</td>
-				<td>Evade & Counter</td>
-              </tr>
+			<tr><td>???? (Kimahri)</td><td>2~4 Ability Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Abaddon</td><td>1~2 Mana Tablet</td><td>1~2 Dark Matter</td><td>3 Purifying Salts</td><td>1 Shining Gem</td></tr>
+			<tr><td>Abyss Worm</td><td>1~2 Stamina Tonic</td><td>1~2 Dark Matter</td><td>4 Shadow Gems</td><td>1 Stamina Tablet</td></tr>
+			<tr><td>Achelous</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Water Gems</td><td>1 Healing Spring</td></tr>
+			<tr><td>Adamantoise</td><td>2~4 Power Spheres</td><td>4~8 Power Spheres</td><td>1 Healing Water</td><td>1 Stamina Tablet</td></tr>
+			<tr><td>Aerouge</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Electro Marble</td><td>1 Lightning Marble</td></tr>
+			<tr><td>Ahriman</td><td>1~2 Speed Spheres</td><td>N/A</td><td>2 Musks</td><td>3 Musks</td></tr>
+			<tr><td>Alcyone</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Smoke Bomb</td><td>2 Smoke Bombs</td></tr>
+			<tr><td>Anacondaur</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Petrify Grenade</td><td>2 Petrify Grenades</td></tr>
+			<tr><td>Anima</td><td>1~2 Ability Spheres</td><td>N/A</td><td>3 Silence Grenades</td><td>1 Farplane Shadow</td></tr>
+			<tr><td>Aqua Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Fish Scales</td><td>2 Dragon Scales</td></tr>
+			<tr><td>Bandersnatch</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Dream Powders</td><td>3 Dream Powders</td></tr>
+			<tr><td>Barbatos</td><td>1~2 Power Spheres</td><td>1~2 Return Spheres</td><td>1 Star Curtain</td><td>1 Blessed Gem</td></tr>
+			<tr><td>Bashura</td><td>1~2 Power Spheres</td><td>2~4 Power Spheres</td><td>1 Soul Spring</td><td>2 Soul Springs</td></tr>
+			<tr><td>Basilisk</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Petrify Grenade</td><td>N/A</td></tr>
+			<tr><td>Bat Eye</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>2 Silence Grenades</td></tr>
+			<tr><td>Behemoth</td><td>1~2 Power Spheres</td><td>1~2 Power Spheres</td><td>1 Ether</td><td>1 Mana Tablet</td></tr>
+			<tr><td>Behemoth King</td><td>1~2 Power Spheres</td><td>1~2 Lv. 3 Key Spheres</td><td>1 Healing Spring</td><td>2 Twin Stars</td></tr>
+			<tr><td>Biran Ronso</td><td>1~2 Return Spheres</td><td>1~2 Friend Spheres</td><td>1 Lv. 3 Key Sphere</td><td>2 Lv. 3 Key Spheres</td></tr>
+			<tr><td>Bite Bug</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Antidote</td><td>1 Poison Fang</td></tr>
+			<tr><td>Black Element</td><td>1~2 Mana Spheres</td><td>1~2 Return Spheres</td><td>1 Hi~Potion</td><td>4 Shining Gems</td></tr>
+			<tr><td>Blue Element</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Fish Scales</td><td>3 Fish Scales</td></tr>
+			<tr><td>Bomb (Home)</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Bomb Cores</td><td>3 Bomb Cores</td></tr>
+			<tr><td>Bomb (Mi'ihen)</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Bomb Fragments</td><td>3 Bomb Fragments</td></tr>
+			<tr><td>Bomb King</td><td>1~2 Doors to Tomorrow</td><td>1~2 Power Spheres</td><td>4 Fire Gems</td><td>1 Shining Gem</td></tr>
+			<tr><td>Braska'a Final Aeon</td><td>N/A</td><td>N/A</td><td>1 Turbo Ether</td><td>1 Elixir</td></tr>
+			<tr><td>Buer</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Musk</td></tr>
+			<tr><td>Bunyip</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Hypello Potion</td></tr>
+			<tr><td>Cactuar</td><td>2~4 Speed Spheres</td><td>3~6 Speed Spheres</td><td>1 Chocobo Feather</td><td>1 Chocobo Wing</td></tr>
+			<tr><td>Cactuar King</td><td>3~6 Blessed Gems</td><td>1~2 Dark Matters</td><td>2 Chocobo Wings</td><td>1 Designer Wallet</td></tr>
+			<tr><td>Catastrophe</td><td>1~2 Designer Wallets</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Lv. 2 Key Spheres</td></tr>
+			<tr><td>Catoblepas</td><td>1~2 Three Stars</td><td>1~2 Dark Matters</td><td>3 Healing Springs</td><td>1 Stamina Tonic</td></tr>
+			<tr><td>Cave Iguion</td><td>1~2 Speed Spheres</td><td>1~2 Power Spheres</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Chimera (Home)</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>3 Arctic Winds</td><td>3 Lightning Marbles</td></tr>
+			<tr><td>Chimera (Macalania)</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Artic Wind</td><td>1 Lightning Marble</td></tr>
+			<tr><td>Chimera Brain</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Ice Gem</td><td>2 Lightning Gems</td></tr>
+			<tr><td>Chimerageist</td><td>1~2 Return Sphere</td><td>1~2 Dark Matter</td><td>2 Mana Springs</td><td>2 Stamina Springs</td></tr>
+			<tr><td>Chocobo Eater</td><td>2 Lv. 1 Key Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Coeurl</td><td>1~2 Mana Spheres</td><td>2~4 Mana Spheres</td><td>1 Mana Spring</td><td>N/A</td></tr>
+			<tr><td>Coeurlregina</td><td>3~6 Shining Gems</td><td>1~2 Dark Matters</td><td>2 Farplane Winds</td><td>1 Blessed Gem</td></tr>
+			<tr><td>Condor</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Phoenix Down</td><td>1 Smoke Bomb</td></tr>
+			<tr><td>Crawler</td><td>1~2 Elixirs</td><td>2~4 Elixirs</td><td>1 Lunar Curtain</td><td>2 Lunar Curtains</td></tr>
+			<tr><td>Dark Anima</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 Three Stars</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Bahamut</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 Twin Stars</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Cindy</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>1 Return Sphere</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Element</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Shining Thorn</td><td>2 Shining Thorns</td></tr>
+			<tr><td>Dark Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Star Curtain</td><td>2 Star Curtains</td></tr>
+			<tr><td>Dark Ifrit</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 Mega Phoenixes</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Ixion</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 Stamina Tablets</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Mindy</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>1 Teleport Sphere</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Sandy</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>1 Friend Sphere</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Shiva</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 Mana Tablets</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Valefor</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 X~Potions</td><td>1 Elixir</td></tr>
+			<tr><td>Dark Yojimbo</td><td>1~2 Dark Matters</td><td>1~2 Master Spheres</td><td>2 Stamina Tonics</td><td>1 Elixir</td></tr>
+			<tr><td>Defender</td><td>2~4 Power Spheres</td><td>N/A</td><td>1 Lunar Curtain</td><td>2 Lunar Curtains</td></tr>
+			<tr><td>Defender X</td><td>1~2 Lv. 2 Key Spheres</td><td>2~4 Lv. 2 Key Spheres</td><td>4 Lunar Curtains</td><td>N/A</td></tr>
+			<tr><td>Defender Z</td><td>1~2 Lv. 2 Key Spheres</td><td>1~2 Lv. 3 Key Spheres</td><td>2 Lunar Curtains</td><td>N/A</td></tr>
+			<tr><td>Demonolith</td><td>1~2 Mana Spheres</td><td>1~2 Lv. 3 Key Spheres</td><td>2 Petrify Grenades</td><td>N/A</td></tr>
+			<tr><td>Dingo</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>1 Sleeping Powder</td></tr>
+			<tr><td>Dinonix</td><td>1~2 Speed Spheres</td><td>1~2 Power Sphere</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Don Tonberry</td><td>3~6 Farplane Winds</td><td>1~2 Dark Matters</td><td>2 Candles of Life</td><td>1 Designer Wallet</td></tr>
+			<tr><td>Dual Horn (Home)</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Mega~Potion</td></tr>
+			<tr><td>Dual Horn (Mi'ihen)</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Potion</td><td>1 Hi~Potion</td></tr>
+			<tr><td>Earth Eater</td><td>1~2 Fortune Spheres</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Lv. 1 Key Sphere</td></tr>
+			<tr><td>Epaaj</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Hi~Potion</td><td>2 Hi~Potions</td></tr>
+			<tr><td>Espada</td><td>1~2 Rename Cards</td><td>1~2 Dark Matters</td><td>4 Farplane Shadows</td><td>1 Farplane Wind</td></tr>
+			<tr><td>Evil Eye (Home)</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Musk</td><td>2 Musks</td></tr>
+			<tr><td>Evil Eye (Mi'ihen)</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Musk</td></tr>
+			<tr><td>Evrae</td><td>1~2 Black Magic Spheres</td><td>N/A</td><td>1 Water Gem</td><td>2 Water Gems</td></tr>
+			<tr><td>Evrae Altana</td><td>1~2 Black Magic Spheres</td><td>N/A</td><td>2 Water Gems</td><td>1 Healing Spring</td></tr>
+			<tr><td>Exoray</td><td>1~2 Mana Spheres</td><td>N/A</td><td>3 Silence Grenades</td><td>1 Ether</td></tr>
+			<tr><td>Extractor</td><td>1~2 Mega Phoenixes</td><td>2~4 Mega Phoenixes</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Fafnir</td><td>20~40 Light Curtains</td><td>1~2 Dark Matters</td><td>2 Gold Hourglasses</td><td>2 Stamina Springs</td></tr>
+			<tr><td>Fallen Monk</td><td>1~2 Ability Spheres</td><td>N/A</td><td>2 Candles of Life</td><td>1 Purifying Salt</td></tr>
+			<tr><td>Fenrir</td><td>1~2 Agility Spheres</td><td>1~2 Dark Matters</td><td>2 Chocobo Feathers</td><td>1 Chocobo Wing</td></tr>
+			<tr><td>Flame Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Fire Gem</td><td>2 Fire Gems</td></tr>
+			<tr><td>Floating Death</td><td>2~4 Mana Spheres</td><td>3~6 Mana Spheres</td><td>4 Musks</td><td>5 Musks</td></tr>
+			<tr><td>Floating Eye</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Echo Screen</td><td>1 Musk</td></tr>
+			<tr><td>Funguar</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Silence Grenade</td><td>1 Ether</td></tr>
+			<tr><td>Gandarewa</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Electro Marble</td><td>2 Electro Marbles</td></tr>
+			<tr><td>Garm</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Sleeping Powder</td></tr>
+			<tr><td>Garuda (Besaid)</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Smoke Bomb</td><td>2 Smoke Bombs</td></tr>
+			<tr><td>Garuda (Luca)</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Garuda (Mushroom Rock)</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Smoke bomb</td><td>2 Smoke Bombs</td></tr>
+			<tr><td>Gemini</td><td>1~2 Power Spheres</td><td>2~4 Power Spheres</td><td>1 Light Curtain</td><td>2 Light Curtains</td></tr>
+			<tr><td>Geneaux's Tentacle</td><td>1~2 Ability Spheres</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+			<tr><td>Geosgaeno</td><td>2~4 Power Spheres</td><td>N/A</td><td>1 Water Gem</td><td>2 Water Gems</td></tr>
+			<tr><td>Ghost</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Phoenix Downs</td><td>1 Farplane Shadow</td></tr>
+			<tr><td>Gold Element</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Electro Marble</td><td>2 Electro Marbles</td></tr>
+			<tr><td>Grat</td><td>1~2 Mana Spheres</td><td>N/A</td><td>4 Antidotes</td><td>3 Remedies</td></tr>
+			<tr><td>Great Malboro</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Remedy</td><td>1 Mana Tonic</td></tr>
+			<tr><td>Greater Sphere</td><td>1~2 Luck Spheres</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Return Sphere</td></tr>
+			<tr><td>Grenade</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Fire Gems</td><td>3 Fire Gems</td></tr>
+			<tr><td>Grendel</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Hi~Potion</td><td>1 Mega~Potion</td></tr>
+			<tr><td>Guado Guardian (Home)</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>2 X~Potions</td></tr>
+			<tr><td>Guado Guardian (w/Seymour)</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Ether</td></tr>
+			<tr><td>Guado Guardian (w/Wendigo)</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 X~Potion</td></tr>
+			<tr><td>Halma</td><td>1~2 Power Spheres</td><td>2~4 Power Spheres</td><td>3 Hypello Potions</td><td>2 Shadow Gems</td></tr>
+			<tr><td>Hornet</td><td>1~2 Accuracy Spheres</td><td>1~2 Dark Matters</td><td>4 Poison Fangs</td><td>2 Purifying Salts</td></tr>
+			<tr><td>Ice Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Arctic Wind</td><td>2 Arctic Winds</td></tr>
+			<tr><td>Iguion</td><td>1~2 Speed Spheres</td><td>1~2 Power Spheres</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Imp</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Lightning Gem</td><td>2 Lightning Gems</td></tr>
+			<tr><td>Ipiria</td><td>1~2 Speed Spheres</td><td>1~2 Power Spheres</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Iron Giant</td><td>2~4 Power Spheres</td><td>3~6 Power Spheres</td><td>1 Light Curtain</td><td>N/A</td></tr>
+			<tr><td>Ironclad</td><td>1~2 HP Spheres</td><td>1~2 Dark Matters</td><td>4 Light Curtains</td><td>1 Stamina Tablet</td></tr>
+			<tr><td>Jormungand</td><td>2~4 Supreme Gems</td><td>1~2 Dark Matters</td><td>4 Petrify Grenades</td><td>1 Three Stars</td></tr>
+			<tr><td>Jumbo Flan</td><td>1~2 Magic Spheres</td><td>1~2 Dark Matters</td><td>4 Lunar Curtains</td><td>1 Mana Tablet</td></tr>
+			<tr><td>Killer Bee</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Antidote</td><td>1 Poison Fang</td></tr>
+			<tr><td>Klikk</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Grenade</td><td>2 Grenades</td></tr>
+			<tr><td>Kottos</td><td>20~40 Healing Springs</td><td>1~2 Dark Matters</td><td>4 Stamina Springs</td><td>2 Soul Springs</td></tr>
+			<tr><td>Kusariqqu</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Silver Hourglass</td></tr>
+			<tr><td>Lamashtu</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potions</td><td>1 Silver Hourglass</td></tr>
+			<tr><td>Land Worm</td><td>1~2 Power Spheres</td><td>1~2 Lv. 4 Key Spheres</td><td>1 Stamnia Spring</td><td>N/A</td></tr>
+			<tr><td>Larva</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Lunar Curtain</td><td>2 Lunar Curtains</td></tr>
+			<tr><td>Lord Ochu</td><td>1~2 MP Spheres</td><td>1~2 HP Spheres</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Machea</td><td>1~2 Mana Spheres</td><td>1~2 Lv. 3 Key Spheres</td><td>2 Hi~Potions</td><td>1 Stamina Tonic</td></tr>
+			<tr><td>Maelspike</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Water Gems</td><td>3 Water Gems</td></tr>
+			<tr><td>Mafdet</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Hypello Potion</td></tr>
+			<tr><td>Malboro</td><td>2~4 Mana Spheres</td><td>N/A</td><td>1 Remedy</td><td>1 Remedy</td></tr>
+			<tr><td>Malboro Menace</td><td>2~4 Mana Tonics</td><td>1~2 Dark Matters</td><td>4 Remedies</td><td>2 Mana Springs</td></tr>
+			<tr><td>Mandragora</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Remedies</td><td>3 Remedies</td></tr>
+			<tr><td>Master Coeurl</td><td>1~2 Lv. 1 Key Spheres</td><td>1~2 Friend Spheres</td><td>2 Farplane Shadows</td><td>4 Farplane Shadows</td></tr>
+			<tr><td>Master Tonberry</td><td>1~2 Power Spheres</td><td>1~2 Teleport Spheres</td><td>1 Mana Spring</td><td>1 Tetra Elemental</td></tr>
+			<tr><td>Maze Larva</td><td>1~2 Ability Spheres</td><td>N/A</td><td>2 Fish Scales</td><td>2 Dragon Scales</td></tr>
+			<tr><td>Mech Defender</td><td>1~2 Phoenix Downs</td><td>1~2 Mega Phoenixes</td><td>2 Al Bhed Potions</td><td>3 Al Bhed Potions</td></tr>
+			<tr><td>Mech Guard</td><td>1~2 Hi~Potions</td><td>N/A</td><td>2 Grenades</td><td>3 Grenades</td></tr>
+			<tr><td>Mech Gunner</td><td>2~4 Hi~Potions</td><td>N/A</td><td>1 Al Bhed Potion</td><td>2 Al Bhed Potions</td></tr>
+			<tr><td>Mech Hunter</td><td>1~2 Phoenix Downs</td><td>1~2 Mega Phoenixes</td><td>1 Al Bhed Potion</td><td>2 Al Bhed Potions</td></tr>
+			<tr><td>Mech Leader</td><td>1~2 Hi~Potions</td><td>1~2 Mega~Potions</td><td>2 Grenades</td><td>2 Frag Grenades</td></tr>
+			<tr><td>Mech Scouter</td><td>1~2 Hi~Potions</td><td>1~2 Mega~Potions</td><td>3 Grenades</td><td>4 Grenades</td></tr>
+			<tr><td>Melusine</td><td>1~2 Speed Spheres</td><td>1~2 Power Spheres</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Mi'ihen Fang</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>1 Sleeping Powder</td></tr>
+			<tr><td>Murussu</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Hypello Potion</td></tr>
+			<tr><td>Mushussu</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Silver Hourglass</td></tr>
+			<tr><td>Nebiros</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Poison Fang</td><td>2 Poison Fangs</td></tr>
+			<tr><td>Nega Elemental</td><td>2~4 Twin Stars</td><td>1~2 Dark Matters</td><td>4 Star Curtains</td><td>1 Twin Stars</td></tr>
+			<tr><td>Negator</td><td>1~2 Potions</td><td>1~2 Hi~Potions</td><td>1 Hi~Potion</td><td>2 Hi~Potions</td></tr>
+			<tr><td>Nemesis</td><td>1~2 Warp Spheres</td><td>1~2 Dark Matters</td><td>1 Lv. 4 Key Spheres</td><td>1 Warp Sphere</td></tr>
+			<tr><td>Neslug</td><td>1~2 Pendulums</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Friend Sphere</td></tr>
+			<tr><td>Nidhogg</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Gold Hourglass</td></tr>
+			<tr><td>Oblitzerator</td><td>1~2 Elixirs</td><td>2~4 Elixirs</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Ochu</td><td>1~2 Power Spheres</td><td>2~4 Mana Spheres</td><td>1 Remedy</td><td>2 Remedies</td></tr>
+			<tr><td>Octopus</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Dragon Scales</td><td>2 Water Gems</td></tr>
+			<tr><td>Ogre</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Stamina Spring</td><td>2 Stamina Springs</td></tr>
+			<tr><td>Omega Weapon</td><td>3~6 Lv. 4 Key Spheres</td><td>N/A</td><td>30 Gamblers' Spirits</td><td>N/A</td></tr>
+			<tr><td>One~Eye</td><td>1~2 Magic Defense Spheres</td><td>1~2 Dark Matters</td><td>3 Lunar Curtains</td><td>1 Blessed Gem</td></tr>
+			<tr><td>Ornitholestes</td><td>1~2 Gamblers' Spirits</td><td>1~2 Dark Matters</td><td>1 Rename Card</td><td>1 Chocobo Wing</td></tr>
+			<tr><td>Overdrive Sin</td><td>1~2 Lv. 3 Key Spheres</td><td>N/A</td><td>1 Ether</td><td>1 Supreme Gem</td></tr>
+			<tr><td>Penance - Left Arm</td><td>1 Dark Matter</td><td>1 Master Sphere</td><td>1 Elixir</td><td>1 Elixir</td></tr>
+			<tr><td>Penance - Main Body</td><td>3 Master Spheres</td><td>6 Master Spheres</td><td>1 Elixir</td><td>2 Megalixirs</td></tr>
+			<tr><td>Penance - Right Arm</td><td>1 Dark Matter</td><td>1 Master Sphere</td><td>1 Elixir</td><td>1 Elixir</td></tr>
+			<tr><td>Phlgyas</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Dragon Sclaes</td><td>1 Water Gem</td></tr>
+			<tr><td>Piranha (x1)</td><td>1~2 Power Spheres</td><td>1~2 Ability Spheres</td><td>1 Grenade</td><td>2 Grenades</td></tr>
+			<tr><td>Piranha (x2)</td><td>1~2 Mana Spheres</td><td>1~2 Ability Spheres</td><td>1 Grenade</td><td>2 Grenades</td></tr>
+			<tr><td>Piranha (x3)</td><td>1~2 Speed Spheres</td><td>1~2 Ability Spheres</td><td>1 Grenade</td><td>2 Grenades</td></tr>
+			<tr><td>Pteryx</td><td>1~2 Evasion Spheres</td><td>1~2 Dark Matters</td><td>4 Smoke Bombs</td><td>1 Candle of Life</td></tr>
+			<tr><td>Puroboros</td><td>1~2 Mana Spheres</td><td>1~2 Lv. 1 Key Spheres</td><td>3 Fire Gems</td><td>4 Fire Gems</td></tr>
+			<tr><td>Qactuar</td><td>1~2 Speed Spheres</td><td>2~4 Speed Spheres</td><td>1 Chocobo Feather</td><td>N/A</td></tr>
+			<tr><td>Ragora</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Antidote</td><td>1 Remedy</td></tr>
+			<tr><td>Raldo</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>1 Hypello Potion</td></tr>
+			<tr><td>Raptor</td><td>1~2 Speed Spheres</td><td>1~2 Power Spheres</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Red Element</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Bomb Fragment</td><td>2 Bomb Fragments</td></tr>
+			<tr><td>Remora</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Dragon Scale</td><td>2 Dragon Scales</td></tr>
+			<tr><td>Sahagin</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Fish Scales</td><td>1 Dragon Scale</td></tr>
+			<tr><td>Sahagin Chief</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Sanctuary Keeper</td><td>1~2 Return Spheres</td><td>N/A</td><td>1 Turbo Ether</td><td>2 Turbo Ethers</td></tr>
+			<tr><td>Sand Wolf</td><td>1~2 Power Spheres</td><td>N/A</td><td>2 Sleeping Powders</td><td>N/A</td></tr>
+			<tr><td>Sand Worm</td><td>2~4 Ability Spheres</td><td>1~2 Lv. 1 Key Spheres</td><td>2 Shadow Gems</td><td>2 Stamina Springs</td></tr>
+			<tr><td>Sandragora</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Remedies</td><td>10 Musks</td></tr>
+			<tr><td>Seymour</td><td>1~2 Black Magic Spheres</td><td>1~2 Special Spheres</td><td>1 Turbo Ether</td><td>1 Elixir</td></tr>
+			<tr><td>Seymour Flux</td><td>1~2 Lv. 4 Key Spheres</td><td>N/A</td><td>1 Elixir</td><td>N/A</td></tr>
+			<tr><td>Seymour Natus</td><td>2~4 Lv. 2 Key Spheres</td><td>N/A</td><td>2 Tetra Elementals</td><td>3 Tetra Elementals</td></tr>
+			<tr><td>Seymour Omnis</td><td>1~2 Lv. 3 Key Spheres</td><td>N/A</td><td>1 Shining Gem</td><td>1 Supreme Gem</td></tr>
+			<tr><td>Shinryu</td><td>1~2 Wings to Discovery</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Three Stars</td></tr>
+			<tr><td>Shred</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Hypello Potion</td><td>2 Hypello Potions</td></tr>
+			<tr><td>Simurgh</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Smoke Bomb</td><td>2 Smoke Bombs</td></tr>
+			<tr><td>Sin - Core</td><td>1~2 MP Spheres</td><td>N/A</td><td>3 Stamina Springs</td><td>4 Stamina Springs</td></tr>
+			<tr><td>Sin - Left Fin</td><td>1~2 HP Spheres</td><td>N/A</td><td>1 Mega~Potion</td><td>1 Supreme Gem</td></tr>
+			<tr><td>Sin - Right Fin</td><td>1~2 Lv. 3 Key Spheres</td><td>N/A</td><td>1 X~Potion</td><td>1 Shining Gem</td></tr>
+			<tr><td>Sin (SS Liki)</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Sinscale</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Sinspawn Echuilles</td><td>2~4 Ability Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Sinspawn Genais</td><td>1~2 Return Spheres</td><td>N/A</td><td>1 Star Curtain</td><td>1 Shining Gem</td></tr>
+			<tr><td>Sinspawn Geneaux</td><td>2~4 Power Spheres</td><td>3~6 Power Spheres</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Sinspawn Gui</td><td>3~6 Lv. 1 Key Spheres</td><td>N/A</td><td>1 Potion</td><td>N/A</td></tr>
+			<tr><td>Skoll</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Dream Powder</td><td>2 Dream Powders</td></tr>
+			<tr><td>Sleep Sprout</td><td>1~2 Teleport Spheres</td><td>1~2 Dark Matters</td><td>4 Poison Fangs</td><td>1 Farplane Wind</td></tr>
+			<tr><td>Snow Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Antarctic Winds</td><td>N/A</td></tr>
+			<tr><td>Snow Wolf</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Sleeping Powder</td><td>2 Sleeping Powders</td></tr>
+			<tr><td>Spectral Keeper</td><td>1~2 Lv. 4 Key Spheres</td><td>N/A</td><td>1 Ether</td><td>1 Turbo Ether</td></tr>
+			<tr><td>Spherimorph</td><td>1~2 Lv. 2 Key Spheres</td><td>N/A</td><td>1 Ether</td><td>1 Turbo Ether</td></tr>
+			<tr><td>Spirit</td><td>1~2 Mana Spheres</td><td>1~2 Friend Spheres</td><td>1 Stamina Spring</td><td>2 Stamina Springs</td></tr>
+			<tr><td>Splasher</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Grenade</td><td>1 Frag Grenade</td></tr>
+			<tr><td>Stratoavis</td><td>2~4 Amulets</td><td>1~2 Dark Matters</td><td>3 Smoke Bombs</td><td>2 Stamina Springs</td></tr>
+			<tr><td>Swamp Mafdet</td><td>1~2 Power Sphere</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Hypello Potion</td></tr>
+			<tr><td>Tanket</td><td>1~2 Defense Spheres</td><td>1~2 Dark Matters</td><td>4 Light Curtains</td><td>N/A</td></tr>
+			<tr><td>Thorn</td><td>1~2 Mana Spheres</td><td>N/A</td><td>2 Silence Greandes</td><td>1 Ether</td></tr>
+			<tr><td>Th'uban</td><td>1~2 Underdogs' Secrets</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Teleport Sphere</td></tr>
+			<tr><td>Thunder Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Electro Marble</td><td>2 Electro Marbles</td></tr>
+			<tr><td>Tonberry</td><td>1~2 Power Spheres</td><td>1~2 Lv. 2 Key Spheres</td><td>1 Hi~Potion</td><td>1 Farplane Shadow</td></tr>
+			<tr><td>Tros</td><td>None</td><td>N/A</td><td>1 Grenade</td><td>3 Grenades</td></tr>
+			<tr><td>Ultima Buster</td><td>1~2 Winning Formulas</td><td>1~2 Dark Matters</td><td>1 Gambler's Spirit</td><td>1 Lv. 3 Key Sphere</td></tr>
+			<tr><td>Ultima Weapon</td><td>3~6 Lv. 3 Key Spheres</td><td>N/A</td><td>10 Doors to Tomorrow</td><td>20 Doors to Tomorrow</td></tr>
+			<tr><td>Valaha</td><td>1~2 Ability Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>2 Hi~Potions</td></tr>
+			<tr><td>Varuna</td><td>1~2 Mana Spheres</td><td>1~2 Lv. 2 Key Spheres</td><td>1 Farplane Wind</td><td>1 Shining Gem</td></tr>
+			<tr><td>Vidatu</td><td>1~2 MP Spheres</td><td>1~2 Dark Matters</td><td>4 Lightning Gems</td><td>1 Mana Tonic</td></tr>
+			<tr><td>Vorban</td><td>1~2 Friend Spheres</td><td>1~2 Dark Matters</td><td>2 Healing Springs</td><td>1 Stamina Tablet</td></tr>
+			<tr><td>Vouivre</td><td>1~2 Power Spheres</td><td>N/A</td><td>1 Potion</td><td>1 Silver Hourglass</td></tr>
+			<tr><td>Warrior Monk</td><td>1~2 Ability Spheres</td><td>N/A</td><td>2 Hi~Potions</td><td>1 Purifying Salt</td></tr>
+			<tr><td>Wasp</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Hi~Potion</td><td>1 Poison Fang</td></tr>
+			<tr><td>Water Flan</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Fish Scale</td><td>2 Dragon Scales</td></tr>
+			<tr><td>Wendigo</td><td>1~2 Power Spheres</td><td>2~4 Power Spheres</td><td>1 Hi~Potion</td><td>1 X~Potion</td></tr>
+			<tr><td>White Element</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Antarctic wind</td><td>2 Antarctic Winds</td></tr>
+			<tr><td>Wraith</td><td>1~2 Mana Spheres</td><td>2~4 Mana Spheres</td><td>1 Farplane Shadow</td><td>1 Farplane Wind</td></tr>
+			<tr><td>Xiphos</td><td>1~2 Ability Spheres</td><td>2~4 Ability Spheres</td><td>1 Hi~Potion</td><td>1 Mega~Potion</td></tr>
+			<tr><td>YAT-97</td><td>2~4 Phoenix Downs</td><td>1~2 Mega Phoenixes</td><td>3 Holy Waters</td><td>2 Ethers</td></tr>
+			<tr><td>YAT-99</td><td>1~2 Phoenix Downs</td><td>1~2 Mega Phoenixes</td><td>1 Remedy</td><td>1 Ether</td></tr>
+			<tr><td>Yellow Element</td><td>1~2 Mana Spheres</td><td>N/A</td><td>1 Electro Marble</td><td>1 Lightning Marble</td></tr>
+			<tr><td>Yenke Ronso</td><td>1~2 Return Spheres</td><td>1~2 Friend Spheres</td><td>1 Lv. 3 Key Sphere</td><td>2 Lv. 3 Key Spheres</td></tr>
+			<tr><td>YKT-11</td><td>2~4 Hi~Potions</td><td>1~2 Mega~Potions</td><td>3 Holy Waters</td><td>2 Ethers</td></tr>
+			<tr><td>YKT-63</td><td>1~2 Hi~Potions</td><td>1~2 Mega~Potions</td><td>1 Remedy</td><td>1 Ether</td></tr>
+			<tr><td>Yowie</td><td>1~2 Speed Spheres</td><td>N/A</td><td>1 Soft</td><td>1 Petrify Grenade</td></tr>
+			<tr><td>Yunalesca</td><td>1~2 Lv. 3 Key Spheres</td><td>N/A</td><td>1 Stamina Tablet</td><td>1 Farplane Wind</td></tr>
+			<tr><td>Zaurus</td><td>1~2 Speed Spheres</td><td>2~4 Speed Spheres</td><td>2 Petrify Grenades</td><td>3 Petrify Grenades</td></tr>
+			<tr><td>Zu</td><td>1~2 Power Spheres</td><td>N/A</td><td>3 Smoke Bombs</td><td>4 Smoke Bombs</td></tr>
+		    </tbody>
+          </table>
+        </div>
+		
+		<h3 id="Monster_Bribes"><a href="#Monster_Bribes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Monster Bribes<span id="misc_totals_3"></span></h3>
+        <div id="Monster_Bribes_col" class="collapse in">
+          <table class="table table-striped">
+            <thead>
+              <tr><th>Monster</th><th>Maximum HP</th><th>Base Bribe Amount (HPx10)</th><th>Approximate Rewards</th></tr>
+            </thead>
+            <tbody>			
+				<tr><td>Achelous</td><td>5,1</td><td>51,000 Gil</td><td>8 Healing Springs</td></tr>
+				<tr><td>Adamantoise</td><td>54,4</td><td>544,000 Gil</td><td>3 Special Spheres</td></tr>
+				<tr><td>Aerouge</td><td>200</td><td>2,000 Gil</td><td>2 Lightning Marbles</td></tr>
+				<tr><td>Ahriman</td><td>2,8</td><td>28,000 Gil</td><td>3 Farplane Winds</td></tr>
+				<tr><td>Alcyone</td><td>430</td><td>4,300 Gil</td><td>1 Mega Phoenix</td></tr>
+				<tr><td>Anacondaur</td><td>5,8</td><td>58,000 Gil</td><td>8 Healing Waters</td></tr>
+				<tr><td>Aqua Flan</td><td>2,025</td><td>20,250 Gil</td><td>8 Water Gems</td></tr>
+				<tr><td>Bandersnatch</td><td>1,8</td><td>18,000 Gil</td><td>10 Dream Powders</td></tr>
+				<tr><td>Barbatos</td><td>95</td><td>950,000 Gil</td><td>10 Teleport Spheres</td></tr>
+				<tr><td>Bashura</td><td>17</td><td>170,000 Gil</td><td>40 Stamina Springs</td></tr>
+				<tr><td>Basilisk</td><td>2,025</td><td>20,250 Gil</td><td>12 Petrify Grenades</td></tr>
+				<tr><td>Bat Eye</td><td>380</td><td>3,800 Gil</td><td>6 Silence Grenades</td></tr>
+				<tr><td>Behemoth</td><td>23</td><td>230,000 Gil</td><td>15 Lv. 2 Key Spheres</td></tr>
+				<tr><td>Behemoth King</td><td>67,5</td><td>675,000 Gil</td><td>7 Three Stars</td></tr>
+				<tr><td>Bite Bug</td><td>200</td><td>2,000 Gil</td><td>1 Poison Fang</td></tr>
+				<tr><td>Black Element</td><td>7,6</td><td>76,000 Gil</td><td>1 Black Magic Sphere</td></tr>
+				<tr><td>Blue Element</td><td>1,5</td><td>15,000 Gil</td><td>5 Water Gems</td></tr>
+				<tr><td>Bomb (Home)</td><td>2,2</td><td>22,000 Gil</td><td>7 Fire Gems</td></tr>
+				<tr><td>Bomb (Mi'ihen)</td><td>850</td><td>8,500 Gil</td><td>8 Bomb Cores</td></tr>
+				<tr><td>Buer</td><td>230</td><td>2,300 Gil</td><td>1 Musk</td></tr>
+				<tr><td>Bunyip</td><td>400</td><td>4,000 Gil</td><td>8 Hypello Potions</td></tr>
+				<tr><td>Cave Iguion</td><td>550</td><td>5,500 Gil</td><td>3 Petrify Grenades</td></tr>
+				<tr><td>Chimera (Home)</td><td>9</td><td>90,000 Gil</td><td>8 Underdog's Secrets</td></tr>
+				<tr><td>Chimera (Macalania)</td><td>5,25</td><td>52,500 Gil</td><td>5 Mana Tablets</td></tr>
+				<tr><td>Chimera Brain</td><td>9,8</td><td>98,000 Gil</td><td>1 Lv. 4 Key Spheres</td></tr>
+				<tr><td>Coeurl</td><td>6</td><td>60,000 Gil</td><td>1 Friend Spheres</td></tr>
+				<tr><td>Condor</td><td>95</td><td>950 Gil</td><td>2 Smoke Bombs</td></tr>
+				<tr><td>Dark Element</td><td>1,8</td><td>18,000 Gil</td><td>2 Return Spheres</td></tr>
+				<tr><td>Dark Flan</td><td>12,8</td><td>128,000 Gil</td><td>1 White Magic Sphere</td></tr>
+				<tr><td>Defender</td><td>12</td><td>120,000 Gil</td><td>10 Stamina Tablets</td></tr>
+				<tr><td>Defender Z</td><td>42,3</td><td>423,000 Gil</td><td>3 Designer Wallets</td></tr>
+				<tr><td>Demonolith</td><td>45</td><td>450,000 Gil</td><td>20 Lv. 3 Key Spheres</td></tr>
+				<tr><td>Dingo</td><td>125</td><td>1,250 Gil</td><td>2 Sleeping Powders</td></tr>
+				<tr><td>Dinonix</td><td>140</td><td>1,400 Gil</td><td>1 Petrify Grenade</td></tr>
+				<tr><td>Dual Horn (Mi'ihen)</td><td>1,875</td><td>18,750 Gil</td><td>30 Hi-Potions</td></tr>
+				<tr><td>Dual Horn (Home)</td><td>3,795</td><td>37,950 Gil</td><td>12 Mega-Potions</td></tr>
+				<tr><td>Epaaj</td><td>8,7</td><td>87,000 Gil</td><td>12 Farplane Winds</td></tr>
+				<tr><td>Evil Eye (Home)</td><td>430</td><td>4,300 Gil</td><td>2 Musks</td></tr>
+				<tr><td>Evil Eye (Macalania)</td><td>310</td><td>3,100 Gil</td><td>2 Musks</td></tr>
+				<tr><td>Exoray</td><td>7,4</td><td>74,000 Gil</td><td>15 Turbo Ethers</td></tr>
+				<tr><td>Flame Flan</td><td>1,5</td><td>15,000 Gil</td><td>5 Fire Gems</td></tr>
+				<tr><td>Floating Death</td><td>6,7</td><td>67,000 Gil</td><td>5 Gambler's Spirits</td></tr>
+				<tr><td>Floating Eye</td><td>140</td><td>1,400 Gil</td><td>1 Musk</td></tr>
+				<tr><td>Funguar</td><td>540</td><td>5,400 Gil</td><td>1 Turbo Ether</td></tr>
+				<tr><td>Gandarewa</td><td>148</td><td>1,480 Gil</td><td>2 Lightning Marbles</td></tr>
+				<tr><td>Garm</td><td>240</td><td>2,400 Gil</td><td>4 Sleeping Powders</td></tr>
+				<tr><td>Garuda (Mushroom Rock)</td><td>4</td><td>40,000 Gil</td><td>50 Smoke Bombs</td></tr>
+				<tr><td>Gemini (club)</td><td>36</td><td>360,000 Gil</td><td>5 Mana Tonics</td></tr>
+				<tr><td>Gemini (sword)</td><td>36</td><td>360,000 Gil</td><td>5 Stamina Tonics</td></tr>
+				<tr><td>Ghost</td><td>9,999</td><td>99,990 Gil</td><td>20 Mega Phoenixes</td></tr>
+				<tr><td>Gold Element</td><td>1,2</td><td>12,000 Gil</td><td>10 Lightning Marbles</td></tr>
+				<tr><td>Grat</td><td>4</td><td>40,000 Gil</td><td>20 Remedies</td></tr>
+				<tr><td>Great Malboro</td><td>64</td><td>640,000 Gil</td><td>4 Wings to Discovery</td></tr>
+				<tr><td>Grenade</td><td>7,5</td><td>75,000 Gil</td><td>6 Shining Gems</td></tr>
+				<tr><td>Grendel</td><td>9,5</td><td>95,000 Gil</td><td>30 Mega-Potions</td></tr>
+				<tr><td>Guado Guardian (Home)</td><td>2,6</td><td>26,000 Gil</td><td>15 X-Potions</td></tr>
+				<tr><td>Guado Guardian (w/Seymour)</td><td>2</td><td>20,000 Gil</td><td>5 Ethers</td></tr>
+				<tr><td>Halma</td><td>13</td><td>130,000 Gil</td><td>10 Supreme Gems</td></tr>
+				<tr><td>Ice Flan</td><td>1,35</td><td>13,500 Gil</td><td>5 Ice Gems</td></tr>
+				<tr><td>Iguion</td><td>370</td><td>3,700 Gil</td><td>3 Petrify Grenades</td></tr>
+				<tr><td>Imp</td><td>880</td><td>8,800 Gil</td><td>2 Lv. 1 Key Spheres</td></tr>
+				<tr><td>Ipiria</td><td>180</td><td>1,800 Gil</td><td>2 Petrify Grenades</td></tr>
+				<tr><td>Iron Giant</td><td>3,6</td><td>36,000 Gil</td><td>1 Stamina Tonic</td></tr>
+				<tr><td>Killer Bee</td><td>110</td><td>1,100 Gil</td><td>1 Poison Fang</td></tr>
+				<tr><td>Kusariqqu</td><td>445</td><td>4,450 Gil</td><td>10 Silver Hourglasses</td></tr>
+				<tr><td>Lamashtu</td><td>275</td><td>2,750 Gil</td><td>5 Silver Hourglasses</td></tr>
+				<tr><td>Land Worm</td><td>80</td><td>800,000 Gil</td><td>1 Dark Matter</td></tr>
+				<tr><td>Larva</td><td>1,498</td><td>14,980 Gil</td><td>5 Shining Thorns</td></tr>
+				<tr><td>Lord Ochu</td><td>4,649</td><td>46,490 Gil</td><td>40 Remedies</td></tr>
+				<tr><td>Machea</td><td>18</td><td>180,000 Gil</td><td>30 Chocobo Wings</td></tr>
+				<tr><td>Maelspike</td><td>10</td><td>100,000 Gil</td><td>1 Attribute Sphere</td></tr>
+				<tr><td>Mafdet</td><td>710</td><td>7,100 Gil</td><td>15 Hypello Potions</td></tr>
+				<tr><td>Malboro</td><td>27</td><td>270,000 Gil</td><td>2 Wings to Discovery</td></tr>
+				<tr><td>Mandragora</td><td>31</td><td>310,000 Gil</td><td>12 Return Spheres</td></tr>
+				<tr><td>Master Coeurl</td><td>13</td><td>130,000 Gil</td><td>1 Warp Sphere</td></tr>
+				<tr><td>Master Tonberry</td><td>48</td><td>480,000 Gil</td><td>2 Pendulums</td></tr>
+				<tr><td>Maze Larva</td><td>2,222</td><td>22,220 Gil</td><td>7 Water Gems</td></tr>
+				<tr><td>Mech Defender</td><td>8,7</td><td>87,000 Gil</td><td>50 Al Bhed Potions</td></tr>
+				<tr><td>Mech Guard</td><td>1,28</td><td>12,800 Gil</td><td>25 Grenades</td></tr>
+				<tr><td>Mech Gunner</td><td>2,8</td><td>28,000 Gil</td><td>20 Al Bhed Potions</td></tr>
+				<tr><td>Mech Hunter</td><td>5,5</td><td>55,000 Gil</td><td>30 Al Bhed Potions</td></tr>
+				<tr><td>Mech Leader</td><td>3,7</td><td>37,000 Gil</td><td>1 Door to Tomorrow</td></tr>
+				<tr><td>Mech Scouter</td><td>2,75</td><td>27,500 Gil</td><td>1 Door to Tomorrow</td></tr>
+				<tr><td>Melusine</td><td>265</td><td>2,650 Gil</td><td>2 Petrify Grenades</td></tr>
+				<tr><td>Mi'ihen Fang</td><td>160</td><td>1,600 Gil</td><td>3 Sleeping Powders</td></tr>
+				<tr><td>Murussu</td><td>580</td><td>5,800 Gil</td><td>12 Hypello Potions</td></tr>
+				<tr><td>Mushussu</td><td>680</td><td>6,800 Gil</td><td>3 Gold Hourglasses</td></tr>
+				<tr><td>Nebiros</td><td>700</td><td>7,000 Gil</td><td>3 Poison Fangs</td></tr>
+				<tr><td>Nidhogg</td><td>2</td><td>20,000 Gil</td><td>6 Gold Hourglasses</td></tr>
+				<tr><td>Ochu</td><td>7,2</td><td>72,000 Gil</td><td>35 Remedies</td></tr>
+				<tr><td>Octopus</td><td>4,5</td><td>45,000 Gil</td><td>10 Healing Springs</td></tr>
+				<tr><td>Ogre</td><td>9,4</td><td>94,000 Gil</td><td>25 Stamina Springs</td></tr>
+				<tr><td>Phlegyas</td><td>1,68</td><td>16,800 Gil</td><td>3 Healing Springs</td></tr>
+				<tr><td>Piranha (x1)</td><td>50</td><td>500 Gil</td><td>1 Water Gem</td></tr>
+				<tr><td>Piranha (x2)</td><td>100</td><td>1,000 Gil</td><td>1 Water Gem</td></tr>
+				<tr><td>Piranha (x3)</td><td>150</td><td>1,500 Gil</td><td>1 Water Gem</td></tr>
+				<tr><td>Puroboros</td><td>20</td><td>200,000 Gil</td><td>18 Shining Gems</td></tr>
+				<tr><td>Ragora</td><td>780</td><td>7,800 Gil</td><td>4 Remedys</td></tr>
+				<tr><td>Raldo</td><td>240</td><td>2,400 Gil</td><td>5 Hypello Potions</td></tr>
+				<tr><td>Raptor</td><td>200</td><td>2,000 Gil</td><td>2 Petrify Grenades</td></tr>
+				<tr><td>Red Element</td><td>450</td><td>4,500 Gil</td><td>4 Bomb Cores</td></tr>
+				<tr><td>Remora</td><td>3</td><td>30,000 Gil</td><td>10 Water Gems</td></tr>
+				<tr><td>Sahagin (Via Purifico: Tidus)</td><td>380</td><td>3,800 Gil</td><td>4 Water Gems</td></tr>
+				<tr><td>Sahagin (Via Purifico: Yuna)</td><td>1,38</td><td>13,800 Gil</td><td>4 Water Gems</td></tr>
+				<tr><td>Sand Wolf</td><td>450</td><td>4,500 Gil</td><td>6 Sleeping Powders</td></tr>
+				<tr><td>Sand Worm</td><td>45</td><td>450,000 Gil</td><td>8 Winning Formulas</td></tr>
+				<tr><td>Sandragora</td><td>12,75</td><td>127,500 Gil</td><td>50 Remedies</td></tr>
+				<tr><td>Shred</td><td>1,95</td><td>19,500 Gil</td><td>25 Hypello Potions</td></tr>
+				<tr><td>Simurgh</td><td>200</td><td>2,000 Gil</td><td>3 Smoke Bombs</td></tr>
+				<tr><td>Sinscale</td><td>200</td><td>2,000 Gil</td><td>5 Potions</td></tr>
+				<tr><td>Skoll</td><td>1</td><td>10,000 Gil</td><td>6 Dream Powders</td></tr>
+				<tr><td>Snow Flan</td><td>600</td><td>6,000 Gil</td><td>5 Arctic Winds</td></tr>
+				<tr><td>Snow Wolf</td><td>400</td><td>4,000 Gil</td><td>6 Sleeping Powders</td></tr>
+				<tr><td>Spirit</td><td>10</td><td>100,000 Gil</td><td>5 Twin Starss</td></tr>
+				<tr><td>Splasher (x1)</td><td>200</td><td>2,000 Gil</td><td>2 Dragon Scales</td></tr>
+				<tr><td>Splasher (x2)</td><td>400</td><td>4,000 Gil</td><td>4 Dragon Scales</td></tr>
+				<tr><td>Splasher (x3)</td><td>600</td><td>6,000 Gil</td><td>6 Dragon Scales</td></tr>
+				<tr><td>Swamp Mafdet</td><td>850</td><td>8,500 Gil</td><td>17 Hypello Potions</td></tr>
+				<tr><td>Thorn</td><td>4,08</td><td>40,800 Gil</td><td>8 Turbo Ethers</td></tr>
+				<tr><td>Thunder Flan</td><td>450</td><td>4,500 Gil</td><td>4 Lightning Marbles</td></tr>
+				<tr><td>Tonberry</td><td>13,5</td><td>135,000 Gil</td><td>1 Amulet</td></tr>
+				<tr><td>Ultima Weapon</td><td>99,999</td><td>999,990 Gil</td><td>50 Pendulums</td></tr>
+				<tr><td>Valaha</td><td>8,7</td><td>87,000 Gil</td><td>30 X-Potions</td></tr>
+				<tr><td>Varuna</td><td>56</td><td>560,000 Gil</td><td>10 Megalixirs</td></tr>
+				<tr><td>Vouivre</td><td>255</td><td>2,550 Gil</td><td>5 Silver Hourglasses</td></tr>
+				<tr><td>Wasp</td><td>360</td><td>3,600 Gil</td><td>2 Poison Fangs</td></tr>
+				<tr><td>Water Flan</td><td>315</td><td>3,150 Gil</td><td>1 Water Gems</td></tr>
+				<tr><td>White Element</td><td>390</td><td>3,900 Gil</td><td>4 Arctic Winds</td></tr>
+				<tr><td>Wraith</td><td>22,222</td><td>222,220 Gil</td><td>30 Farplane Winds</td></tr>
+				<tr><td>Xiphos</td><td>2,7</td><td>27,000 Gil</td><td>1 Megalixir</td></tr>
+				<tr><td>YAT-97</td><td>3,7</td><td>37,000 Gil</td><td>8 Ethers</td></tr>
+				<tr><td>YAT-99</td><td>2,7</td><td>27,000 Gil</td><td>5 Ethers</td></tr>
+				<tr><td>Yellow Element</td><td>300</td><td>3,000 Gil</td><td>3 Lightning Marbles</td></tr>
+				<tr><td>YKT-11</td><td>6,2</td><td>62,000 Gil</td><td>6 Elixirs</td></tr>
+				<tr><td>YKT-63</td><td>4,2</td><td>42,000 Gil</td><td>4 Elixirs</td></tr>
+				<tr><td>Yowie</td><td>900</td><td>9,000 Gil</td><td>6 Petrify Grenades</td></tr>
+				<tr><td>Zaurus</td><td>7,85</td><td>78,500 Gil</td><td>5 Rename Cards</td></tr>
+				<tr><td>Zu</td><td>18</td><td>180,000 Gil</td><td>1 Skill Sphere</td></tr>
             </tbody>
           </table>
         </div>
