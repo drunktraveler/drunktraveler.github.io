@@ -2037,8 +2037,345 @@
           </table>
         </div>
 		
-		<h3 id="Monster_Bribes"><a href="#Monster_Bribes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Monster Bribes<span id="misc_totals_4"></span></h3>
-        <div id="Monster_Bribes_col" class="collapse in">
+		<h3 id="White_Magic"><a href="#White_Magic_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>White Magic<span id="misc_totals_4"></span></h3>
+        <div id="White_Magic_col" class="collapse in">
+		  <table class="table table-striped">
+			<thead>
+				<tr><th>Ability</th><th>MP Cost</th><th>Effect</th></tr>
+            </thead>
+            <tbody>
+				<tr><td>Auto-Life</td><td>97 MP</td><td>Target automatically revives once with 25% HP</td></tr>
+				<tr><td>Cura</td><td>10 MP</td><td>Heals target double of Cure. Damages Zombies. Affected by Shell and Reflect</td></tr>
+				<tr><td>Curaga</td><td>20 MP</td><td>Heals target 1.75x more than Cura. Damages Zombies. Affected by Shell and Reflect</td></tr>
+				<tr><td>Cure</td><td>4 MP</td><td>Heals target a little hp. Damages Zombies. Affected by Shell and Reflect</td></tr>
+				<tr><td>Dispel</td><td>12 MP</td><td>Removes all Breaks, Nul-Spells, Protect, Shell, Reflect, Haste, Regen from target</td></tr>
+				<tr><td>Esuna</td><td>5 MP</td><td>Removes Darkness, Silence, Sleep, Poison, Petrification, Confusion, Berserk, Slow from target. Affected by Reflect</td></tr>
+				<tr><td>Full-Life</td><td>60 MP</td><td>Revives target with 100%. Kills Zombies (or deals 9.999/99.999 damage). Affected by Reflect</td></tr>
+				<tr><td>Haste</td><td>8 MP</td><td>Doubles target's Agility. Affected by Reflect</td></tr>
+				<tr><td>Hastega</td><td>30 MP</td><td>Doubles target party's Agility. Affected by Reflect</td></tr>
+				<tr><td>Holy</td><td>85 MP</td><td>Deals holy damage to target. Affected by Reflect and Shell</td></tr>
+				<tr><td>Life</td><td>18 MP</td><td>Revives target with 50% HP. Kills Zombies (or deals 9.999/99.999 damage). Affected by Reflect</td></tr>
+				<tr><td>NulBlaze/Frost/Shock/Tide</td><td>2 MP</td><td>Nullifies the next Fire/Ice/Lightning/Water attack on each person. Affected by Reflect</td></tr>
+				<tr><td>Protect</td><td>12 MP</td><td>Doubles the target's Defense. Affected by Reflect</td></tr>
+				<tr><td>Reflect</td><td>14 MP</td><td>Bounces most magic to the opposite party. Affected by Reflect</td></tr>
+				<tr><td>Regen</td><td>40 MP</td><td>Heals target for ten turns. Damages Zombies. Affected by Reflect</td></tr>
+				<tr><td>Scan</td><td>1 MP</td><td>Show enemy stats and affinities. Affected by Reflect</td></tr>
+				<tr><td>Shell</td><td>10 MP</td><td>Doubles target's Magic Defense. Affected by Reflect</td></tr>
+				<tr><td>Slow</td><td>12 MP</td><td>Halves target's Agility. Affected by Reflect</td></tr>
+				<tr><td>Slowga</td><td>20 MP</td><td>Halves target party's Agility. Affected by Reflect</td></tr>
+			</tbody>
+		  </table>
+		</div>
+		
+		<h3 id="Black_Magic"><a href="#Black_Magic_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Black Magic<span id="misc_totals_5"></span></h3>
+        <div id="Black_Magic_col" class="collapse in">
+		  <table class="table table-striped">
+			<thead>
+				<tr><th>Ability</th><th>MP Cost</th><th>Effect</th></tr>
+            </thead>
+            <tbody>
+				<tr><td>Bio</td><td>10 MP</td><td>Poison the target. Affected by Reflect</td></tr>
+				<tr><td>Blizzaga/Firaga/Thundaga/Waterga</td><td>20 MP</td><td>Hits the target for 3.5x the damage of its base counterpart. Affected by Shell, Reflect and affinities</td></tr>
+				<tr><td>Blizzara/Fira/Thundara/Watera</td><td>8 MP</td><td>Hits the target for 2x the damage of its base counterpart. Affected by Shell, Reflect and affinities</td></tr>
+				<tr><td>Blizzard/Fire/Thunder/Water</td><td>4 MP</td><td>Hits the target for minor Ice/Fire/Lightning/Water-elemental damage. Affected by Shell, Reflect and affinities</td></tr>
+				<tr><td>Death</td><td>20 MP</td><td>Kills the target. Does not work on Zombies. Affected by Reflect</td></tr>
+				<tr><td>Demi</td><td>32 MP</td><td>Reduces the HP of the target party by 25% of their current HP. Affected by Shell and damage limits</td></tr>
+				<tr><td>Drain</td><td>12 MP</td><td>Damage a target and heals user for the same amount. Effect reversed for Zombies. Affected by Shell and Reflect</td></tr>
+				<tr><td>Flare</td><td>54 MP</td><td>Hits the target with non-elemental damage. Deals 5x the damage of regular elemental spells. Affected by Shell and Reflect</td></tr>
+				<tr><td>Osmose</td><td>0 MP</td><td>Drains target's MP. Effect reversed for Zombies. Affected by Reflect</td></tr>
+				<tr><td>Ultima</td><td>90 MP</td><td>Hits the target party with non-elemental damage. 5.83x more powerful than regular elemental spells. Affected by Shell</td></tr>
+			</tbody>
+		  </table>
+		</div>
+		
+		<h3 id="Skills"><a href="#Skills_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Skills<span id="misc_totals_6"></span></h3>
+        <div id="Skills_col" class="collapse in">
+		  <table class="table table-striped">
+			<thead>
+				<tr><th>Skill</th><th>MP Cost</th><th>Effect</th></tr>
+            </thead>
+            <tbody>
+				<tr><td>Armor/Magic/Mental/Power Break</td><td>8 MP</td><td>Damages the target and halves their Defense/Magic/Magic Defense/Strength</td></tr>
+				<tr><td>Dark/Silence/Sleep Attack</td><td>5 MP</td><td>Damages the target and 50% chance to apply Darkness/Silence/Sleep for three turns</td></tr>
+				<tr><td>Dark/Silence/Sleep Buster</td><td>10 MP</td><td>Damages the target and 100% chance to apply Darkness/Silence/Sleep for three turns</td></tr>
+				<tr><td>Delay Attack</td><td>8 MP</td><td>Damages the target and delays their next turn</td></tr>
+				<tr><td>Delay Buster</td><td>18 MP</td><td>Damages the target and greatly delays their next turn</td></tr>
+				<tr><td>Extract Ability/Mana/Power/Speed</td><td>1 MP</td><td>Damages the target and makes them drop Ability/Mana/Power/Speed Spheres</td></tr>
+				<tr><td>Full Break</td><td>99 MP</td><td>Damages the target and applies all 4 Breaks</td></tr>
+				<tr><td>Mug</td><td>10 MP</td><td>Attacks the target and steals with a (1/steal attempt) success rate (100%, 50%, 33%, 25%...)</td></tr>
+				<tr><td>Nab Gil</td><td>30 MP</td><td>Attacks the target and pilfers Gil with a (1/pilfer attempt) success rate (100%, 50%, 33%, 25%...)</td></tr>
+				<tr><td>Quick Hit</td><td>36 MP</td><td>Damages the target and allows the user to get their turn faster</td></tr>
+				<tr><td>Triple Foul</td><td>24 MP</td><td>Damages the target and induces Darkness, Silence, Sleep</td></tr>
+				<tr><td>Zombie Attack</td><td>10 MP</td><td>Damages the target and 50% to apply Zombie</td></tr>
+			</tbody>
+		  </table>
+		</div>
+		
+		<h3 id="Specials"><a href="#Specials_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Specials<span id="misc_totals_7"></span></h3>
+        <div id="Specials_col" class="collapse in">
+		  <table class="table table-striped">
+			<thead>
+				<tr><th>Special</th><th>MP Cost</th><th>Effect</th></tr>
+            </thead>
+            <tbody>
+				<tr><td>Aim</td><td>0 MP</td><td>Raises the party's Accuracy by 1. Stacks 5 times</td></tr>
+				<tr><td>Bribe</td><td>0 MP</td><td>Pay enemies to flee and receive items depending on the amount paid. Check Monster Bribes</td></tr>
+				<tr><td>Cheer</td><td>0 MP</td><td>Raises the party's Strength and Defense by 1. Stacks 5 times</td></tr>
+				<tr><td>Copycat</td><td>28 MP</td><td>Copy the last action of an ally, excluding Summoning and Overdrives, at no MP cost</td></tr>
+				<tr><td>Doublecast</td><td>0 MP</td><td>Use two Black Magic spells in one turn</td></tr>
+				<tr><td>Entrust</td><td>0 MP</td><td>Add the user's Overdrive gauge to the target's</td></tr>
+				<tr><td>Flee</td><td>0 MP</td><td>100% for the party to flee the battle</td></tr>
+				<tr><td>Focus</td><td>0 MP</td><td>Raises the party's Magic and Magic Defense by 1. Stacks 5 times</td></tr>
+				<tr><td>Guard</td><td>0 MP</td><td>Take damage for an ally targeted by a single-target attack</td></tr>
+				<tr><td>Jynx</td><td>0 MP</td><td>Raises the target party's Luck by 1. Stacks 5 times</td></tr>
+				<tr><td>Lancet</td><td>0 MP</td><td>Drain a little HP and MP from a target. Effect is reversed on Zombies</td></tr>
+				<tr><td>Luck</td><td>0 MP</td><td>Raises the party's Luck by 1. Stacks 5 times</td></tr>
+				<tr><td>Pilfer Gil</td><td>20 MP</td><td>Steals Gil with a (1/pilfer attempt) success rate (100%, 50%, 33%, 25%...)</td></tr>
+				<tr><td>Pray</td><td>0 MP</td><td>Restore a small amount of HP to the party</td></tr>
+				<tr><td>Provoke</td><td>4 MP</td><td>Provoke a target to attack only the user</td></tr>
+				<tr><td>Quick Pockets</td><td>70 MP</td><td>Use an item and get the next turn quicker</td></tr>
+				<tr><td>Reflex</td><td>0 MP</td><td>Raises the party's Evasion by 1. Stacks 5 times</td></tr>
+				<tr><td>Sentinel</td><td>0 MP</td><td>Take damage for an ally targeted by a single-target attack. Damage is reduced by 50%</td></tr>
+				<tr><td>Spare Change</td><td>0 MP</td><td>Throw money at an enemy to deal damage. Damage is equal to money thrown/10</td></tr>
+				<tr><td>Steal</td><td>0 MP</td><td>Steals items with a (1/steal attempt) success rate (100%, 50%, 33%, 25%...)</td></tr>
+				<tr><td>Threaten</td><td>12 MP</td><td>Delays the target's next turn</td></tr>
+				<tr><td>Use</td><td>0 MP</td><td>Allows use of otherwise unusable items</td></tr>
+			</tbody>
+		  </table>
+		</div>
+		
+		<h3 id="Overdrives"><a href="#Overdrives_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Overdrives<span id="misc_totals_8"></span></h3>
+        <div id="Overdrives_col" class="collapse in">
+			<li data-id="misc_8_1"><b>Tidus - Swordplay</b>: Stop a moving cursor when it's in the middle of the gauge
+				<ul>
+				<li data-id="misc_8_1_1"><b>Spiral Cut</b>: Learned initially, 33% stronger if successful</li>
+				<li data-id="misc_8_1_2"><b>Slice & Dice</b>: Perform 10 Overdrives, 33% stronger and can attack up to 4 enemies if successful </li>
+				<li data-id="misc_8_1_3"><b>Energy Rain</b>: Perform 30 Overdrives, 30% stronger if successful</li>
+				<li data-id="misc_8_1_4"><b>Blitz Ace</b>: Perform 80 Overdrives, follow up with a 6x more powerful attack if successful</li>
+				</ul>
+			</li>
+			<li data-id="misc_8_2"><b>Wakka - Slots</b>: Match slots
+				<ul>
+				<li data-id="misc_8_2_1"><b>Element Reels</b>: Learned initially, 3 matches attacks all enemies with the selected element, 2 matches attacks one enemy with the selected element, no matches attacks one enemy with no element</li>
+				<li data-id="misc_8_2_2"><b>Attack Reels</b>: Obtained from a Blitzball tournament, hits are cumulative unless you get 3 1x hit, which results in 6 hits, and 3 2x hit, which results in 12 hits </li>
+				<li data-id="misc_8_2_3"><b>Status Reels</b>: Obtained from a Blitzball league and after Wakka fought at least 250 battles, works exactly like the Element Reels </li>
+				<li data-id="misc_8_2_4"><b>Aurochs Reels</b>: Obtained from a Blitzball tournament and after Wakka fought at least 450 battles, same as Element Reels, but with an Aurochs emblem - line those up for an attack to all enemies with 112% power</li>
+				</ul>
+			</li>
+			<li data-id="misc_8_3"><b>Yuna - Grand Summon</b>: Summon an Aeon, its Overdrive bar get filled. If it's already full, you can use two Overdrives in a row
+			</li>
+			<li data-id="misc_8_4"><b>Lulu - Fury</b>: Rotate your Analog Stick repeatedly to perform the selected spell multiple times at around 42% of its original power
+			</li>
+			<li data-id="misc_8_5"><b>Kimahri - Ronso Rage</b>: Use one of the abilities that you have stolen from enemies
+				<ul>
+				<li data-id="misc_8_5_1"><b>Aqua Breath</b>: Obtained from Chimera/Chimera Brain/Yenke Ronso, water damage to all enemies</li>
+				<li data-id="misc_8_5_2"><b>Bad Breath</b>: Obtained from Malboro/Great Malboro, inflict poison, darkness, silence, sleep on all enemies</li>
+				<li data-id="misc_8_5_3"><b>Doom</b>: Obtained from Biran Ronso/Ghost/Wraith, inflicts Doom on one enemy (death after 3-255 turns)</li>
+				<li data-id="misc_8_5_4"><b>Fire Breath</b>: Obtained from Dual Horn/Grendel/Yenke Ronso, fire damage to all enemies</li>
+				<li data-id="misc_8_5_5"><b>Jump</b>: Learned initially, physical damage to one enemy </li>
+				<li data-id="misc_8_5_6"><b>Mighty Guard</b>: Obtained from Behemoth/Behemoth King/Biran Ronso, apply all Nul-Spells, Shell, Protect on all allies</li>
+				<li data-id="misc_8_5_7"><b>Nova</b>: Obtained from Nemesis/Omega Weapon, magical damage to all enemies</li>
+				<li data-id="misc_8_5_8"><b>Seed Cannon</b>: Obtained from story, physical damage to one enemy</li>
+				<li data-id="misc_8_5_9"><b>Self Destruct</b>: Obtained from Bomb/Biran Ronso/Grenade/Puroboros, remove Kimahri from battle and deal 3x his max HP to one enemy</li>
+				<li data-id="misc_8_5_10"><b>Stone Breath</b>: Obtained from Anacondaur/Basilisk/Demonolith/Yenke Ronso, petrify every enemy</li>
+				<li data-id="misc_8_5_11"><b>Thrust Kick</b>: Obtained from Biran Ronso/YKT-11/YKT-63, physical damage to one enemy</li>
+				<li data-id="misc_8_5_12"><b>White Wind</b>: Obtained from Dark Flan/Spirit, heal all allies</li>
+				</ul>
+			</li>
+			<li data-id="misc_8_6"><b>Auron - Bushido</b>: Press a combination of buttons. Multiplier for fast completion (1 + (time left / 2 * time given))
+				<ul>
+				<li data-id="misc_8_6_1"><b>Dragon Fang</b>: Learned initially, Down Left Up Right L1 R1 Circle X, attacks all enemies, gain 6,25% damage boost and apply Delay on success</li>
+				<li data-id="misc_8_6_2"><b>Shooting Star</b>: Learned after beating Spherimorph, Triangle Circle Square Circle Left Right X, attacks one enemy and may eject them from battle on success</li>
+				<li data-id="misc_8_6_3"><b>Banishing Blade</b>: Collect 3 Jecht/Auron/Braska Spheres, Up L1 Down R1 Right Left Triangle, attacks one enemy, applies Power, Armor, Magic and Mental Breaks on success</li>
+				<li data-id="misc_8_6_4"><b>Tornado</b>: Collect all ten Spheres, X Right R1 Left Triangle, hits all enemies twice, 33% damage boost on success</li>
+				</ul>
+			</li>
+			<li data-id="misc_8_7"><b>Rikku - Mix</b>: Mix two items to bring about incredible effects. The full list is in this section
+			</li>
+		</div>
+		
+		<h3 id="Overdrive_Modes"><a href="#Overdrive_Modes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a>Overdrive Modes<span id="misc_totals_9"></span></h3>
+        <div id="Overdrive_Modes_col" class="collapse in">
+		    <li data-id="misc_9_1">Obtain <b>Ally</b>: The gauge fills 4% every time an ally gets a turn. Have allies get turns to obtain
+				<ul>
+				<li data-id="misc_9_1_1"><b>Tidus</b>: 600</li>
+				<li data-id="misc_9_1_2"><b>Yuna</b>: 500</li>
+				<li data-id="misc_9_1_3"><b>Wakka</b>: 350</li>
+				<li data-id="misc_9_1_4"><b>Lulu</b>: 480</li>
+				<li data-id="misc_9_1_5"><b>Kimahri</b>: 300</li>
+				<li data-id="misc_9_1_6"><b>Auron</b>: 450</li>
+				<li data-id="misc_9_1_7"><b>Rikku</b>: 320</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_2">Obtain <b>Avenger</b>: The gauge fills 1/3 every time an ally dies. Have allies die to obtain
+				<ul>
+				<li data-id="misc_9_2_1"><b>Tidus</b>: 100</li>
+				<li data-id="misc_9_2_2"><b>Yuna</b>: 80</li>
+				<li data-id="misc_9_2_3"><b>Wakka</b>: 100</li>
+				<li data-id="misc_9_2_4"><b>Lulu</b>: 150</li>
+				<li data-id="misc_9_2_5"><b>Kimahri</b>: 100</li>
+				<li data-id="misc_9_2_6"><b>Auron</b>: 125</li>
+				<li data-id="misc_9_2_7"><b>Rikku</b>: 100</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_3">Obtain <b>Comrade</b>: The gauge fills (2/3)-(Damage*30/Max HP) every time an ally takes damage. Have allies take damage to obtain
+				<ul>
+				<li data-id="misc_9_3_1"><b>Tidus</b>: 300</li>
+				<li data-id="misc_9_3_2"><b>Yuna</b>: 240</li>
+				<li data-id="misc_9_3_3"><b>Wakka</b>: 100</li>
+				<li data-id="misc_9_3_4"><b>Lulu</b>: 100</li>
+				<li data-id="misc_9_3_5"><b>Kimahri</b>: 100</li>
+				<li data-id="misc_9_3_6"><b>Auron</b>: 220</li>
+				<li data-id="misc_9_3_7"><b>Rikku</b>: 100</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_4">Obtain <b>Coward</b>: The gauge fills 10% when you flee. Be in the party when you flee to obtain
+				<ul>
+				<li data-id="misc_9_3_1"><b>Tidus</b>: 600</li>
+				<li data-id="misc_9_3_2"><b>Yuna</b>: 900</li>
+				<li data-id="misc_9_3_3"><b>Wakka</b>: 400</li>
+				<li data-id="misc_9_3_4"><b>Lulu</b>: 950</li>
+				<li data-id="misc_9_3_5"><b>Kimahri</b>: 700</li>
+				<li data-id="misc_9_3_6"><b>Auron</b>: 1000</li>
+				<li data-id="misc_9_3_7"><b>Rikku</b>: 450</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_5">Obtain <b>Dancer</b>: The gauge fills 1/6 every time you dodge an attack. Dodge attacks to obtain
+				<ul>
+				<li data-id="misc_9_5_1"><b>Tidus</b>: 170</li>
+				<li data-id="misc_9_5_2"><b>Yuna</b>: 90</li>
+				<li data-id="misc_9_5_3"><b>Wakka</b>: 140</li>
+				<li data-id="misc_9_5_4"><b>Lulu</b>: 150</li>
+				<li data-id="misc_9_5_5"><b>Kimahri</b>: 200</li>
+				<li data-id="misc_9_5_6"><b>Auron</b>: 260</li>
+				<li data-id="misc_9_5_7"><b>Rikku</b>: 110</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_6">Obtain <b>Daredevil</b>: The gauge fills 1/6 every time you get a turn while under 50% HP. Get turns while under 50% HP to obtain
+				<ul>
+				<li data-id="misc_9_6_1"><b>Tidus</b>: 170</li>
+				<li data-id="misc_9_6_2"><b>Yuna</b>: 90</li>
+				<li data-id="misc_9_6_3"><b>Wakka</b>: 140</li>
+				<li data-id="misc_9_6_4"><b>Lulu</b>: 150</li>
+				<li data-id="misc_9_6_5"><b>Kimahri</b>: 200</li>
+				<li data-id="misc_9_6_6"><b>Auron</b>: 260</li>
+				<li data-id="misc_9_6_7"><b>Rikku</b>: 110</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_7">Obtain <b>Healer</b>: The gauge fills by Healed HP*16/Max HP for every healed ally. Heal allies to obtain
+				<ul>
+				<li data-id="misc_9_7_1"><b>Tidus</b>: 80</li>
+				<li data-id="misc_9_7_2"><b>Yuna</b>: 60</li>
+				<li data-id="misc_9_7_3"><b>Wakka</b>: 100</li>
+				<li data-id="misc_9_7_4"><b>Lulu</b>: 170</li>
+				<li data-id="misc_9_7_5"><b>Kimahri</b>: 100</li>
+				<li data-id="misc_9_7_6"><b>Auron</b>: 200</li>
+				<li data-id="misc_9_7_7"><b>Rikku</b>: 70</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_8">Obtain <b>Hero</b>: The gauge fills 20% every time you kill an enemy with over 10.000 HP. Kill enemies with over 10.000 HP to obtain
+				<ul>
+				<li data-id="misc_9_8_1"><b>Tidus</b>: 50</li>
+				<li data-id="misc_9_8_2"><b>Yuna</b>: 50</li>
+				<li data-id="misc_9_8_3"><b>Wakka</b>: 50</li>
+				<li data-id="misc_9_8_4"><b>Lulu</b>: 70</li>
+				<li data-id="misc_9_8_5"><b>Kimahri</b>: 45</li>
+				<li data-id="misc_9_8_6"><b>Auron</b>: 40</li>
+				<li data-id="misc_9_8_7"><b>Rikku</b>: 50</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_9">Obtain <b>Loner</b>: The gauge fills 1/6 every turn you are alone in the party. Fight alone to obtain
+				<ul>
+				<li data-id="misc_9_9_1"><b>Tidus</b>: 60</li>
+				<li data-id="misc_9_9_2"><b>Yuna</b>: 180</li>
+				<li data-id="misc_9_9_3"><b>Wakka</b>: 110</li>
+				<li data-id="misc_9_9_4"><b>Lulu</b>: 45</li>
+				<li data-id="misc_9_9_5"><b>Kimahri</b>: 90</li>
+				<li data-id="misc_9_9_6"><b>Auron</b>: 35</li>
+				<li data-id="misc_9_9_7"><b>Rikku</b>: 170</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_10">Obtain <b>Rook</b>: The gauge fills 10% every time you magically block an attack (includes partial blocks, e.g. Protect). Magically block attacks to obtain
+				<ul>
+				<li data-id="misc_9_10_1"><b>Tidus</b>: 120</li>
+				<li data-id="misc_9_10_2"><b>Yuna</b>: 110</li>
+				<li data-id="misc_9_10_3"><b>Wakka</b>: 120</li>
+				<li data-id="misc_9_10_4"><b>Lulu</b>: 120</li>
+				<li data-id="misc_9_10_5"><b>Kimahri</b>: 120</li>
+				<li data-id="misc_9_10_6"><b>Auron</b>: 120</li>
+				<li data-id="misc_9_10_7"><b>Rikku</b>: 120</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_11">Obtain <b>Slayer</b>: The gauge fills 20% every time you kill an enemy. Kill enemies to obtain
+				<ul>
+				<li data-id="misc_9_11_1"><b>Tidus</b>: 100</li>
+				<li data-id="misc_9_11_2"><b>Yuna</b>: 110</li>
+				<li data-id="misc_9_11_3"><b>Wakka</b>: 90</li>
+				<li data-id="misc_9_11_4"><b>Lulu</b>: 130</li>
+				<li data-id="misc_9_11_5"><b>Kimahri</b>: 120</li>
+				<li data-id="misc_9_11_6"><b>Auron</b>: 80</li>
+				<li data-id="misc_9_11_7"><b>Rikku</b>: 100</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_12">Obtain <b>Stoic</b>: The gauge fills by Damage*30/Max HP every time you take damage. Automatically obtained
+			</li>
+			<li data-id="misc_9_13">Obtain <b>Sufferer</b>: The gauge fills 1/6 every turn under a status effect. Be affected by ailments to obtain
+				<ul>
+				<li data-id="misc_9_13_1"><b>Tidus</b>: 120</li>
+				<li data-id="misc_9_13_2"><b>Yuna</b>: 100</li>
+				<li data-id="misc_9_13_3"><b>Wakka</b>: 110</li>
+				<li data-id="misc_9_13_4"><b>Lulu</b>: 130</li>
+				<li data-id="misc_9_13_5"><b>Kimahri</b>: 100</li>
+				<li data-id="misc_9_13_6"><b>Auron</b>: 160</li>
+				<li data-id="misc_9_13_7"><b>Rikku</b>: 125</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_14">Obtain <b>Tactician</b>: The gauge fills 1/6 every time you inflict a status on an enemy. Inflict status ailments to obtain
+				<ul>
+				<li data-id="misc_9_14_1"><b>Tidus</b>: 75</li>
+				<li data-id="misc_9_14_2"><b>Yuna</b>: 100</li>
+				<li data-id="misc_9_14_3"><b>Wakka</b>: 80</li>
+				<li data-id="misc_9_14_4"><b>Lulu</b>: 75</li>
+				<li data-id="misc_9_14_5"><b>Kimahri</b>: 60</li>
+				<li data-id="misc_9_14_6"><b>Auron</b>: 110</li>
+				<li data-id="misc_9_14_7"><b>Rikku</b>: 90</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_15">Obtain <b>Victim</b>: The gauge fills 1/6 every turn under a negative status effect. Be affected by ailments turns to obtain
+				<ul>
+				<li data-id="misc_9_15_1"><b>Tidus</b>: 100</li>
+				<li data-id="misc_9_15_2"><b>Yuna</b>: 80</li>
+				<li data-id="misc_9_15_3"><b>Wakka</b>: 100</li>
+				<li data-id="misc_9_15_4"><b>Lulu</b>: 110</li>
+				<li data-id="misc_9_15_5"><b>Kimahri</b>: 130</li>
+				<li data-id="misc_9_15_6"><b>Auron</b>: 120</li>
+				<li data-id="misc_9_15_7"><b>Rikku</b>: 90</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_16">Obtain <b>Victor</b>: The gauge fills 20% every time you win a battle. Win battles to obtain
+				<ul>
+				<li data-id="misc_9_16_1"><b>Tidus</b>: 120</li>
+				<li data-id="misc_9_16_2"><b>Yuna</b>: 150</li>
+				<li data-id="misc_9_16_3"><b>Wakka</b>: 150</li>
+				<li data-id="misc_9_16_4"><b>Lulu</b>: 200</li>
+				<li data-id="misc_9_16_5"><b>Kimahri</b>: 120</li>
+				<li data-id="misc_9_16_6"><b>Auron</b>: 200</li>
+				<li data-id="misc_9_16_7"><b>Rikku</b>: 140</li>
+				</ul>
+			</li>
+			<li data-id="misc_9_17">Obtain <b>Warrior</b>: The gauge fills based on the amount of damage you deal. Deal damage to obtain
+				<ul>
+				<li data-id="misc_9_17_1"><b>Tidus</b>: 150</li>
+				<li data-id="misc_9_17_2"><b>Yuna</b>: 200</li>
+				<li data-id="misc_9_17_3"><b>Wakka</b>: 160</li>
+				<li data-id="misc_9_17_4"><b>Lulu</b>: 300</li>
+				<li data-id="misc_9_17_5"><b>Kimahri</b>: 120</li>
+				<li data-id="misc_9_17_6"><b>Auron</b>: 100</li>
+				<li data-id="misc_9_17_7"><b>Rikku</b>: 140</li>
+				</ul>
+			</li>
+		</div>
+		
       </div>
 	  
 	  <div class="tab-pane" id="tabBlitzball">
