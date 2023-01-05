@@ -13,7 +13,7 @@ If you are interested in contributing to this guide, I welcome Pull Requests.
 For some background on how the guide code is written, here is a sample item on the checklist:
 
 ```
-<li data-id="playthrough_15_5" class="f_sphere">Pick up the Luck Sphere on the right side of the corrider</li>
+<li data-id="playthrough_15_5" class="f_sphere">Pick up the Luck Sphere on the right side of the corridor</li>
 ```
 
 The **data-id** is a unique ID used to store the user's progress. For example, ***playthrough_15_5*** is the 5th task in zone 15. New data-ids must be used in ascending order, but you can place the new entries anywhere within a zone.

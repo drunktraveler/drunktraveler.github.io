@@ -311,22 +311,12 @@ var profilesKey = 'darksouls3_profiles';
             profiles[profilesKey][profile_name].hidden_categories = {
                 f_boss: false,
                 f_miss: false,
-                f_npc: false,
-                f_estus: false,
-                f_bone: false,
-                f_tome: false,
-                f_coal: false,
-                f_ash: false,
-                f_gest: false,
-                f_sorc: false,
-                f_pyro: false,
-                f_mirac: false,
-                f_ring: false,
+                f_cons: false,
+                f_battle: false,
+                f_sphere: false,
+                f_prime: false,
                 f_weap: false,
                 f_arm: false,
-                f_tit: false,
-                f_gem: false,
-                f_cov: false,
                 f_misc: false
             };
     }
@@ -559,14 +549,23 @@ var profilesKey = 'darksouls3_profiles';
             searchTag: '#playthrough_search',
             contentTag: '#playthrough_list ul'
         }), new Jets({
+            searchTag: '#checklist_search',
+            contentTag: '#checklist_list ul'
+        }), new Jets({
+            searchTag: '#monster_search',
+            contentTag: '#monster_list ul'// The outcome is that all <h4> tags are hidden while searching inside <ul> tags
+		}), new Jets({
+            searchTag: '#sidequests_search',
+            contentTag: '#sidequests_list ul'// The outcome is that all <h4> tags are hidden while searching inside <ul> tags
+		}), new Jets({
+            searchTag: '#misc_search',
+            contentTag: '#misc_list ul'// The outcome is that all <h4> tags are hidden while searching inside <ul> tags
+		}), new Jets({
+            searchTag: '#blitzball_search',
+            contentTag: '#blitzball_list ul'// The outcome is that all <h4> tags are hidden while searching inside <ul> tags
+        }), new Jets({
             searchTag: '#item_search',
-            contentTag: '#item_list h4, #item_list ul'// This does not mean that we are searching inside the content of both <h4> and <ul> tags
-        }), new Jets({
-            searchTag: '#weapons_search',
-            contentTag: '#weapons_list h4, #weapons_list ul'// The outcome is that all <h4> tags are hidden while searching inside <ul> tags
-        }), new Jets({
-            searchTag: '#armors_search',
-            contentTag: '#armors_list ul'
+            contentTag: '#item_list ul'
         })];
 
         $('#playthrough_search').keyup(function() {
